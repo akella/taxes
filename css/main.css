@@ -7,16 +7,16 @@
 .types i { position: absolute; left: 0; bottom: 0; }
 
 .types__item-1 { width: 170px; }
-.types__item-1 i { background: url('../img/icons-s76cfac854c.png') 0 -287px no-repeat; width: 60px; height: 50px; }
+.types__item-1 i { background: url('../img/icons-s4e62153969.png') 0 -422px no-repeat; width: 60px; height: 50px; }
 
 .types__item-2 { width: 160px; }
-.types__item-2 i { background: url('../img/icons-s76cfac854c.png') 0 -174px no-repeat; width: 60px; height: 50px; }
+.types__item-2 i { background: url('../img/icons-s4e62153969.png') 0 -264px no-repeat; width: 60px; height: 50px; }
 
 .types__item-3 { width: 180px; }
-.types__item-3 i { background: url('../img/icons-s76cfac854c.png') 0 -501px no-repeat; width: 60px; height: 50px; }
+.types__item-3 i { background: url('../img/icons-s4e62153969.png') 0 -636px no-repeat; width: 60px; height: 50px; }
 
 .types__item-4 { width: 150px; }
-.types__item-4 i { background: url('../img/icons-s76cfac854c.png') 0 -394px no-repeat; width: 60px; height: 50px; }
+.types__item-4 i { background: url('../img/icons-s4e62153969.png') 0 -529px no-repeat; width: 60px; height: 50px; }
 
 .main-slider { background: #dde6ee; }
 
@@ -61,7 +61,7 @@
 .services__next { right: 0; border-radius: 3px 0 0 3px; }
 .services__next i { right: 9px; border-width: 7px 0 7px 7px; border-color: transparent transparent transparent #2c486e; }
 
-.services_mod { height: 122px; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2MzZTRmNyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #c3e4f7)); background-image: -webkit-linear-gradient(#ffffff, #c3e4f7); background-image: -moz-linear-gradient(#ffffff, #c3e4f7); background-image: -o-linear-gradient(#ffffff, #c3e4f7); background-image: linear-gradient(#ffffff, #c3e4f7); }
+.services_mod { height: 122px; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjM2U0ZjciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #ffffff), color-stop(100%, #c3e4f7)); background-image: -webkit-linear-gradient(#ffffff 50%, #c3e4f7); background-image: -moz-linear-gradient(#ffffff 50%, #c3e4f7); background-image: -o-linear-gradient(#ffffff 50%, #c3e4f7); background-image: linear-gradient(#ffffff 50%, #c3e4f7); }
 .services_mod span { width: 46px; height: 46px; line-height: 46px; }
 .services_mod ul { padding: 25px 0 0 5px; }
 .services_mod li { width: 100px; margin: 0; }
@@ -97,7 +97,7 @@
 .accord__content li { margin-bottom: 20px; color: #666666; }
 .accord__content li span { font-size: 10px; }
 .accord__content li span a { margin-right: 8px; font-size: 14px; font-weight: 600; }
-.accord__content li span a:before { content: ""; position: relative; display: inline-block; top: -1px; margin-right: 7px; background: url('../img/icons-s76cfac854c.png') 0 -2158px no-repeat; width: 7px; height: 7px; }
+.accord__content li span a:before { content: ""; position: relative; display: inline-block; top: -1px; margin-right: 7px; background: url('../img/icons-s4e62153969.png') 0 -2293px no-repeat; width: 7px; height: 7px; }
 .accord__content li p { margin-top: 5px; line-height: 1.2; }
 .accord__content li p a { margin-left: 5px; color: #cc3333; }
 
