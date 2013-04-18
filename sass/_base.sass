@@ -1,0 +1,57 @@
+@import "compass/css3"
+//variables
+$blue: #00518c
+$red: #cc3333
+// gradients for ie
+$experimental-support-for-svg: true
+// global sprites
+$icons: sprite-map("icons/*.png", $spacing: 10px)
+//extends
+// image replacement
+%hide-text
+  font: 0/0 a
+  text-shadow: none
+  color: transparent
+%clr
+  &:before, &:after 
+    content: " "
+    display: table
+  &:after
+    clear: both
+  *zoom: 1
+// placeholder color
+@mixin input-placeholder($color) 
+  &.placeholder
+    color: $color
+  &:-moz-placeholder
+    color: $color
+  &::-webkit-input-placeholder
+    color: $color
+// sized sprites
+@mixin image-size($path)
+  width: image-width($path)
+  height: image-height($path)
+@mixin s($map, $sprite)
+  background: sprite($map, $sprite) no-repeat
+  @include image-size(sprite-file($map, $sprite))
+//rotate
+@mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0)
+  -moz-transform: rotate($deg + deg)
+  -o-transform: rotate($deg + deg)
+  -webkit-transform: rotate($deg + deg)
+  -ms-transform: rotate($deg + deg)
+  transform: rotate($deg + deg)
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand')
+  zoom: 1
+
+
+
+
+  
+
+
+
+
+	
+
+		

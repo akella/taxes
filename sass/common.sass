@@ -1,0 +1,463 @@
+@import "base"
+* 
+	margin: 0
+	padding: 0 
+	//-webkit-text-size-adjust: none
+html, body 
+	height: 100%
+html
+	background-color: #abbecf
+body	
+	+background-image(linear-gradient(#2f5288 0px, #abbecf 630px, #abbecf 100%))
+	font-family: 'Open Sans', Arial, Tahoma, sans-serif
+	font-weight: 400
+	font-size: 12px
+	color: #231F20 
+	line-height: 1
+	//-webkit-transform: translate3d(0,0,0);
+	//-weblit-backface-visibility: hidden;
+// resets
+a img, fieldset 
+	border: none
+a
+	color: $blue 
+	text-decoration: none
+li 
+	list-style: none
+textarea, button, select, input
+	border: none
+	outline: none
+button 
+	line-height: 1
+	cursor: pointer
+table 
+	border-spacing: 0
+	border-collapse: collapse
+// common styles
+.wrap
+	width: 940px
+	margin: 0 auto
+	padding: 0 10px
+	background: #25426c 
+	box-shadow: #25426c 0px 1px 0 1px inset
+	+background-image(linear-gradient(#31507d 108px, #21659c 170px, #31507d 260px, #25426c 100%))
+//icons
+.ico-video, .ico-photo
+	display: inline-block
+.ico-video
+	+s($icons, ico-video)
+.ico-photo
+	+s($icons, ico-photo)
+.ico-play
+	+s($icons, ico-play)
+.ico-s1
+	+s($icons, s1)
+.ico-s2
+	+s($icons, s2)
+.ico-s3
+	+s($icons, s3)
+.ico-s4
+	+s($icons, s4)
+.ico-s5
+	+s($icons, s5)
+.ico-s6
+	+s($icons, s6)
+.ico-s7
+	+s($icons, s7)
+.ico-s8
+	+s($icons, s8)
+.ico-s9
+	+s($icons, s9)
+.ico-s10
+	+s($icons, s10)
+.ico-s11
+	+s($icons, s11)
+.ico-s12
+	+s($icons, s12)
+.ico-s13
+	+s($icons, s13)
+.ico-s14
+	+s($icons, s14)
+.ico-book-1
+	+s($icons, ico-book-1)
+.ico-book-2
+	+s($icons, ico-book-2)
+.ico-book-3
+	+s($icons, ico-book-3)
+.ico-fl1
+	+s($icons, fl1)
+.ico-fl2
+	+s($icons, fl2)
+.ico-fl3
+	+s($icons, fl3)
+//header
+.header
+	position: relative
+	height: 108px
+	margin: 0 -10px
+	padding: 0 10px
+	+background-image(linear-gradient(#4670ac, #2b4a77))
+.languages
+	float: left
+	margin: 25px 15px 0 0
+	a
+		display: block
+		height: 19px
+		padding: 0 5px 
+		margin-bottom: 3px		
+		line-height: 19px
+		font-size: 11px
+		color: #FFF  
+		&.active
+			+background-image(linear-gradient(#1d8acf, #26acf5))
+.logo
+	float: left
+	margin: 7px 7px 0 0
+	+s($icons, logo)
+	@extend %hide-text
+.flag
+	float: left
+	width: 3px
+	height: 68px
+	margin: 21px 11px 0 0
+	background: #f8ea1b
+	i
+		display: block
+		height: 50%
+		background: $blue
+.header__top, .header__bottom
+	overflow: hidden
+.header__top
+	margin-bottom: 10px
+.header__title
+	float: left
+	margin-top: 22px
+	color: #FFF
+	h1
+		margin-bottom: 2px
+		font-size: 20px
+		font-weight: 400  
+.header__links
+	float: right
+	a
+		float: left
+		margin-left: 8px
+		height: 27px
+		padding: 0 10px
+		+background-image(linear-gradient(#24a5ed, #1c86cb))
+		border-radius: 0 0 5px 5px
+		line-height: 27px
+		color: #fff
+.header__search
+	float: left
+	width: 221px
+	height: 23px
+	background: #FFF 
+	input, button
+		float: left
+	input
+		width: 190px
+		height: 23px
+		margin-left: 5px 
+	button
+		+s($icons, search-btn)
+.header__nav, .footer__nav
+	float: right
+	ul
+		margin-top: 5px
+		overflow: hidden
+	li
+		float: left
+		padding: 0 10px
+		border-left: 1px solid #476b8f
+		&:first-child
+			border: none
+	a
+		color: #FFF 
+.social
+	float: right
+	a 
+		float: left
+		margin-left: 11px
+.social__fb
+	+s($icons, fb)
+.social__tw
+	+s($icons, tw)
+.social__vk
+	+s($icons, vk)
+//nav
+.nav
+	margin: 0 -10px 8px -10px
+	overflow: hidden
+	ul
+		margin-right: -30px
+		+background-image(linear-gradient(#fff2c2, #f3d178))
+		overflow: hidden		
+	li
+		float: left
+		border-left: 1px solid #d9b556
+		&:first-child
+			border: none
+			a
+				border: none 
+	a
+		display: block
+		height: 35px
+		padding: 0 30px
+		border-left: 1px solid #fff 
+		line-height: 35px
+		font-weight: 600 
+		font-size: 13px
+		color: #25426c 
+		text-transform: uppercase
+//tape
+.tape
+	height: 21px
+	margin: 0 -10px
+	padding-bottom: 12px
+	line-height: 21px
+	color: #fff 
+	overflow: hidden
+.tape__title
+	position: relative
+	float: left
+	padding: 0 7px 0 31px
+	+background-image(linear-gradient(#e0310b, #c12602))	
+	i
+		position: absolute
+		top: 4px
+		left: 11px
+		+s($icons, tape)
+.tape__control
+	float: right
+	margin: 2px 10px 0 0
+	button
+		float: left
+		margin-left: 9px
+.tape__play
+	+s($icons, tape-play)
+.tape__pause
+	+s($icons, tape-pause)
+.tape__info
+	position: relative
+	padding: 0 5px
+	+background-image(linear-gradient(#258bc8, #21659c))	
+	white-space: nowrap
+	overflow: hidden
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		right: 0
+		width: 40px
+		height: 21px
+		+background-image(linear-gradient(left, rgba(34,90,142,0) 0%, #21659c 75%))
+//footer
+.footer
+	margin: 14px -9px 0 -9px
+	padding: 0 9px
+	+background-image(linear-gradient(#25426c 0%, #235485 50%, #25426c 100%))
+	.cols
+		height: 105px
+	.social
+		float: left
+		a
+			margin: 0 9px 0 0
+.footer__container
+	overflow: hidden
+.footer__title
+	margin-bottom: 10px
+	color: #FFF 
+.footer__bottom
+	position: relative
+	height: 43px
+	border-top: 1px solid #51657d 	
+.footer__nav
+	ul
+		margin-top: 15px
+.counter
+	position: absolute
+	top: 11px
+	left: 50%
+	margin-left: -92px
+	opacity: 0.26
+	&:hover
+		opacity: 1 
+.copyright
+	float: left
+	padding-top: 15px
+	color: #FFF 
+.links-out
+	margin-bottom: 20px
+	overflow: hidden
+	a
+		float: left
+		width: 300px
+		height: 35px
+		padding: 5px
+		margin-right: 10px
+		+background-image(linear-gradient(#fff2c2, #f3d177))	
+		border-radius: 5px
+		line-height: 35px		
+		font-size: 15px
+		font-weight: 700 
+	.links-out__last
+		width: 290px
+		margin: 0
+	i
+		float: left
+		margin-right: 15px
+//cols
+.cols
+	margin-bottom: 10px
+	overflow: hidden	
+.cols__220, .cols__230, .cols__240, .cols__460, .cols__470, .cols__480, .cols__720, .cols__710
+	float: left
+	margin-right: 10px
+.cols__220	
+	width: 220px	
+.cols__220_mod
+	margin: 0
+.cols__230	
+	width: 230px
+.cols__240
+	width: 240px
+.cols__460
+	width: 460px
+.cols__470
+	width: 470px
+.cols__480
+	width: 480px
+.cols__710
+	width: 710px
+//tabs
+.tabs
+	padding: 8px 5px 0 5px	
+	overflow: hidden
+.tabs__list
+	float: left
+	li
+		float: left
+		height: 35px
+		padding: 0 15px
+		margin-right: 4px
+		background: rgba(255,255,255,.5)
+		border-radius: 5px 5px 0 0
+		line-height: 35px
+		font-size: 14px
+		color: $blue
+		cursor: pointer
+		&.active
+			color: #000
+			background: #fff 
+.tabs_slider
+	.tabs__list
+		li
+			padding: 0 10px
+			background: #FFF 
+			color: #000 
+			cursor: default
+		span
+			margin-right: 5px
+			font-weight: 700
+			color: $red 
+.tabs__navi
+	float: right
+	margin-top: 7px
+	button
+		float: left
+		width: 17px
+		height: 17px
+		background: none
+		font-size: 12px
+		color: $blue
+		&.active
+			background: #FFF 
+			color: #2f2f2f 
+//more
+.more
+	position: absolute
+	bottom: 13px
+	right: 13px
+	font-size: 11px
+	color: $red  
+//banners
+.banner-customs, .banner-legistation
+	position: relative
+	display: block
+	+background-image(linear-gradient(#3a4352 0%, #4f525d 47%, #373942 54%, #15181c 100%))	
+	color: #fff
+	span
+		display: block
+		padding: 6px 0 2px 0
+		font-family: Impact, Arial, Tahoma, sans-serif
+.banner-customs	
+	height: 72px
+	padding-left: 15px	
+	span
+		font-size: 39px
+	strong
+		font-family: Arial, Tahoma, sans-serif
+		font-size: 17px
+	i
+		position: absolute
+		top: 4px
+		right: 22px
+		+s($icons, earth)
+.banner-legistation
+	height: 80px
+	text-align: center
+	span
+		padding: 10px 0
+		font-size: 28px
+	ul
+		margin-left: 3px
+		overflow: hidden
+	li
+		float: left
+		line-height: 21px
+		font-weight: 600 
+.banner-declaration
+	display: block
+	height: 251px
+	padding: 13px
+	background: url(../img/pic4.jpg) no-repeat 50% 50% #FFF 
+	text-align: center
+	span
+		display: block
+		padding: 100px 0 5px 0
+		font-size: 25px
+		font-weight: bold
+	strong
+		font-family: 'Arial Black', Arial, Tahoma, sans-serif 
+		font-size: 33px
+		color: $red
+		text-transform: uppercase
+.banner-business, .banner-items, .banner-centres 
+	display: block
+	strong
+		display: block
+		padding: 6px 0
+		background: #4c70a5 
+		text-align: center
+		font-size: 14px
+		color: #FFF 
+.banner-items, .banner-centres 
+	height: 110px
+.banner-items
+	background: url(../img/pic6.jpg) no-repeat 0 100% 
+.banner-centres 
+	background: url(../img/pic7.jpg) no-repeat 0 100% 
+.banner-business	
+	height: 122px
+	background: url(../img/pic5.jpg) no-repeat 50% 37px #fff
+	
+
+		
+
+	
+
+	
+		
+		
+	
