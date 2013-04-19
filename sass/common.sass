@@ -14,9 +14,9 @@ body
 	font-size: 12px
 	color: #231F20 
 	line-height: 1
-	//-webkit-transform: translate3d(0,0,0);
-	//-weblit-backface-visibility: hidden;
-// resets
+	-webkit-transform: translate3d(0,0,0)
+	-weblit-backface-visibility: hidden
+// reset
 a img, fieldset 
 	border: none
 a
@@ -241,10 +241,9 @@ table
 .tape__pause
 	+s($icons, tape-pause)
 .tape__info
-	position: relative
+	position: relative	
 	padding: 0 5px
-	+background-image(linear-gradient(#258bc8, #21659c))	
-	white-space: nowrap
+	+background-image(linear-gradient(#258bc8, #21659c))		
 	overflow: hidden
 	&:after
 		content: ""
@@ -254,6 +253,15 @@ table
 		width: 40px
 		height: 21px
 		+background-image(linear-gradient(left, rgba(34,90,142,0) 0%, #21659c 75%))
+.tape__move
+	position: relative
+	height: 21px
+	overflow: hidden
+	p
+		position: absolute
+		top: 0
+		left: 0
+		white-space: nowrap
 //footer
 .footer
 	margin: 14px -9px 0 -9px
@@ -298,6 +306,7 @@ table
 	margin-bottom: 20px
 	overflow: hidden
 	a
+		position: relative
 		float: left
 		width: 300px
 		height: 35px
@@ -308,12 +317,22 @@ table
 		line-height: 35px		
 		font-size: 15px
 		font-weight: 700 
+		&:after
+			content: ""
+			position: absolute
+			top: 18px
+			right: 15px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 0 9px 9px 0
+			border-color: transparent #929ea4 transparent transparent
 	.links-out__last
 		width: 290px
 		margin: 0
 	i
 		float: left
-		margin-right: 15px
+		margin-right: 14px
 //cols
 .cols
 	margin-bottom: 10px
