@@ -119,7 +119,7 @@ if ($('.js-tab').length > 0) {
   $('.js-tab li').click(function() {
     if (!$(this).hasClass('active')) {
       var tab = $(this).attr('data-item');
-      $('.js-tab li').removeClass('active');
+      $(this).parent().children().removeClass('active');
       $(this).parent().parent().parent().find('.js-tab-item').hide();
       $(this).addClass('active');
       $('#' + tab).show();
@@ -165,15 +165,10 @@ if ($('.js-scl').length > 0) {
 };
 
 //accordeon
-$('.js-accord .accord__title').click(function() {
-  if (!$(this).parent().hasClass('active')) {    
-    $('.js-accord .accord__item.active').animate({
-      width: 31
-    }, 800);
-    $('.js-accord .accord__title').parent().removeClass('active');
-    $(this).parent().animate({
-      width: 387
-    }, 800).addClass('active');        
+$('.js-accord .accord__item').click(function() {
+  if (!$(this).hasClass('active')) {
+    $('.js-accord .accord__item').removeClass('active');
+    $(this).addClass('active');
   };
 });
 

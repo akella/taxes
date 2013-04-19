@@ -91,10 +91,11 @@
 .datepicker .ui-datepicker-calendar .ui-datepicker-week-end { color: #cc3333; }
 .datepicker .ui-datepicker-calendar .ui-datepicker-week-end a { color: #cc3333; }
 
-.accord { height: 277px; background: white; border-radius: 6px; overflow: hidden; }
+.accord { position: relative; width: 480px; height: 277px; background: #1370a7; border-radius: 5px; overflow: hidden; }
 
-.accord__item { position: relative; float: left; width: 31px; height: 277px; background: #1370a7; }
-.accord__item.active .accord__title { background: white; color: black; }
+.accord__item { position: relative; float: left; width: 31px; height: 277px; }
+.accord__item.active { width: 387px; background: white; border-radius: 5px 0 0 5px; }
+.accord__item.active .accord__title { border-radius: 5px; background: white; color: black; }
 .accord__item.active .accord__title span { border-bottom: 1px solid #dee7ef; }
 .accord__item.active .accord__title span:after { top: 11px; left: 2px; border-width: 5px 0 5px 5px; border-color: transparent transparent transparent #bbdaed; }
 .accord__item.active + .accord__item { background: white; }
@@ -106,7 +107,7 @@
 .accord__title span { position: absolute; top: 123px; left: -108px; width: 247px; height: 31px; line-height: 31px; text-align: right; text-transform: uppercase; -moz-transform: rotate(-90deg); -o-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
 .accord__title span:after { content: ""; position: absolute; top: 15px; left: 0; width: 0px; height: 0px; border-style: solid; border-width: 5px 5px 0 5px; border-color: #bbdaed transparent transparent transparent; }
 
-.accord__content { position: absolute; top: 0; left: 31px; width: 326px; height: 247px; padding: 15px; background: white; }
+.accord__content { position: absolute; top: 0; left: 31px; width: 326px; height: 247px; padding: 15px; }
 .accord__content li { margin-bottom: 20px; color: #666666; }
 .accord__content li span { font-size: 10px; }
 .accord__content li span a { margin-right: 8px; font-size: 14px; font-weight: 600; }
