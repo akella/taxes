@@ -45,13 +45,17 @@
     margin: 12px 0
     font-size: 20px
     font-weight: normal
+.low-cont__sub-title 
+    margin-bottom: 26px
+    color: #000
+    font-size: 16px
+    font-weight: normal
 .low-list 
     li 
         margin-bottom: 5px
         &:nth-child(2n+1)
             a 
                 background: #f4f7f9
-            
     a 
         position: relative
         display: block
@@ -64,7 +68,7 @@
             top: 4px
             width: 14px
             height: 14px
-            line-height: 14px
+            line-height: 12px
             text-align: center
             border: 1px solid #268bc2
             border-radius: 3px
@@ -75,4 +79,76 @@
             font-size: 18px
             box-shadow: 0 1px 2px rgba(203,200,194,.25), inset 0 0 1px rgba(255,255,255,.65)
             +background-image(linear-gradient(bottom, #1b85cb 0%, #23a5ed 100%)) 
-             
+    .is-active
+        a 
+            color: #fff 
+            background: #326899
+    .low-list__cont 
+        display: none
+        ul 
+            display: none
+            margin-left: 8px 
+            padding-bottom: 15px
+        li
+            &:nth-child(2n+1)
+                a 
+                    background: none
+        a
+            padding-left: 12px
+            color: #00518c
+            background: none
+            font-size: 12px
+            i
+                left: 0
+                top: 9px
+                width: 6px
+                height: 6px
+                background: #999 
+                border: 0
+                border-radius: 0
+            
+.low-list__cont 
+    padding-left: 25px
+    font-size: 14px
+    color: #333
+    line-height: 1.4
+    p
+        margin-bottom: 16px      
+.low-list__roll 
+    display: none
+    margin: 0 0 15px 25px
+    background: none 
+    cursor: pointer
+    i 
+        margin-right: 8px
+        +s($icons, roll-up)
+    i, span 
+        display: inline-block
+        vertical-align: middle
+    span 
+        color: #00518c 
+        border-bottom: 1px dashed #00518c 
+        line-height: 1
+.low-list__more 
+    display: block
+    margin: 10px 0
+    background: none 
+    cursor: pointer
+    i
+        margin-right: 5px
+        width: 12px
+        height: 12px
+        line-height: 10px
+        text-align: center
+        color: #a6a6a6
+        font-style: normal
+        font-weight: 600
+        font-size: 18px 
+        border: 1px solid #ccc
+        border-radius: 2px
+    i, span 
+        display: inline-block
+        vertical-align: middle
+    span 
+        color: #00518c 
+        border-bottom: 1px dashed 
