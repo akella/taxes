@@ -25,11 +25,11 @@ a
 	&:hover
 		text-decoration: underline
 li 
-	list-style: none
+	list-style: none 
 textarea, button, select, input
 	border: none
 	outline: none
-button 
+button  
 	line-height: 1
 	cursor: pointer
 table 
@@ -42,8 +42,31 @@ table
 	background: #25426c 
 	box-shadow: #25426c 0px 1px 0 1px inset
 	+background-image(linear-gradient(#31507d 108px, #21659c 170px, #31507d 260px, #25426c 100%))
+.title
+	padding: 10px 0 17px 0
+	margin-bottom: 10px
+	border-bottom: 1px solid #dde6ee
+	font-size: 24px 
+	font-weight: 400
+	text-transform: uppercase
+//btns
+.btn
+	height: 37px
+	padding: 0 17px
+	border-radius: 5px
+	+background-image(linear-gradient(#24a5ee, #1c86cb))
+	border: 1px solid #258fcd
+	box-shadow: #48b4f0 1px 1px 0 inset, rgba(203,200,194,.25) 1px 1px 2px
+	font-size: 16px
+	font-weight: 600 
+	color: #fff
+.btn_gray
+	+background-image(linear-gradient(#fff, #e7e7e7))
+	border-color: #bababa
+	box-shadow: rgba(203,200,194,.25) 1px 1px 2px
+	color: #666 
 //icons
-.ico-video, .ico-photo
+.ico-video, .ico-photo, .ico-arr-r
 	display: inline-block
 .ico-video
 	+s($icons, ico-video)
@@ -91,6 +114,8 @@ table
 	+s($icons, fl2)
 .ico-fl3
 	+s($icons, fl3)
+.ico-arr-r
+	+s($icons, arr-r)
 //header
 .header
 	position: relative
@@ -201,6 +226,7 @@ table
 			a
 				border: none 
 		&:hover
+			+background-image(linear-gradient(#fff2c2, #e1be60))
 			ul
 				display: block
 		ul
@@ -219,10 +245,12 @@ table
 				&:first-child
 					border-top: 3px solid #e0bc5d 
 					border-bottom: 1px solid #e2bf63
+				&:hover
+					background: none
 			a
 				position: relative
-				height: 28px
-				line-height: 28px
+				height: 26px
+				line-height: 26px
 				white-space: nowrap
 				font-size: 13px
 				font-weight: normal
@@ -406,13 +434,10 @@ table
 		&.active
 			color: #000
 			background: #fff 
-.tabs_slider
-	.tabs__list
-		li
-			padding: 0 10px
-			background: #FFF 
-			color: #000 
-			cursor: default
+	.tabs__title
+		padding: 0 10px
+		background: #FFF 
+		color: #000 
 		span
 			margin-right: 5px
 			font-weight: 700
@@ -451,6 +476,7 @@ table
 		padding: 6px 0 2px 0
 		font-family: Impact, Arial, Tahoma, sans-serif
 .banner-customs	
+	margin: 10px 0
 	height: 72px
 	padding-left: 15px	
 	span
@@ -463,6 +489,8 @@ table
 		top: 4px
 		right: 22px
 		+s($icons, earth)
+.banner-customs_mod
+	margin: 0
 .banner-legistation
 	height: 80px
 	text-align: center
@@ -509,8 +537,10 @@ table
 	background: url(../img/pic7.jpg) no-repeat 0 100% 
 .banner-business	
 	height: 122px
+	margin-bottom: 10px
 	background: url(../img/pic5.jpg) no-repeat 50% 37px #fff
-	
+.banner-business_mod
+	margin-bottom: 0
 
 		
 

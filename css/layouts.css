@@ -1,5 +1,5 @@
 /*styles for layouts */
-.cols { padding: 0 10px; margin-bottom: 10px; overflow: hidden; }
+.cols { margin: 0 10px 10px 10px; overflow: hidden; }
 
 .cols__220, .cols__230, .cols__240, .cols__460, .cols__470, .cols__480, .cols__720, .cols__710 { float: left; margin-right: 10px; }
 
