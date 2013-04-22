@@ -37,9 +37,8 @@ table
 	border-collapse: collapse
 // common styles
 .wrap
-	width: 940px
+	width: 960px
 	margin: 0 auto
-	padding: 0 10px
 	background: #25426c 
 	box-shadow: #25426c 0px 1px 0 1px inset
 	+background-image(linear-gradient(#31507d 108px, #21659c 170px, #31507d 260px, #25426c 100%))
@@ -96,7 +95,6 @@ table
 .header
 	position: relative
 	height: 108px
-	margin: 0 -10px
 	padding: 0 10px
 	+background-image(linear-gradient(#4670ac, #2b4a77))
 .languages
@@ -189,33 +187,75 @@ table
 	+s($icons, vk)
 //nav
 .nav
-	margin: 0 -10px 8px -10px
-	overflow: hidden
+	position: relative
+	z-index: 100 
 	ul
-		margin-right: -30px
+		height: 35px
 		+background-image(linear-gradient(#fff2c2, #f3d178))
-		overflow: hidden		
 	li
+		position: relative
 		float: left
 		border-left: 1px solid #d9b556
 		&:first-child
 			border: none
 			a
 				border: none 
+		&:hover
+			ul
+				display: block
+		ul
+			display: none
+			position: absolute
+			top: 35px
+			left: 0
+			height: auto
+			+background-image(linear-gradient(#f3d075, #fff2c2 32%))		
+			border-top: 1px solid #d3b560 	
+			li
+				float: none
+				border-width: 0 0 1px 0
+				border-color: #e2bf63
+				border-style: solid
+				&:first-child
+					border-top: 3px solid #e0bc5d 
+					border-bottom: 1px solid #e2bf63
+			a
+				position: relative
+				height: 28px
+				line-height: 28px
+				white-space: nowrap
+				font-size: 13px
+				font-weight: normal
+				text-transform: none		
+				&:before
+					content: ""
+					position: absolute
+					top: 12px
+					left: 10px
+					width: 6px
+					height: 6px
+					background: #e1c370
+					box-shadow: #c7b680 1px 1px 1px 1px inset
 	a
 		display: block
 		height: 35px
-		padding: 0 30px
+		padding: 0 26px
 		border-left: 1px solid #fff 
 		line-height: 35px
 		font-weight: 600 
 		font-size: 13px
 		color: #25426c 
 		text-transform: uppercase
+.nav_fixed
+	position: fixed
+	top: 0
+	left: 50%
+	width: 960px
+	margin-left: -480px 
 //tape
 .tape
 	height: 21px
-	margin: 0 -10px
+	margin-top: 8px
 	padding-bottom: 12px
 	line-height: 21px
 	color: #fff 
@@ -264,11 +304,12 @@ table
 		white-space: nowrap
 //footer
 .footer
-	margin: 14px -9px 0 -9px
+	margin-top: 14px
 	padding: 0 9px
 	+background-image(linear-gradient(#25426c 0%, #235485 50%, #25426c 100%))
 	.cols
 		height: 97px
+		padding: 0
 	.social
 		float: left
 		a
@@ -333,29 +374,18 @@ table
 	i
 		float: left
 		margin-right: 14px
-//cols
-.cols
-	margin-bottom: 10px
-	overflow: hidden	
-.cols__220, .cols__230, .cols__240, .cols__460, .cols__470, .cols__480, .cols__720, .cols__710
-	float: left
-	margin-right: 10px
-.cols__220	
-	width: 220px	
-.cols__220_mod
-	margin: 0
-.cols__230	
-	width: 230px
-.cols__240
-	width: 240px
-.cols__460
-	width: 460px
-.cols__470
-	width: 470px
-.cols__480
-	width: 480px
-.cols__710
-	width: 710px
+//breadcrumbs
+.breadcrumbs
+	margin: 12px
+	overflow: hidden
+	li
+		float: left
+		color: #fff 
+	a
+		font-size: 11px
+		color: #f8df97
+	span
+		margin: 0 6px		 
 //tabs
 .tabs
 	padding: 8px 5px 0 5px	
