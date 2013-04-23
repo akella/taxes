@@ -12,10 +12,8 @@ body
 	font-family: 'Open Sans', Arial, Tahoma, sans-serif
 	font-weight: 400
 	font-size: 12px
-	color: #231F20 
+	color: #333
 	line-height: 1
-	-webkit-transform: translate3d(0,0,0)
-	-weblit-backface-visibility: hidden
 // reset
 a img, fieldset 
 	border: none
@@ -44,11 +42,15 @@ table
 	+background-image(linear-gradient(#31507d 108px, #21659c 170px, #31507d 260px, #25426c 100%))
 .title
 	padding: 10px 0 17px 0
-	margin-bottom: 10px
+	margin-bottom: 15px
 	border-bottom: 1px solid #dde6ee
 	font-size: 24px 
 	font-weight: 400
 	text-transform: uppercase
+.h2
+	font-size: 14px
+	font-weight: 400
+	text-transform: uppercase 
 //btns
 .btn
 	height: 37px
@@ -67,8 +69,7 @@ table
 	color: #666 
 //bottom
 .bottom
-	padding-top: 2px
-	margin-bottom: 25px
+	padding: 2px 0 25px 0
 	overflow: hidden
 	.social
 		margin-top: -2px
@@ -147,6 +148,14 @@ table
 	+s($icons, arr-r)
 .ico-print
 	+s($icons, print)
+.ico-word-d
+	+s($icons, ico-word-d)
+.ico-point-d
+	+s($icons, ico-point-d)
+.ico-exel-d
+	+s($icons, ico-exel-d)
+.ico-photo-d
+	+s($icons, ico-photo-d)
 //header
 .header
 	position: relative
@@ -441,7 +450,7 @@ table
 		margin-right: 14px
 //breadcrumbs
 .breadcrumbs
-	margin: 12px
+	padding: 12px
 	overflow: hidden
 	li
 		float: left
@@ -579,7 +588,6 @@ table
 .banner-business_mod
 	margin-bottom: 0
 
-		
 
 	
 
