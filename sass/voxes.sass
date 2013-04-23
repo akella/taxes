@@ -1,0 +1,145 @@
+@import "base"
+
+// voxes main styles
+.voxes, .zakon
+	padding: 12px 12px 20px 10px
+	.l-voxes__item
+		border-bottom: 1px solid #dfe8ef
+.voxes__item
+	padding-left: 30px
+	margin-bottom: 30px
+	.voxes__link
+		position: relative
+		display: block
+		font: 14px 'Open Sans', Sans-serif
+		i
+			position: absolute
+			left: -29px
+			top: 5px
+			display: block
+			width: 21px
+			height: 20px
+			+s($icons, voxes)
+
+.voxes__date
+	padding-top: 5px
+	color: #999
+// .voxes__nav
+// 	margin: 19px 12px 17px 46px
+// 	a
+// 		position: relative
+// 		i
+// 			position: absolute
+// 			left: -12px
+// 			top: 4px
+// 			+s($icons, arr-l)			
+// 	.voxes__pages
+// 		margin-top: 18px
+// 		li
+// 			display: inline-block
+// 			.voxes__page
+// 				display: block
+// 				height: 17px
+// 				width: 17px
+// 				line-height: 17px
+// 				text-align: center
+// 				text-decoration: none
+// 			.voxes__page_act
+// 				color: #2f2f2f
+// 				background-color: #dde6ee
+
+// styles for voxes details
+
+.voxes__question
+	margin-bottom: 5px
+	font-size: 18px
+.voxes__answer
+	font-size: 14px
+	padding: 25px 0 23px 46px
+	border-bottom: 1px solid #dde6ee
+	li
+		margin-bottom: 9px
+.voxes__btns
+	@extend %clr
+	margin: 18px 46px
+	button
+		float: left
+		margin-right: 8px
+
+// voxes results
+.progress
+	position: relative
+	box-sizing: border-box
+	width: 586px
+	margin: 18px 46px
+	border: 1px solid #cfd9e3
+	background-color: #ebf0f5
+	font-size: 14px
+	.progress__triangle
+		position: absolute
+		top: -14px
+		left: 178px
+		i
+			display: block
+			+s($icons, triangle)
+	.progress__close
+		position: absolute
+		display: block
+		top: 11px
+		right: 11px 
+		i
+			display: block
+			+s($icons, close)
+	.progress__answer
+		padding: 22px 17px 10px
+		li
+			@extend %clr
+			margin-bottom: 9px
+		.progress__counter
+			float: left
+			margin-top: 6px
+			font-size: 12px
+			color: #666
+		.progress__status-bar
+			float: left
+			position: relative
+			.progress__line
+				width: 357px
+				height: 9px
+				margin: 6px 10px 0
+				-webkit-border-radius: 3px
+				-moz-border-radius: 3px
+				-o-border-radius: 3px
+				border-radius: 3px
+				border: 1px solid #aaa
+				background-color: #fff
+			.progress__line_blue
+				position: absolute
+				top: 0px
+				left: 0px
+				height: 11px
+				border: none
+				+background-image(linear-gradient(#4980b9, #356aa0))
+
+// lows
+.lows
+	padding: 12px 12px 20px 10px
+	li
+		padding: 5px 0px 15px
+		margin-bottom: 15px
+		border-bottom: 1px solid #dfe8ef
+		.low__link
+			display: inline-block
+			line-height: 1.4
+			font-size: 14px
+			i
+				display: inline-block
+				margin-left: 10px
+				+s($icons, arr-r)
+
+		
+
+
+
+
+
