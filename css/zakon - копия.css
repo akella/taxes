@@ -2,22 +2,17 @@
 
 .cols_margin { margin: 10px; padding: 0 0 27px; border-bottom: 1px solid #e0e8f0; }
 
-.categ-nav { float: left; margin-right: -1px; width: 259px; border-right: 1px solid #e0e8f0; }
+.categ-nav { float: left; width: 259px; border-right: 1px solid #e0e8f0; }
 .categ-nav ol { margin-left: 32px; }
 .categ-nav li { color: #666666; list-style-type: decimal; }
 .categ-nav a { display: block; padding: 6px 15px 6px 0; position: relative; z-index: 2; line-height: 1.2; }
 .categ-nav .is-active { color: #c8a74f; }
 .categ-nav .is-active a { color: white; background: #225d91; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 .categ-nav .is-active a:before { content: ""; position: absolute; left: -32px; top: 0; bottom: 0; z-index: -1; width: 32px; background: #225d91; }
-.categ-nav .bottom { padding: 14px 0 0 32px; }
-.categ-nav .bottom .back { line-height: 17px; padding: 0; }
-.categ-nav .bottom .ico-arr-r { margin-left: 10px; }
-.categ-nav .pagination { margin: 5px 0; }
-.categ-nav .pagination a { padding: 0 5px; line-height: 17px; }
 
 .categ-nav__title { margin: 19px 12px 16px; color: #c8a74f; text-transform: uppercase; font-weight: 600; }
 
-.categ-cont { padding: 0 15px 0 20px; overflow: hidden; background: white; border-left: 1px solid #e0e8f0; }
+.categ-cont { padding: 0 15px 0 20px; overflow: hidden; background: white; }
 
 .categ-cont__title { margin: 19px 0 21px; font-size: 20px; font-weight: normal; }
 
@@ -39,7 +34,7 @@
 .low-list__cont p { margin-bottom: 16px; }
 
 .low-list__roll { display: block; margin: 0 0 15px 25px; background: none; cursor: pointer; }
-.low-list__roll i { margin-right: 8px; background: url('../img/icons-sc9084358f1.png') 0 -1079px no-repeat; width: 19px; height: 18px; }
+.low-list__roll i { margin-right: 8px; background: url('../img/icons-sbed9801841.png') 0 -1079px no-repeat; width: 19px; height: 18px; }
 .low-list__roll i, .low-list__roll span { display: inline-block; vertical-align: middle; }
 .low-list__roll span { color: #00518c; border-bottom: 1px dashed #00518c; line-height: 1; }
 

@@ -1,0 +1,43 @@
+.faq li { *zoom: 1; }
+.faq li:before, .faq li:after { content: " "; display: table; }
+.faq li:after { clear: both; }
+
+.sub-categ { margin-bottom: 35px; }
+.sub-categ li:nth-child(2n) { background: #f4f7f9; }
+.sub-categ i, .sub-categ span, .sub-categ a { display: inline-block; }
+.sub-categ i { margin-right: 7px; background: url('../img/icons-s53f6244c0e.png') 0 -1306px no-repeat; width: 11px; height: 10px; }
+.sub-categ span { margin-right: 8px; color: #666666; }
+.sub-categ a { padding: 6px 1px; font-size: 14px; }
+
+.sub-categ__title { padding-bottom: 8px; font-size: 14px; font-weight: 600; color: #c8a74f; text-transform: uppercase; border-bottom: 1px solid #dfe8ef; }
+
+.faq-wrap { padding-bottom: 40px; }
+.faq-wrap .bottom { margin-left: 50px; }
+
+.faq-wrap__title { margin-bottom: 7px; font-size: 14px; color: #333333; font-weight: 600; text-transform: uppercase; }
+
+.faq-wrap__sub-title { margin: 18px 0 10px; color: #666666; font-weight: 600; font-size: 12px; text-transform: uppercase; }
+
+.faq-wrap__info { display: block; margin-bottom: 20px; color: #666666; }
+
+.bottom_right { float: right; }
+
+.faq li { position: relative; margin-bottom: 28px; padding: 5px 10px; font-size: 14px; line-height: 1.4; background: #ffffd9; border: 1px solid #d9d9b3; border-radius: 7px; }
+.faq li:before { content: ""; position: absolute; bottom: -17px; left: 60px; background: url('../img/icons-s53f6244c0e.png') 0 -1107px no-repeat; width: 17px; height: 17px; }
+.faq p { margin-bottom: 3px; }
+.faq a { font-size: 11px; }
+.faq span { float: right; color: #666666; font-size: 11px; }
+
+.message { padding: 10px 17px 15px; margin: 0 auto; width: 490px; clear: both; font-size: 18px; text-align: center; line-height: 1.4; border-radius: 7px; }
+.message p { margin-bottom: 14px; }
+.message span { font-size: 14px; }
+
+.message_red { background: #ecd9d9; border: 1px solid #c7b4b4; }
+
+.faq-answer { position: relative; margin: 0 0 15px 31px; padding: 10px 15px; font-size: 14px; line-height: 1.4; color: #333333; background: #f3f9f3; border: 1px solid #c1d1c1; border-radius: 7px; }
+.faq-answer:before { content: ""; position: absolute; top: -17px; left: 50px; background: url('../img/icons-s53f6244c0e.png') 0 -1134px no-repeat; width: 18px; height: 17px; }
+.faq-answer p { margin-bottom: 14px; }
+
+.faq-answer__title { display: block; margin-bottom: 14px; font-weight: 600; }
+
+.faq-answer__label { position: absolute; top: -21px; left: 73px; color: #666666; font-weight: 600; font-size: 12px; text-transform: uppercase; }
