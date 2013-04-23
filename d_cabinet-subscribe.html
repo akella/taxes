@@ -121,14 +121,34 @@
 							<li class="active" data-item="userdata__tab-3">Розсилки</li>
 						</ul>
 					</div>
-					<div id="userdata__tab-1" class="userdata__tabs-content js-tab-item">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, possimus, omnis eius ex ut dolor veniam neque odio optio libero fugit tempore. Autem, reiciendis ad quam ducimus. Tempore, nisi, corrupti.</p>
+					<div id="userdata__tab-1" class="userdata__tabs-content js-tab-item" style="display:none;">
+					<p>Деякий текст!</p>
 					</div>
-					<div id="userdata__tab-2" class="userdata__tabs-content js-tab-item">
+					<div id="userdata__tab-2" class="userdata__tabs-content js-tab-item" style="display:none;">
 					<p>Деякий текст</p>
 					</div>
-					<div id="userdata__tab-3" class="userdata__tabs-content js-tab-item">
-					<p>Виберіть тип інформації, який Ви бажаєте щодня отримувати у Вашу поштову скриньку:</p>
+					<div id="userdata__tab-3" class="userdata__tabs-content js-tab-item" style="display:block;">
+					<!-- BEGIN .infotype -->
+					<div class="infotype">
+						<p>Виберіть тип інформації, який Ви бажаєте щодня отримувати у Вашу поштову скриньку:</p>
+						<!-- BEGIN .infotype__checkbox -->
+						<div class="infotype__checkbox">
+							<label class="checkbox">
+							  <input type="checkbox" value="">Новини ДПС України
+							</label>
+							<label class="checkbox">
+							  <input type="checkbox" value="">Головні регіональні новини ДПС України
+							</label>
+							<label class="checkbox">
+							  <input type="checkbox" value="">Міжнародні новини про податки
+							</label>
+							<label class="checkbox">
+							  <input type="checkbox" value="">Нове в законодавстві про податки
+							</label>
+						</div>
+						<!-- END .infotype__checkbox -->
+					</div>
+					<!-- END .infotype -->
 					<!-- BEGIN .cab__buttons -->
 					<div class="cab__buttons">
 						<button class="btn">Зберегти зміни</button>
