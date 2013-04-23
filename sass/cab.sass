@@ -28,30 +28,30 @@
 .password__form
 	width: 780px
 	margin: 0 auto
-//forms global
-.form
-	.formline
-		label
-			float: left
-			text-align: right
-			font-size: 14px
-			color: #25426c
-			font-weight: 600
-		input
-			padding: 0 4px
-		.formline__right
-			display: table
-		.cab__captcha
-			position: relative
-			margin-bottom: 8px
-			i
-				+s($icons, ico_captcha_reload)
-				cursor: pointer
-				position: absolute
-				right: -38px
-				top: 6px
-		.formline__captcha
-			width: 57px
+	//forms global
+	.form
+		.formline
+			label
+				float: left
+				text-align: right
+				font-size: 14px
+				color: #25426c
+				font-weight: 600
+			input
+				padding: 0 4px
+			.formline__right
+				display: table
+			.cab__captcha
+				position: relative
+				margin-bottom: 8px
+				i
+					+s($icons, ico_captcha_reload)
+					cursor: pointer
+					position: absolute
+					right: -38px
+					top: 6px
+			.formline__captcha
+				width: 57px
 //forms pw
 .password__form
 	.formline
@@ -77,17 +77,179 @@
 		color: #25426c
 		font-size: 20px
 		margin-top: 20px
+		margin-bottom: 0.1em
 	.userdata__type
 		color: #666
 		font-size: 14px
-		margin-bottom: 20px
+		margin-bottom: 18px
 	.userdata__tabs
+		margin: 0 5px
 		.tabs
 			background: #96b8d5
 	.cab__buttons
 		border-top: 2px solid #dde6ee
 		padding-top: 20px
-		margin-top: 20px
+		margin-top: 39px
 		margin-bottom: 20px
 	.userdata__tabs-content
-		margin-top: 10px
+		margin: 19px 6px
+
+.infotype__checkbox
+	margin-top: 17px
+	.checkbox
+		display: block
+		text-decoration: underline
+		color: $blue
+		cursor: pointer
+		line-height: 20px
+		margin-bottom: 4px
+		&:hover
+			text-decoration: none
+		input
+			margin-top: 3px
+			margin-right: 5px
+			float: left
+			cursor: pointer
+
+
+.userinfo
+	.userinfo__warning
+		text-align: right
+		margin-right: 15px
+	.userinfo__red
+		color: #cc3333
+	.userinfo__form
+		margin-top: 17px
+	.userinfo__title
+		background: #dde6ee
+		display: block
+		margin-bottom: 23px
+		height: 30px
+		line-height: 30px
+		padding: 0 10px
+		font-weight: 600
+		text-transform: uppercase
+		color: #333
+		font-size: 14px
+	.userinfo__title-2
+		font-size: 14px
+		color: #333
+		font-weight: 600
+		text-transform: uppercase
+		padding: 5px 632px 15px 40px
+		text-align: right
+		margin-bottom: 16px
+		border-bottom: 1px solid #dfe8ef
+	.formline
+		@extend %clr
+		margin-bottom: 15px
+		.userinfo__label
+			float: left
+			text-align: right
+			font-size: 14px
+			color: #25426c
+			font-weight: 600
+			width: 288px
+			margin-right: 20px
+			margin-top: 0
+		.formline__right
+			display: table
+		.radio
+			display: block
+			cursor: pointer
+			margin-bottom: 9px
+			font-size: 14px
+		.userinfo__infotext
+			color: #666
+			font-size: 11px
+			width: 265px
+			line-height: 1.4
+		.userinfo__input
+			padding: 0 4px
+			height: 25px
+			line-height: 25px
+			border: 1px solid #b3b3b3
+			margin-right: 10px
+			border-radius: 3px
+			display: block
+			margin-bottom: 5px
+			width: 277px
+			display: inline-block
+			margin-bottom: 0
+			vertical-align: middle
+		.userinfo__select
+			border-radius: 3px
+			border: 1px solid #b3b3b3
+			padding: 4px 4px
+			width: 287px
+			height: 27px
+			display: inline-block
+			margin-bottom: 0
+			vertical-align: middle
+			margin-right: 10px
+			//-webkit-appearance: none
+		.userinfo__input_alt
+			display: inline-block
+			vertical-align: top
+		.userinfo__input_code
+			width: 65px
+		.userinfo__citycode
+			width: 28px
+		.userinfo__phone
+			width: 66px
+		.userinfo__index
+			width: 40px
+		.userinfo__housenumber
+			width: 25px
+		.userinfo__building
+			width: 18px
+		.userinfo__apartment
+			width: 25px
+		.userinfo__captcha
+			width: 57px
+		.userinfo__captcha-image
+			position: relative
+			margin-bottom: 8px
+			i
+				+s($icons, ico_captcha_reload)
+				cursor: pointer
+				position: absolute
+				right: -38px
+				top: 6px
+		.userinfo__select__birthday
+			width: 50px
+		.userinfo__select__birthmonth
+			width: 106px
+		.userinfo__select__birthyear
+			width: 65px
+		.userinfo__select__region
+			width: 169px
+		.userinfo__select_gender
+			width: 107px
+
+
+	.formline__error
+		position: relative
+		.userinfo__input
+			border: 1px solid #ff9999
+		.formline__help
+			margin-top: 2px
+			color: #cc3333
+			font-size: 12px
+			display: inline-block
+			margin-bottom: 0
+			vertical-align: middle
+			strong
+				font-weight: bold
+				font-size: 14px
+				margin-right: 2px
+	.formline_inline
+		display: inline-block
+		.userinfo__label
+			text-align: left
+			width: auto
+			margin-right: 10px
+		.formline__right
+			width: auto
+.cab__buttons_userinfo
+	margin-bottom: 40px
