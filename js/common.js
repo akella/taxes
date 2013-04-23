@@ -241,10 +241,26 @@ $(".low-list__more").click(function(){
 });
 
 
+// popup for poll results
+
+$(".js-result").click( function(){
+  $(".l-progress").slideDown();
+  return false;
+
+
 
 
 
 });
+
+$(".progress__close").click( function(){
+  $(".l-progress").slideUp();
+  return false;
+});
+
+
+});
+
 
 //scroll
 $(window).scroll(function() {
