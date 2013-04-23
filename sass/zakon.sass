@@ -1,10 +1,13 @@
 @import "base"
+.title_mod
+    margin: 0 15px
 .cols_margin
     margin: 10px
     padding: 0 0 27px
     border-bottom: 1px solid #e0e8f0 
 .categ-nav
     float: left
+    margin-right: -1px
     width: 259px
     border-right: 1px solid #e0e8f0 
     ol 
@@ -20,14 +23,14 @@
         line-height: 1.2
     .is-active
         color: #c8a74f
-        a
+        a  
             color: #fff  
             background: #225d91 
             -webkit-user-select: none
             -moz-user-select: none
             user-select: none
             &:before
-                content: ""
+                content: ""  
                 position: absolute
                 left: -32px
                 top: 0
@@ -35,6 +38,18 @@
                 z-index: -1
                 width: 32px  
                 background: #225d91 
+    .bottom 
+        padding: 14px 0 0 32px
+        .back
+            line-height: 17px
+            padding: 0
+        .ico-arr-r 
+            margin-left: 10px
+    .pagination 
+        margin: 5px 0 
+        a
+            padding: 0 5px
+            line-height: 17px
 .categ-nav__title 
     margin: 19px 12px 16px
     color: #c8a74f 
@@ -44,6 +59,7 @@
     padding: 0 15px 0 20px
     overflow: hidden
     background: #fff 
+    border-left: 1px solid #e0e8f0
 .categ-cont__title  
     margin: 19px 0 21px
     font-size: 20px
