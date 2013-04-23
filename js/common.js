@@ -240,6 +240,19 @@ $(".low-list__more").click(function(){
   }
 });
 
+$(".js-message-cont").hide();
+$(".js-roll-message").click(function(){
+  if ($(this).hasClass("is-active")) {
+    $(this).parent().children(".js-message-cont").slideUp("fast");
+    $(this).removeClass("is-active");
+    $(this).children("span").text("Розгорнути");
+  }
+  else {
+    $(this).parent().children(".js-message-cont").slideDown("fast");
+    $(this).addClass("is-active");
+    $(this).children("span").text("Згорнути");
+  }
+});
 
 // popup for poll results
 

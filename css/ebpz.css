@@ -1,11 +1,11 @@
-.faq li { *zoom: 1; }
-.faq li:before, .faq li:after { content: " "; display: table; }
-.faq li:after { clear: both; }
+.faq li, .message .bottom { *zoom: 1; }
+.faq li:before, .message .bottom:before, .faq li:after, .message .bottom:after { content: " "; display: table; }
+.faq li:after, .message .bottom:after { clear: both; }
 
 .sub-categ { margin-bottom: 35px; }
 .sub-categ li:nth-child(2n) { background: #f4f7f9; }
 .sub-categ i, .sub-categ span, .sub-categ a { display: inline-block; }
-.sub-categ i { margin-right: 7px; background: url('../img/icons-se3329e4ae7.png') 0 -1383px no-repeat; width: 11px; height: 10px; }
+.sub-categ i { margin-right: 7px; background: url('../img/icons-s28898e965c.png') 0 -1417px no-repeat; width: 11px; height: 10px; }
 .sub-categ span { margin-right: 8px; color: #666666; }
 .sub-categ a { padding: 6px 1px; font-size: 14px; }
 
@@ -23,19 +23,43 @@
 .bottom_right { float: right; }
 
 .faq li { position: relative; margin-bottom: 28px; padding: 5px 10px; font-size: 14px; line-height: 1.4; background: #ffffd9; border: 1px solid #d9d9b3; border-radius: 7px; }
-.faq li:before { content: ""; position: absolute; bottom: -17px; left: 60px; background: url('../img/icons-se3329e4ae7.png') 0 -1137px no-repeat; width: 17px; height: 17px; }
+.faq li:before { content: ""; position: absolute; bottom: -17px; left: 60px; background: url('../img/icons-s28898e965c.png') 0 -1171px no-repeat; width: 17px; height: 17px; }
 .faq p { margin-bottom: 3px; }
 .faq a { font-size: 11px; }
 .faq span { float: right; color: #666666; font-size: 11px; }
 
-.message { padding: 10px 17px 15px; margin: 0 auto; width: 490px; clear: both; font-size: 18px; text-align: center; line-height: 1.4; border-radius: 7px; }
+.message { position: relative; padding: 10px 17px 15px; margin: 0 auto 21px; width: 490px; clear: both; line-height: 1.4; border-radius: 7px; border: 1px solid; }
 .message p { margin-bottom: 14px; }
 .message span { font-size: 14px; }
+.message ol { clear: both; counter-reset: list1; }
+.message ol ol { margin-top: 15px; counter-reset: list2; }
+.message li { margin-bottom: 15px; }
+.message li:before { counter-increment: list1; content: counter(list1) ". "; }
+.message li li:before { counter-increment: list2; content: counter(list1) "." counter(list2) ". "; }
+.message .bottom { margin-top: 11px; }
+.message .pagination { float: right; }
+.message .ico-arr-r { margin-left: 10px; }
 
-.message_red { background: #ecd9d9; border: 1px solid #c7b4b4; }
+.message_red { background: #ecd9d9; border-color: #c7b4b4; }
+
+.message_yellow { background: #ffffec; border-color: #ececd9; }
+
+.message_gray { background: #fafbfc; border-color: #e5ebf1; }
+
+.message_center { font-size: 18px; text-align: center; }
+
+.message__title { display: block; width: 400px; font-size: 15px; color: #333333; text-transform: uppercase; font-weight: 600; }
+
+.message__roll { position: absolute; right: 12px; top: 12px; color: #999999; font-size: 12px; background: none; }
+.message__roll i { margin-left: 5px; background: url('../img/icons-s28898e965c.png') 0 -1731px no-repeat; width: 20px; height: 20px; }
+.message__roll span, .message__roll i { display: inline-block; vertical-align: middle; }
+
+.message__roll.is-active i { background: url('../img/icons-s28898e965c.png') 0 -1701px no-repeat; width: 20px; height: 20px; }
+
+.message__cont { margin-top: 21px; }
 
 .faq-answer { position: relative; margin: 0 0 15px 31px; padding: 10px 15px; font-size: 14px; line-height: 1.4; color: #333333; background: #f3f9f3; border: 1px solid #c1d1c1; border-radius: 7px; }
-.faq-answer:before { content: ""; position: absolute; top: -17px; left: 50px; background: url('../img/icons-se3329e4ae7.png') 0 -1164px no-repeat; width: 18px; height: 17px; }
+.faq-answer:before { content: ""; position: absolute; top: -17px; left: 50px; background: url('../img/icons-s28898e965c.png') 0 -1198px no-repeat; width: 18px; height: 17px; }
 .faq-answer p { margin-bottom: 14px; }
 
 .faq-answer__title { display: block; margin-bottom: 14px; font-weight: 600; }
