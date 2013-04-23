@@ -203,22 +203,13 @@ if ($('.js-slider').length > 0) {
       next: slider_next
     });
     var api = slider.data('scrollable');
-    var count = slider_items.find('li').length;
-    var count_items = slider_items.children().length;
-    slider.prev().find('.js-slider-all').html(count);
-    var current = slider_items.attr('data-item');
-    current = parseInt(current);
-    slider.prev().find('.js-slider-current').html(current);
-    var cr_val = current; //4    
-    api.onSeek(function() { 
-      var cr_change = api.getIndex(); 
-      ++cr_change; //1
-      var cr_new = 0;
-      cr_new = (cr_change)*cr_val;
-      slider.prev().find('.js-slider-current').html(cr_new);
-      if (count_items == cr_change) {
-        slider.prev().find('.js-slider-current').html(count);
-      };
+    var size = api.getSize();   
+    slider.prev().find('.js-slider-all').html(size); 
+    var current = api.getIndex();
+    slider.prev().find('.js-slider-current').html(++current);   
+    api.onSeek(function() {
+      current = api.getIndex();
+      slider.prev().find('.js-slider-current').html(++current);
     });
   });  
 };

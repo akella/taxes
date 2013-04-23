@@ -1,6 +1,6 @@
-.cab__buttons { *zoom: 1; }
-.cab__buttons:before, .cab__buttons:after { content: " "; display: table; }
-.cab__buttons:after { clear: both; }
+.cab__buttons, .userinfo .formline { *zoom: 1; }
+.cab__buttons:before, .userinfo .formline:before, .cab__buttons:after, .userinfo .formline:after { content: " "; display: table; }
+.cab__buttons:after, .userinfo .formline:after { clear: both; }
 
 .cols_white { min-height: 725px; }
 
@@ -16,20 +16,63 @@
 .cab__buttons .btn { float: left; margin-right: 20px; }
 
 .password__form { width: 780px; margin: 0 auto; }
-
-.form .formline label { float: left; text-align: right; font-size: 14px; color: #25426c; font-weight: 600; }
-.form .formline input { padding: 0 4px; }
-.form .formline .formline__right { display: table; }
-.form .formline .cab__captcha { position: relative; margin-bottom: 8px; }
-.form .formline .cab__captcha i { background: url('../img/icons-sbed9801841.png') 0 -1033px no-repeat; width: 29px; height: 36px; cursor: pointer; position: absolute; right: -38px; top: 6px; }
-.form .formline .formline__captcha { width: 57px; }
+.password__form .form .formline label { float: left; text-align: right; font-size: 14px; color: #25426c; font-weight: 600; }
+.password__form .form .formline input { padding: 0 4px; }
+.password__form .form .formline .formline__right { display: table; }
+.password__form .form .formline .cab__captcha { position: relative; margin-bottom: 8px; }
+.password__form .form .formline .cab__captcha i { background: url('../img/icons-s120619a88e.png') 0 -1033px no-repeat; width: 29px; height: 36px; cursor: pointer; position: absolute; right: -38px; top: 6px; }
+.password__form .form .formline .formline__captcha { width: 57px; }
 
 .password__form .formline { margin-bottom: 10px; }
 .password__form label { width: 220px; margin-right: 17px; height: 25px; padding-top: 5px; line-height: 1.2; }
 .password__form input { height: 25px; line-height: 25px; border: 1px solid #b3b3b3; margin-right: 10px; border-radius: 3px; display: block; margin-bottom: 5px; width: 277px; }
 
-.userdata .userdata__name { color: #25426c; font-size: 20px; margin-top: 20px; }
-.userdata .userdata__type { color: #666666; font-size: 14px; margin-bottom: 20px; }
+.userdata .userdata__name { color: #25426c; font-size: 20px; margin-top: 20px; margin-bottom: 0.1em; }
+.userdata .userdata__type { color: #666666; font-size: 14px; margin-bottom: 18px; }
+.userdata .userdata__tabs { margin: 0 5px; }
 .userdata .userdata__tabs .tabs { background: #96b8d5; }
-.userdata .cab__buttons { border-top: 2px solid #dde6ee; padding-top: 20px; margin-top: 20px; margin-bottom: 20px; }
-.userdata .userdata__tabs-content { margin-top: 10px; }
+.userdata .cab__buttons { border-top: 2px solid #dde6ee; padding-top: 20px; margin-top: 39px; margin-bottom: 20px; }
+.userdata .userdata__tabs-content { margin: 19px 6px; }
+
+.infotype__checkbox { margin-top: 17px; }
+.infotype__checkbox .checkbox { display: block; text-decoration: underline; color: #00518c; cursor: pointer; line-height: 20px; margin-bottom: 4px; }
+.infotype__checkbox .checkbox:hover { text-decoration: none; }
+.infotype__checkbox .checkbox input { margin-top: 3px; margin-right: 5px; float: left; cursor: pointer; }
+
+.userinfo .userinfo__warning { text-align: right; margin-right: 15px; }
+.userinfo .userinfo__red { color: #cc3333; }
+.userinfo .userinfo__form { margin-top: 17px; }
+.userinfo .userinfo__title { background: #dde6ee; display: block; margin-bottom: 23px; height: 30px; line-height: 30px; padding: 0 10px; font-weight: 600; text-transform: uppercase; color: #333333; font-size: 14px; }
+.userinfo .userinfo__title-2 { font-size: 14px; color: #333333; font-weight: 600; text-transform: uppercase; padding: 5px 632px 15px 40px; text-align: right; margin-bottom: 16px; border-bottom: 1px solid #dfe8ef; }
+.userinfo .formline { margin-bottom: 15px; }
+.userinfo .formline .userinfo__label { float: left; text-align: right; font-size: 14px; color: #25426c; font-weight: 600; width: 288px; margin-right: 20px; margin-top: 0; }
+.userinfo .formline .formline__right { display: table; }
+.userinfo .formline .radio { display: block; cursor: pointer; margin-bottom: 9px; font-size: 14px; }
+.userinfo .formline .userinfo__infotext { color: #666666; font-size: 11px; width: 265px; line-height: 1.4; }
+.userinfo .formline .userinfo__input { padding: 0 4px; height: 25px; line-height: 25px; border: 1px solid #b3b3b3; margin-right: 10px; border-radius: 3px; display: block; margin-bottom: 5px; width: 277px; display: inline-block; margin-bottom: 0; vertical-align: middle; }
+.userinfo .formline .userinfo__select { border-radius: 3px; border: 1px solid #b3b3b3; padding: 4px 4px; width: 287px; height: 27px; display: inline-block; margin-bottom: 0; vertical-align: middle; margin-right: 10px; }
+.userinfo .formline .userinfo__input_alt { display: inline-block; vertical-align: top; }
+.userinfo .formline .userinfo__input_code { width: 65px; }
+.userinfo .formline .userinfo__citycode { width: 28px; }
+.userinfo .formline .userinfo__phone { width: 66px; }
+.userinfo .formline .userinfo__index { width: 40px; }
+.userinfo .formline .userinfo__housenumber { width: 25px; }
+.userinfo .formline .userinfo__building { width: 18px; }
+.userinfo .formline .userinfo__apartment { width: 25px; }
+.userinfo .formline .userinfo__captcha { width: 57px; }
+.userinfo .formline .userinfo__captcha-image { position: relative; margin-bottom: 8px; }
+.userinfo .formline .userinfo__captcha-image i { background: url('../img/icons-s120619a88e.png') 0 -1033px no-repeat; width: 29px; height: 36px; cursor: pointer; position: absolute; right: -38px; top: 6px; }
+.userinfo .formline .userinfo__select__birthday { width: 50px; }
+.userinfo .formline .userinfo__select__birthmonth { width: 106px; }
+.userinfo .formline .userinfo__select__birthyear { width: 65px; }
+.userinfo .formline .userinfo__select__region { width: 169px; }
+.userinfo .formline .userinfo__select_gender { width: 107px; }
+.userinfo .formline__error { position: relative; }
+.userinfo .formline__error .userinfo__input { border: 1px solid #ff9999; }
+.userinfo .formline__error .formline__help { margin-top: 2px; color: #cc3333; font-size: 12px; display: inline-block; margin-bottom: 0; vertical-align: middle; }
+.userinfo .formline__error .formline__help strong { font-weight: bold; font-size: 14px; margin-right: 2px; }
+.userinfo .formline_inline { display: inline-block; }
+.userinfo .formline_inline .userinfo__label { text-align: left; width: auto; margin-right: 10px; }
+.userinfo .formline_inline .formline__right { width: auto; }
+
+.cab__buttons_userinfo { margin-bottom: 40px; }

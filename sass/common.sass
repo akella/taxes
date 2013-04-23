@@ -41,17 +41,25 @@ table
 	box-shadow: #25426c 0px 1px 0 1px inset
 	+background-image(linear-gradient(#31507d 108px, #21659c 170px, #31507d 260px, #25426c 100%))
 .title
-	padding: 10px 0 17px 0
+	position: relative
+	padding: 5px 0 15px 0
 	margin-bottom: 15px
 	border-bottom: 1px solid #dde6ee
 	font-size: 24px 
 	font-weight: 400
 	text-transform: uppercase
+	line-height: 1.2
 .h2
 	font-size: 14px
-	font-weight: 400
-	text-transform: uppercase 
-//btns
+	font-weight: 600
+	text-transform: uppercase
+.h2_mod
+	height: 30px
+	margin-bottom: 23px
+	padding: 0 10px
+	background: #dde6ee	
+	line-height: 30px	
+	//btns
 .btn
 	height: 37px
 	padding: 0 17px
@@ -73,15 +81,21 @@ table
 	overflow: hidden
 	.social
 		margin-top: -2px
-.back	
-	float: left
+.bottom_mod
+	margin-bottom: 15px
+	border-bottom: 1px solid #dde6ee
+.back, .next
 	height: 17px
 	line-height: 17px
+.back	
+	float: left	
 	margin-right: 20px
-	.ico-arr-l
-		position: relative
-		top: -1px
-		padding-right: 8px
+	i
+		margin-right: 8px
+.next
+	float: right
+	i
+		margin-left: 8px
 .pagination
 	float: left
 	a, span		
@@ -102,6 +116,8 @@ table
 	+s($icons, ico-photo)
 .ico-play
 	+s($icons, ico-play)
+.ico-play-big
+	+s($icons, ico-play-big)
 .ico-s1
 	+s($icons, s1)
 .ico-s2
@@ -484,6 +500,7 @@ table
 		padding: 0 10px
 		background: #FFF 
 		color: #000 
+		cursor: default
 		span
 			margin-right: 5px
 			font-weight: 700
@@ -587,6 +604,55 @@ table
 	background: url(../img/pic5.jpg) no-repeat 50% 37px #fff
 .banner-business_mod
 	margin-bottom: 0
+//form styles
+.label
+	display: block
+	margin-bottom: 15px
+	overflow: hidden
+	&.error
+		.input-text
+			border-color: $red
+.label__title
+	float: left
+	width: 290px
+	line-height: 27px
+	margin-right: 10px
+	text-align: right
+	font-size: 14px
+	color: #25426c
+	font-weight: 600
+	span
+		margin-left: 3px
+		color: $red 	
+.label__info
+	clear: both
+	padding-left: 298px
+	width: 265px
+	font-size: 11px
+	color: #666	
+	line-height: 1.4 
+.label__message
+	float: left
+	line-height: 27px
+	color: $red 
+	span
+		margin-right: 5px
+		font-weight: 700 
+.input-text
+	float: left
+	width: 277px
+	height: 25px
+	padding: 0 4px
+	margin-right: 10px
+	border: 1px solid #b3b3b3
+	border-radius: 3px
+.select
+	float: left
+	height: 27px
+	padding: 4px
+	margin-right: 10px
+	border-radius: 3px
+	border: 1px solid #b3b3b3
 
 
 	
