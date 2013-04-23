@@ -3,7 +3,7 @@
     margin: 10px
     padding: 0 0 27px
     border-bottom: 1px solid #e0e8f0 
-.low-nav 
+.categ-nav
     float: left
     width: 259px
     border-right: 1px solid #e0e8f0 
@@ -23,6 +23,9 @@
         a
             color: #fff  
             background: #225d91 
+            -webkit-user-select: none
+            -moz-user-select: none
+            user-select: none
             &:before
                 content: ""
                 position: absolute
@@ -32,21 +35,21 @@
                 z-index: -1
                 width: 32px  
                 background: #225d91 
-.low-nav__title 
-    margin: 10px 12px
+.categ-nav__title 
+    margin: 19px 12px 16px
     color: #c8a74f 
     text-transform: uppercase
-    font-weight: normal
-.low-cont 
+    font-weight: 600
+.categ-cont 
     padding: 0 15px 0 20px
     overflow: hidden
     background: #fff 
-.low-cont__title  
-    margin: 12px 0
+.categ-cont__title  
+    margin: 19px 0 21px
     font-size: 20px
     font-weight: normal
-.low-cont__sub-title 
-    margin-bottom: 26px
+.categ-cont__sub-title 
+    margin-bottom: 24px
     color: #000
     font-size: 16px
     font-weight: normal
@@ -77,7 +80,7 @@
             text-align: center
             border: 1px solid #268bc2
             border-radius: 3px
-            background: #cbcbcb
+            background: #1b85cb
             font-style: normal
             color: #fff
             font-weight: 600
