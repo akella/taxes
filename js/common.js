@@ -66,12 +66,10 @@ function tape_move () {
     // рекурсивно вызываем функцию сдвига с заданной задержкой
     timeOut = setTimeout(function() {
       moveCrawLine(w);
-    }, tdelay);
-    
+    }, tdelay);    
   }
   // вызов инициализирующей функции
   enableCrawLine(0);
-
   $('.tape__play').click(function(event) {
     if(enableR) {
       clearTimeout(timeOut);
@@ -192,6 +190,38 @@ if ($('.js-scl').length > 0) {
   $('.js-scl').scrollableAddClones();
 };
 
+//slider
+if ($('.js-slider').length > 0) {
+  $('.js-slider').each(function() {
+    var slider = $(this);
+    var slider_items = $(this).children();
+    var slider_prev = $(this).prev().find('.js-slider-prev');
+    var slider_next = $(this).prev().find('.js-slider-next');
+    slider.scrollable({
+      items: slider_items,
+      prev: slider_prev,
+      next: slider_next
+    });
+    var api = slider.data('scrollable');
+    var count = slider_items.find('li').length;
+    var count_items = slider_items.children().length;
+    slider.prev().find('.js-slider-all').html(count);
+    var current = slider_items.attr('data-item');
+    current = parseInt(current);
+    slider.prev().find('.js-slider-current').html(current);
+    var cr_val = current; //4    
+    api.onSeek(function() { 
+      var cr_change = api.getIndex(); 
+      ++cr_change; //1
+      var cr_new = 0;
+      cr_new = (cr_change)*cr_val;
+      slider.prev().find('.js-slider-current').html(cr_new);
+      if (count_items == cr_change) {
+        slider.prev().find('.js-slider-current').html(count);
+      };
+    });
+  });  
+};
 //accordeon
 $('.js-accord .accord__item').click(function() {
   if (!$(this).hasClass('active')) {
