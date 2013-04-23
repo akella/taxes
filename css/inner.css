@@ -47,6 +47,7 @@
 .question__btn a { display: block; margin: 1px 0 3px 0; }
 
 .news { padding: 10px; }
+.news .title { position: relative; }
 
 .news__list { padding-bottom: 8px; }
 .news__list li { padding: 5px 0 20px 0; }
@@ -60,3 +61,11 @@
 .news__content img { float: left; margin-right: 10px; border: 1px solid #9eb2c3; }
 .news__content p { overflow: hidden; line-height: 1.3; color: #666666; }
 .news__content p i { margin-left: 8px; }
+
+.news__detail { margin-bottom: 5px; overflow: hidden; }
+.news__detail span { display: block; margin-bottom: 15px; color: #666666; }
+.news__detail img { float: left; margin: 0 11px 11px 0; border: 1px solid #9eb2c3; }
+.news__detail p { margin-bottom: 15px; font-size: 14px; color: #333333; line-height: 1.2; }
+
+.link-print { position: absolute; bottom: -6px; right: 0; padding-left: 8px; background: white; }
+.link-print i { display: block; }
