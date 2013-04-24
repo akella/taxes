@@ -214,12 +214,13 @@ if ($('.js-slider').length > 0) {
   });  
 };
 //accordeon
-$('.js-accord .accord__item').click(function() {
-  if (!$(this).hasClass('active')) {
-    $('.js-accord .accord__item').removeClass('active');
-    $(this).addClass('active');
-  };
-});
+if ($('.js-accord').length > 0) {
+  $('.js-accord').liteAccordion({
+    containerWidth : 480,                   
+    containerHeight : 277,                 
+    headerWidth: 31
+  });
+};
 
 $(".low-list__roll").hide();
 $(".js-low-accord").children("li").children("a").click(function(){

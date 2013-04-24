@@ -152,3 +152,16 @@
 .leadership__info { margin-bottom: 25px; }
 .leadership__info .h2, .leadership__info p { margin-bottom: 15px; }
 .leadership__info p { font-size: 14px; line-height: 1.2; }
+
+.map { padding: 10px; }
+.map .table th, .map .table td { padding: 8px 6px; }
+.map .table th:last-child { width: 70px; }
+.map .table td:last-child { text-align: center; }
+.map .table tr:last-child td { border: none; }
+
+.map__container p { margin-bottom: 5px; }
+.map__container select { width: 210px; height: 26px; padding: 2px; margin-bottom: 10px; border: 1px solid #b4b2b2; color: #00518c; }
+
+.map__block { margin-bottom: 20px; }
+
+.map__info { margin-bottom: 20px; line-height: 1.2; color: #666666; }
