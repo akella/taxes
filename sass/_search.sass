@@ -1,0 +1,193 @@
+@import "base"
+.cols__inner
+    padding: 10px 
+.search-form
+    margin: 30px 0   
+    .label__title
+        width: 187px
+        min-height: 1px 
+    .btn_small
+        margin-right: 5px
+    .label__info
+        padding-left: 197px
+.search-form_with-bg
+    padding: 26px 0 29px 
+    background: #f1f5f8 
+    border-top: 1px solid #dde6ee
+    border-bottom: 1px solid #dde6ee
+.search-base
+    width: 100%
+    .formline
+        label 
+            width: 175px
+.select_width
+    width: 650px
+.btn_small 
+    height: 27px
+    font-size: 14px
+    font-weight: 400
+    
+.text-center
+    margin: 0 auto 21px  
+    width: 500px 
+    line-height: 1.4
+.title
+    position: relative
+.link-feedback
+    position: absolute
+    bottom: -10px
+    right: 10px
+    padding: 0 12px 0 45px
+    height: 35px
+    line-height: 35px
+    border: 1px solid #dfe7ef
+    border-radius: 7px
+    background-color: #c3e3f7
+    +background-image(linear-gradient(bottom, #c3e3f7 0%, #fff 100%))
+    font-size: 14px
+    text-transform: capitalize
+    i
+        position: absolute
+        top: 7px
+        left: 6px
+        +s($icons, link-feedback)
+        
+.table 
+    width: 100%
+    line-height: 1.4
+    th
+        padding: 9px 
+        background: #e6edf3
+        font-weight: 600 
+        text-align: left
+        border-bottom: 2px solid #dde6ee         
+    td
+        padding: 9px 
+        border-bottom: 1px solid #dee7ef 
+        border-top: 1px solid #dee7ef 
+    tbody
+        tr
+            &:nth-child(2n)
+                td
+                    background: #f2f5f8 
+.table_fixed-col
+    margin: 15px 0  
+    tr
+        &:hover
+            td
+                color: #fff 
+                background: #2b6395  
+                &:first-child
+                    a
+                        color: #fff
+            &:nth-child(2n)
+                td
+                    background: #2b6395
+            a
+                color: #fff
+                text-decoration: none
+    td
+        &:first-child
+            width: 190px
+            a
+                display: block
+                height: 100%
+                color: #333
+.table_links
+    margin-bottom: 15px
+    td
+        padding: 0
+    a
+        padding: 9px 
+.table_sort
+    th
+        min-width: 100px 
+        white-space: nowrap
+        &:hover
+            background: #dee7ee 
+            cursor: pointer
+            .table__sort-arrows
+                +opacity(1)
+    tr
+        &:last-child
+            td
+                border-bottom-width: 2px
+.btn-del
+    position: relative
+    width: 17px
+    height: 17px
+    background: #fff
+    border: 1px solid #cecece
+    border-radius: 50%
+    &:hover
+        border-color: #709fcf
+    i
+        position: absolute
+        top: 4px
+        left: 4px
+        +s($icons, delete-bullshit)
+.table__sort-arrows
+    float: right
+    margin-top: 2px 
+    +opacity(.5)
+    +s($icons, sort) 
+.chosen-quest
+    clear: both
+    margin-bottom: 36px
+    padding-bottom: 20px
+    border-bottom: 1px solid #dee7ef 
+    line-height: 1.4
+    .h2
+        margin: 0 0 15px 190px
+    span
+        float: left
+        margin-right: 11px
+        padding-right: 3px 
+        width: 177px
+        text-align: right
+    .tabs
+        border-bottom: 1px solid #dde6ee
+        padding: 0
+        margin-top: -2px
+        overflow: visible
+        @extend %clr
+        .active
+            position: relative
+            top: 2px
+            border: 1px solid #dde6ee
+            border-bottom: 0
+        li
+            border: 1px solid transparent
+.chosen-quest__item
+    margin-bottom: 5px
+    overflow: hidden
+    line-height: 1.4
+.chosen-quest__cont
+    overflow: hidden
+.chosen-quest__main
+    margin-top: 20px
+    font-size: 14px
+    span
+        padding: 5px 3px 5px 0 
+        background: #2b6395 
+        color: #fff 
+.chosen-quest__tab-item
+    display: none
+    padding: 15px 0 0 10px
+.business-partner 
+    margin-top: 20px
+    font-size: 14px
+    line-height: 1.4
+    p
+        margin-bottom: 14px
+.radio_inline
+    display: inline-block
+    margin-right: 23px
+.label__captcha
+    img, button
+        vertical-align: middle
+    button
+        margin-left: 6px
+        +s($icons, captcha-reload)      
+.tabs_table
+    background: #96b8d5  

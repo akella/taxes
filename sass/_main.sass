@@ -196,10 +196,7 @@
 		right: 9px		
 		border-width: 7px 0 7px 7px
 		border-color: transparent transparent transparent #2c486e
-.services_mod
-	height: 97px
-	padding: 25px 0 0 5px
-	+background-image(linear-gradient(#fff 50%, #c3e4f7))
+.services_mod, .services_inner	
 	span
 		width: 46px
 		height: 46px
@@ -210,6 +207,33 @@
 	li
 		width: 100px
 		margin: 0
+.services_mod
+	height: 97px
+	padding: 25px 0 0 5px
+	+background-image(linear-gradient(#fff 50%, #c3e4f7))
+.services_inner
+	height: auto	
+	padding: 13px
+	background: #FFF 
+	.services__list
+		height: auto
+		li
+			float: none
+			width: auto
+			margin-top: 10px
+			overflow: hidden
+			text-align: left
+			line-height: 46px
+			span
+				float: left
+				margin: 0 8px 0 0 
+				text-align: center
+			&:first-child
+				margin: 0
+	.h2
+		padding-bottom: 10px
+		color: #c8a74f 
+		
 //datepicker
 .datepicker
 	padding-bottom: 8px
@@ -284,33 +308,103 @@
 //accord
 .accord
 	position: relative
-	width: 480px
-	height: 277px
 	background: #1370a7 
-	border-radius: 5px
+	//border-radius: 5px
 	overflow: hidden
-.accord__item
-	position: relative
-	float: left
-	width: 31px
-	height: 277px
-	&.active
-		width: 387px
-		background: #FFF
-		border-radius: 5px 0 0 5px
-		.accord__title	
-			border-radius: 5px
-			background: #FFF				
+	ol
+		position: relative
+		height: 100%
+		overflow: hidden
+.accord__slide
+	h2
+		position: absolute
+		top: 0
+		left: 0
+		margin: 0
+		z-index: 50		
+		+background-image(linear-gradient(top, #2391d8, #1370a7))
+		//border-radius: 5px 5px 0 0		
+		-webkit-backface-visibility: hidden //fixes chrome bug
+		-webkit-transform: translateX(-100%) rotate(-90deg)
+		-webkit-transform-origin: right top
+		-moz-transform: translateX(-100%) rotate(-90deg)
+		-moz-transform-origin: right top
+		-o-transform: translateX(-100%) rotate(-90deg)
+		-o-transform-origin: right top
+		transform: translateX(-100%) rotate(-90deg)
+		transform-origin: right top		
+		font-size: 12px
+		font-weight: normal
+		line-height: 31px
+		text-transform: uppercase
+		color: #fff2c2
+		cursor: pointer
+		span
+			position: relative
+			display: block
+			padding-right: 5%
+			text-align: right
+			height: 100%
+			-webkit-user-select: none
+			-khtml-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+			user-select: none
+			&:after
+				content: ""
+				position: absolute
+				top: 15px
+				left: 15px
+				width: 0px
+				height: 0px
+				border-style: solid
+				border-width: 5px 5px 0 5px
+				border-color: #bbdaed transparent transparent transparent
+		&.selected
+			background: #FFF		
 			color: #000  
 			span
 				border-bottom: 1px solid #dee7ef
 				&:after
 					top: 11px
-					left: 2px
+					left: 17px
 					border-width: 5px 0 5px 5px
 					border-color: transparent transparent transparent #bbdaed
-		& + .accord__item
-			background: #fff 
+	div
+		position: absolute
+		top: 0
+		height: 100%		
+		z-index: 10
+		overflow: hidden 
+		background: #fff
+		
+
+
+// .accord__item
+// 	position: relative
+// 	float: left
+// 	width: 31px
+// 	height: 277px
+// 	&.active
+// 		width: 387px
+// 		background: #FFF
+// 		border-radius: 5px 0 0 5px
+// 		.accord__title	
+// 			border-radius: 5px
+// 			background: #FFF				
+// 			color: #000  
+// 			span
+// 				border-bottom: 1px solid #dee7ef
+// 				&:after
+// 					top: 11px
+// 					left: 2px
+// 					border-width: 5px 0 5px 5px
+// 					border-color: transparent transparent transparent #bbdaed
+// 		& + .accord__item
+// 			background: #fff
+			
+
+
 .accord__title
 	position: relative
 	float: left
@@ -353,13 +447,9 @@
 			border-style: solid
 			border-width: 5px 5px 0 5px
 			border-color: #bbdaed transparent transparent transparent
-.accord__content 	
-	position: absolute
-	top: 0
-	left: 31px
-	width: 326px
-	height: 247px
-	padding: 15px
+.accord__content 
+	ul
+		padding: 15px
 	li
 		margin-bottom: 20px
 		color: #666
@@ -382,24 +472,24 @@
 			a
 				margin-left: 5px
 				color: $red 
-//map
-.map
+//main-map
+.main-map
 	position: relative
 	height: 220px
 	+background-image(linear-gradient(#fff, #dde6ee))
-.map__container
+.main-map__container
 	position: absolute
 	top: 56px
 	left: 28px
 	width: 180px
 	height: 121px
-	background: url(../img/map.png) no-repeat
+	background: url(../img/main-map.png) no-repeat
 	cursor: pointer	
-.map__title
+.main-map__title
 	padding: 17px 0 0 10px
 	font-size: 18px
 	color: #000 
-.map__select
+.main-map__select
 	padding: 30px 0 0 240px
 	p
 		margin-bottom: 10px

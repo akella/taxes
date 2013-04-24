@@ -214,13 +214,25 @@ if ($('.js-slider').length > 0) {
   });  
 };
 //accordeon
-$('.js-accord .accord__item').click(function() {
+if ($('.js-accord').length > 0) {
+  $('.js-accord').liteAccordion({
+    containerWidth : 480,                   
+    containerHeight : 277,                 
+    headerWidth: 31
+  });
+};
+
+//accordeon navigation
+$('.js-accord-nav h3').click( function(){
   if (!$(this).hasClass('active')) {
-    $('.js-accord .accord__item').removeClass('active');
+    $('.js-accord-nav h3').removeClass('active');
     $(this).addClass('active');
+    $('.js-accord-nav ul').slideUp();
+    $(this).next().slideDown();
   };
 });
 
+//low list
 $(".low-list__roll").hide();
 $(".js-low-accord").children("li").children("a").click(function(){
   if ($(this).hasClass("is-active")) {
@@ -261,6 +273,10 @@ $(".low-list__more").click(function(){
   }
 });
 
+<<<<<<< HEAD
+=======
+//messgae container
+>>>>>>> b2140ddf759a09ec776cab0fdfb163323d4e76ce
 $(".js-message-cont").hide();
 $(".js-roll-message").click(function(){
   if ($(this).hasClass("is-active")) {
@@ -275,22 +291,30 @@ $(".js-roll-message").click(function(){
   }
 });
 
-// popup for poll results
-
-$(".js-result").click( function(){
-  $(".l-progress").slideDown();
+//popup for poll results
+$(".js-result").click(function() {
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active');
+    $(".l-progress").slideUp();
+  }
+  else {
+    $(this).addClass('active');
+    $(".l-progress").slideDown();
+  };  
   return false;
-
-
-
-
-
 });
-
 $(".progress__close").click( function(){
   $(".l-progress").slideUp();
+  $(".js-result").removeClass('active');
   return false;
 });
+
+//table sort
+if ($(".js-table-sort").length > 0) {
+  $(".js-table-sort").tablesorter({
+    cssHeader: ""
+  }); 
+};
 
 
 $(".js-table-sort").tablesorter({

@@ -65,12 +65,35 @@
 //aside-nav
 .aside-nav
 	margin-bottom: 10px
-	.tabs
-		padding: 8px 8px 0 8px
-		+background-image(linear-gradient(#f5fbfe, #b0def8))
-.aside-nav__list
-	padding: 10px 0
-	background: #FFF
+	h3		
+		padding: 7px 10px
+		+background-image(linear-gradient(#fcfeff, #eff8fd))
+		border-top: 1px solid #dde6ee
+		font-size: 12px
+		font-weight: normal
+		line-height: 1.2
+		cursor: pointer
+		span
+			font-weight: 600 
+			color: $blue 
+		&.active
+			padding: 8px 8px 0 8px
+			+background-image(linear-gradient(#f5fbfe, #b0def8))
+			overflow: hidden
+			cursor: default
+			span
+				float: left
+				height: 35px
+				padding: 0 10px
+				background: #fff
+				border-radius: 5px 5px 0 0
+				line-height: 35px
+				font-size: 14px
+				color: #000
+	ul
+		display: none
+		padding: 10px 0
+		background: #FFF
 	li
 		position: relative
 		padding: 0 0 3px 22px
@@ -83,6 +106,11 @@
 			width: 6px
 			height: 6px
 			background: #a4d1ef
+		&.active
+			a
+				color: #000 
+			&:before
+				background: #c2c2c2 
 	a
 		font-size: 12px
 .aside-nav__links
@@ -421,3 +449,35 @@
 	p
 		font-size: 14px
 		line-height: 1.2
+//map
+.map
+	padding: 10px
+	.table
+		th, td
+			padding: 8px 6px
+		th
+			&:last-child
+				width: 70px
+		td			
+			&:last-child
+				text-align: center
+		tr
+			&:last-child
+				td
+					border: none
+.map__container
+	p
+		margin-bottom: 5px
+	select
+		width: 210px
+		height: 26px
+		padding: 2px
+		margin-bottom: 10px
+		border: 1px solid #b4b2b2
+		color: #00518c 	
+.map__block
+	margin-bottom: 20px
+.map__info
+	margin-bottom: 20px
+	line-height: 1.2
+	color: #666

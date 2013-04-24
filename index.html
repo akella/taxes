@@ -5,13 +5,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.min.js"></script>
 	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 	<script src="js/jquery.cycle.all.js"></script>	
 	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>	
+	<script src="js/liteaccordion.jquery.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>	
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -53,7 +55,25 @@
 					<li><a href="#">Контакти</a></li>
 				</ul>
 			</nav>
-		</div>		
+		</div>	
+		<form class="auth" action="">
+			<div class="auth__title">Авторизація</div>
+			<div class="auth__field">
+				<span>Email:</span>
+				<input type="text" value="petrivsky.leonid.@gmail.com">
+			</div>
+			<div class="auth__field auth__field_mod">
+				<span>Пароль:</span>
+				<input type="password" value="********">
+				<button type="submit">Увійти</button>
+			</div>
+			<div class="auth__pass-restore">
+				<a href="#">Відновити пароль</a>
+			</div>
+			<div class="auth__info">
+				<p>Якщо Ви бажаєте отримувати новини на email і т.д. - <a href="#">Зареєструйтеся</a></p>
+			</div>
+		</form>	
 	</header>
 	<!-- END .hedaer -->
 	<!-- BEGIN .navigation -->
@@ -393,11 +413,71 @@
 			</a>
 		</div>
 		<div class="cols__480">
+			<div class="accord js-accord">
+				<ol>
+					<li class="accord__slide">
+						<h2><span>Брошури та листівки</span></h2>
+						<div class="accord__content">
+							<ul>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати консолідованого податку на прибуток та форми...<a href="#">детальніше</a></p>
+								</li>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати...<a href="#">детальніше</a></p>
+								</li>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати консолідованого...<a href="#">детальніше</a></p>
+								</li>
+							</ul>
+							<a class="more" href="#">архів документів</a>
+						</div>
+					</li>
+					<li class="accord__slide">
+						<h2><span>Заходи для платників</span></h2>
+						<div class="accord__content">
+							<ul>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати консолідованого податку на прибуток та форми...<a href="#">детальніше</a></p>
+								</li>
+							</ul>
+							<a class="more" href="#">архів документів</a>
+						</div>
+					</li>
+					<li class="accord__slide">
+						<h2><span>Повідомлення та нагадування</span></h2>
+						<div class="accord__content">
+							<ul>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати консолідованого податку на прибуток та форми...<a href="#">детальніше</a></p>
+								</li>
+							</ul>
+							<a class="more" href="#">архів документів</a>
+						</div>
+					</li>
+					<li class="accord__slide">
+						<h2><span>Офіційні документи</span></h2>
+						<div class="accord__content">
+							<ul>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати консолідованого податку на прибуток та форми...<a href="#">детальніше</a></p>
+								</li>
+							</ul>
+							<a class="more" href="#">архів документів</a>
+						</div>
+					</li>
+				</ol>
+			</div>
 			<!-- BEGIN .accord -->
-			<ul class="accord js-accord">
+			<!-- <ul class="accord js-accord">
 				<li class="accord__item">
 					<div class="accord__title">	
-						<span>Брошури та листівки</span>
+						<span></span>
 					</div>
 					<div class="accord__content">
 						<p>Деякий текст</p>						
@@ -405,7 +485,7 @@
 				</li>
 				<li class="accord__item">
 					<div class="accord__title">	
-						<span>Заходи для платників</span>
+						<span></span>
 					</div>
 					<div class="accord__content">
 						<p>Деякий текст</p>
@@ -413,7 +493,7 @@
 				</li>
 				<li class="accord__item">
 					<div class="accord__title">	
-						<span>Повідомлення та нагадування</span>
+						<span></span>
 					</div>
 					<div class="accord__content">
 						<p>Деякий текст</p>
@@ -421,7 +501,7 @@
 				</li>
 				<li class="accord__item active">
 					<div class="accord__title">	
-						<span>Офіційні документи</span>
+						<span></span>
 					</div>
 					<div class="accord__content">						
 						<ul>
@@ -441,7 +521,7 @@
 						<a class="more" href="#">архів документів</a>
 					</div>
 				</li>
-			</ul>
+			</ul> -->
 			<!-- END .accord -->
 		</div>
 		<div class="cols__220 cols__220_mod">
@@ -516,13 +596,13 @@
 	<!-- BEGIN .cols -->
 	<div class="cols">
 		<div class="cols__470">
-			<!-- BEGIN .map -->
-			<div class="map">
-				<div class="map__container">
+			<!-- BEGIN .main-map -->
+			<div class="main-map">
+				<div class="main-map__container">
 					
 				</div>
-				<div class="map__title">Територіальні органи</div>
-				<div class="map__select">
+				<div class="main-map__title">Територіальні органи</div>
+				<div class="main-map__select">
 					<p>Скористайтесь інтерактивною картою, або оберiть свій регіон зі списку</p>
 					<select name="" id="">
 						<option value="1">Автономна республіка Крим</option>
@@ -535,7 +615,7 @@
 					</select>
 				</div>
 			</div>
-			<!-- END .map -->
+			<!-- END .main-map -->
 		</div>
 		<div class="cols__230">
 			<!-- BEGIN .new-info -->

@@ -11,7 +11,7 @@ body
 	+background-image(linear-gradient(#2f5288 0px, #abbecf 630px, #abbecf 100%))
 	font-family: 'Open Sans', Arial, Tahoma, sans-serif
 	font-weight: 400
-	font-size: 12px
+	font-size: 12px 
 	color: #333
 	line-height: 1
 // reset
@@ -70,11 +70,21 @@ table
 	font-size: 16px
 	font-weight: 600 
 	color: #fff
+	&:hover
+		+background-image(linear-gradient(#24a5ee, #156ba3))
+	&:active
+		+background-image(linear-gradient(#1c86cb, #24a5ee))
+		box-shadow: #0e4970 0 0 3px inset 
 .btn_gray
 	+background-image(linear-gradient(#fff, #e7e7e7))
 	border-color: #bababa
 	box-shadow: rgba(203,200,194,.25) 1px 1px 2px
 	color: #666 
+	&:hover
+		+background-image(linear-gradient(#fff, #bbb))
+	&:active, &.active
+		+background-image(linear-gradient(#e7e7e7, #fff))
+		box-shadow: #999 0 0 3px inset 
 //bottom
 .bottom
 	padding: 2px 0 25px 0
@@ -84,6 +94,11 @@ table
 .bottom_mod
 	margin-bottom: 15px
 	border-bottom: 1px solid #dde6ee
+.bottom_right
+	.next
+		margin-right: 20px
+	.pagination
+		float: right		
 .back, .next
 	height: 17px
 	line-height: 17px
@@ -341,6 +356,7 @@ table
 	left: 50%
 	width: 960px
 	margin-left: -480px 
+	z-index: 100 
 //tape
 .tape
 	height: 21px
@@ -471,6 +487,7 @@ table
 	li
 		float: left
 		color: #fff 
+		line-height: 1.2
 	a
 		font-size: 11px
 		color: #f8df97
@@ -615,6 +632,7 @@ table
 .label__title
 	float: left
 	width: 290px
+	min-height: 1px
 	line-height: 27px
 	margin-right: 10px
 	text-align: right
@@ -653,9 +671,66 @@ table
 	margin-right: 10px
 	border-radius: 3px
 	border: 1px solid #b3b3b3
+//auth
+.auth
+	position: absolute
+	top: 0
+	right: 10px
+	width: 250px
+	padding: 0 17px
+	border-radius: 0 0 5px 5px
+	+background-image(linear-gradient(#24a5ee, #1c86cb))	
+	box-shadow: rgba(0,0,0,.22) 5px 5px 7px
+	z-index: 1000 
+	color: #FFF 
+	a
+		color: #f5d174
+.auth__title
+	padding: 9px 0
+	text-align: center
+	font-size: 13px
+.auth__field
+	margin-bottom: 6px
+	overflow: hidden
+	span
+		float: left
+		width: 55px
+		margin-right: 5px
+		font-size: 13px
+		font-weight: 600
+		text-align: right 
+		line-height: 24px 
+	input
+		float: left
+		width: 177px
+		height: 22px
+		padding: 0 5px
+		border: 1px solid #336699
+		border-radius: 3px 
+.auth__field_mod
+	input
+		width: 110px
+		margin-right: 8px 
+	button
+		float: left
+		height: 23px
+		padding: 0 8px
+		border-radius: 4px
+		+background-image(linear-gradient(#fff3ca, #f4d279))
+		box-shadow: rgba(0,0,0,0.1) 1px 1px 2px
+		font-size: 14px
+		color: #003366 
+		&:hover
+			+background-image(linear-gradient(#fff3ca, #d2ae4e))
+		&:active
+			+background-image(linear-gradient(#f4d279, #fff3ca))
+.auth__pass-restore
+	padding: 5px 0 10px 60px
+	border-bottom: 1px solid #52a3d8 
+.auth__info
+	padding: 10px 0
+	line-height: 1.2
 
-
-	
 
 	
 		

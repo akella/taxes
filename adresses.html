@@ -5,13 +5,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.min.js"></script>
 	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 	<script src="js/jquery.cycle.all.js"></script>	
 	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>	
+	<script src="js/liteaccordion.jquery.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>	
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -208,81 +210,104 @@
 			<!-- END .question -->
 		</div>
 		<div class="cols__480 cols__white">
-			<!-- BEGIN .news -->
-			<div class="news">
-				<h1 class="title">Новини</h1>
-				<ul class="news__list">
-					<li>
-						<div class="news__title">
-							<span>10.09.2013<i class="ico-photo"></i></span>
-							<a href="#">Київські митники передали до музейного фонду держави 248 старовинних</a>
-						</div>						
-						<div class="news__content">
-							<a href="#"><img src="img/pic10.jpg" alt=""></a>
-							<p>Під час здійснення митного контролю ручної поклажі і багажу пасажирів, що слідували авіарейсом «Москва - Сімферополь», громадянин Росії обрав «зелений» коридор<a href="#"><i class="ico-arr-r"></i></a></p>
-						</div>
-					</li>
-					<li>
-						<div class="news__title">
-							<span>10.09.2013<i class="ico-video"></i></span>
-							<a href="#">Київські митники передали до музейного фонду держави 248 старовинних</a>
-						</div>						
-						<div class="news__content">
-							<a href="#"><img src="img/pic10.jpg" alt=""></a>
-							<p>Під час здійснення митного контролю ручної поклажі і багажу пасажирів, що слідували авіарейсом «Москва - Сімферополь», громадянин Росії обрав «зелений» коридор<a href="#"><i class="ico-arr-r"></i></a></p>
-						</div>
-					</li>
-					<li>
-						<div class="news__title">
-							<span>10.09.2013<i class="ico-photo"></i></span>
-							<a href="#">Київські митники передали до музейного фонду держави 248 старовинних</a>
-						</div>						
-						<div class="news__content">
-							<a href="#"><img src="img/pic10.jpg" alt=""></a>
-							<p>Під час здійснення митного контролю ручної поклажі і багажу пасажирів, що слідували авіарейсом «Москва - Сімферополь», громадянин Росії обрав «зелений» коридор<a href="#"><i class="ico-arr-r"></i></a></p>
-						</div>
-					</li>
-					<li>
-						<div class="news__title">
-							<span>10.09.2013</span>
-							<a href="#">Київські митники передали до музейного фонду держави 248 старовинних</a>
-						</div>						
-						<div class="news__content">
-							<a href="#"><img src="img/pic10.jpg" alt=""></a>
-							<p>Під час здійснення митного контролю ручної поклажі і багажу пасажирів, що слідували авіарейсом «Москва - Сімферополь», громадянин Росії обрав «зелений» коридор<a href="#"><i class="ico-arr-r"></i></a></p>
-						</div>
-					</li>
-					<li>
-						<div class="news__title">
-							<span>10.09.2013</span>
-							<a href="#">Київські митники передали до музейного фонду держави 248 старовинних</a>
-						</div>						
-						<div class="news__content">
-							<a href="#"><img src="img/pic10.jpg" alt=""></a>
-							<p>Під час здійснення митного контролю ручної поклажі і багажу пасажирів, що слідували авіарейсом «Москва - Сімферополь», громадянин Росії обрав «зелений» коридор<a href="#"><i class="ico-arr-r"></i></a></p>
-						</div>
-					</li>
-					<li>
-						<div class="news__title">
-							<span>10.09.2013</span>
-							<a href="#">Київські митники передали до музейного фонду держави 248 старовинних</a>
-						</div>						
-						<div class="news__content">
-							<a href="#"><img src="img/pic10.jpg" alt=""></a>
-							<p>Під час здійснення митного контролю ручної поклажі і багажу пасажирів, що слідували авіарейсом «Москва - Сімферополь», громадянин Росії обрав «зелений» коридор<a href="#"><i class="ico-arr-r"></i></a></p>
-						</div>
-					</li>
-				</ul>
-				<div class="bottom">
-					<a class="back" href="#"><i class="ico-arr-l"></i>Попередні закони</a>
-					<div class="pagination">
-						<span>1</span>
-						<a href="#">2</a>
-						<a href="#">3</a>
+			<!-- BEGIN .map -->
+			<div class="map">
+				<h1 class="title">Адреси масової реєстрації платників податків</h1>
+				<div class="map__container">
+					<div class="map__info">Скористайтесь інтерактивною картою, або<br>оберіть свій регіон зі списку</div>
+					<div class="map__block">
+						<img src="img/map.png" alt="">
 					</div>
+					<p>Oберіть область:</p>
+					<select>
+						<option value="1">Харківська область</option>
+						<option value="2">Харківська область</option>
+						<option value="3">Харківська область</option>
+						<option value="4">Харківська область</option>
+						<option value="5">Харківська область</option>
+						<option value="6">Харківська область</option>
+					</select>
 				</div>
-			</div>			
-			<!-- END .news -->
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Адреса, яка при державній реєстрації зазначена як місцезнаходження юридичної особи</th>
+							<th>Кількість юр.осіб, що зареєстр.</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>610 Харкiвська обл., м. Харків, вул. Академіка проскури, буд. 1</td>
+							<td>160</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- END .map -->
 		</div>
 		<div class="cols__220 cols__220_mod">
 			<!-- BEGIN .announcements -->
