@@ -1,0 +1,398 @@
+<!doctype html>
+<!--[if IE 7]><html lang="ru-RU" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Registration ex</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+	<script src="js/jquery.cycle.all.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body> 
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<!-- BEGIN .hedaer -->
+	<header class="header">
+		<div class="languages">
+			<a class="active" href="#">Укр</a>
+			<a href="#">Рус</a>
+			<a href="#">Eng</a>
+		</div>
+		<a class="logo" href="#">Міністерство доходів і зборів України</a>
+		<div class="flag"><i></i></div>
+		<div class="header__top">
+			<div class="header__title">
+				<h1>Міністерство доходів і зборів України</h1>
+				<span>Офіційний портал</span>
+			</div>
+			<div class="header__links">
+				<a href="#">До головного порталу</a>
+				<a href="#">Реєстрація</a>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<form class="header__search" action="">
+				<input type="text" placeholder="Пошук по сайту">
+				<button type="submit"></button>
+			</form>
+			<div class="social">
+				<a class="social__fb" href="#"></a>
+				<a class="social__vk" href="#"></a>
+				<a class="social__tw" href="#"></a>
+			</div>
+			<nav class="header__nav">
+				<ul>
+					<li><a href="#">Приймальня громадян</a></li>
+					<li><a href="#">Форум</a></li>
+					<li><a href="#">Контакти</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- END .hedaer -->
+	<!-- BEGIN .navigation -->
+	<nav class="nav">
+		<ul>
+			<li>
+				<a href="#">Міністерство</a>
+				<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+					<li><a href="#">Міжнародні новини</a></li>
+					<li><a href="#">Контакти</a></li>
+					<li><a href="#">До відома ЗМІ</a></li>
+					<li><a href="#">Реагування на критику</a></li>
+					<li><a href="#">Журнал "Вісник податкової служби"</a></li>
+					<li><a href="#">Фотогалерея</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Діяльність</a>
+				<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+					<li><a href="#">Міжнародні новини</a></li>
+					<li><a href="#">Контакти</a></li>
+					<li><a href="#">До відома ЗМІ</a></li>
+					<li><a href="#">Реагування на критику</a></li>
+					<li><a href="#">Журнал "Вісник податкової служби"</a></li>
+					<li><a href="#">Фотогалерея</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Податки, збори, платежі </a></li>
+			<li><a href="#">Електронні форми документів </a></li>
+			<li><a href="#">Медіа-центр</a></li>
+		</ul>
+	</nav>
+	<!-- END .navigation -->
+	<!-- BEGIN .breadcrumbs -->
+	<ul class="breadcrumbs">
+		<li><a href="#">Головна</a><span>></span></li>
+		<li>Реєстрація платника</li>
+	</ul>
+	<!-- END .breadcrumbs -->
+	<!-- BEGIN .cols -->
+	<section class="cols cols_white">
+		<!-- BEGIN .userdata -->
+		<div class="userdata">
+			<h1 class="title">Реєстрація платника</h1>
+			<!-- BEGIN .userdata__form -->
+			<div class="userdata__form">
+				<div class="userdata__warning"><span class="userinfo__red">*</span> - всі поля позначені зірочкою, обов`язкові для заповнення!</div>
+				<!-- Хто Ви? -->
+				<label class="label">
+					<div class="label__title label__title_mod">Хто Ви?</div>
+					<div class="label__field">
+						<label class="radio">
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+							Юридична особа
+						</label>
+						<label class="radio">
+							<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked="">
+							Фізична особа
+						</label>
+						<label class="radio">
+							<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked="">
+							Самозайнята особа
+						</label>
+					</div>
+				</label>
+				<!-- Реєстраційна інформація -->
+				<h2 class="h2 h2_mod">Реєстраційна інформація</h2>
+				<label class="label">
+					<div class="label__title">Назва організації:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="ТОВ Перша Інвестиційна компанія">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Код ЄДРПОУ:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text input_small" type="text" value="12345678">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Форма власності:<span>*</span></div>
+					<select class="select">
+						<option>Власність інших держав</option>
+						<option>Власність держав інших</option>
+					</select>
+				</label>
+				<!-- Контактна особа -->
+				<h2 class="h2 h2_mod">Контактна особа</h2>
+				<label class="label">
+					<div class="label__title">Посада в компанії:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="старший економіст-маркетолог">
+					</div>
+				</label>
+				<label class="label error">
+					<div class="label__title">Прізвище:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="">
+						<div class="label__message"><span>!</span>Поле Підтвердження пароля є обов’язковим</div>
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Ім’я:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="Леонiд">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">По батькові:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="Валентинович">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">E-Mail:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="petrivsky.leonid.valentinovich@gmail.com">
+						</div>
+						<div class="label__info">Вкажіть Вашу дійсну та захищену адресу, оскільки на неї прийде повідомлення щодо підтвердження реєстрації.</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Альтернативний E-Mail:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="petrivsky.leonid.valentinovich@ukr.net">
+					</div>
+					<div class="label__info">На випадок проблем із основним.</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Пароль:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text input_medium" type="text" value="123456qwertyyuio">
+					</div>
+					<div class="label__info">Будь-ласка використовуйте тільки латинські символи A-Z та цифри 0-9. Довжина паролю повинна бути не меншою ніж 8 символів.</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Підтвердження пароля:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text input_medium" type="text" value="">
+					</div>
+				</label>
+				<!-- Особисті дані -->
+				<h2 class="h2 h2_mod">Особисті дані</h2>
+				<label class="label">
+					<div class="label__title">Стать:</div>
+					<select class="select">
+						<option>чоловiча</option>
+						<option>жiноча</option>
+						<option>не встановлено</option>
+					</select>
+				</label>
+				<label class="label">
+					<div class="label__title">Дата народження:<span>*</span></div>
+					<select class="select">
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+					</select>
+					<select class="select">
+						<option>Листопад</option>
+						<option>Грудень</option>
+					</select>
+					<select class="select">
+						<option>2012</option>
+						<option>2013</option>
+					</select>
+				</label>
+				<label class="label error">
+					<div class="label__title">Види діяльності:<span>*</span></div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="">
+						<div class="label__message"><span>!</span>Поле Види діяльності є обов’язковим</div>
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">WWW-сторінка:</div>
+					<div class="label__field">
+						<input class="input-text" type="text" placeholder="http://" value="">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">ICQ:</div>
+					<div class="label__field">
+						<input class="input-text input_medium" type="text" value="1234567891011">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Skype:</div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="">
+					</div>
+				</label>
+				<!-- Телефони -->
+				<h2 class="h2 h2_form">Телефони:</h2>
+				<div class="label">
+					<div class="label__title">Телефон:</div>
+					<div class="label__field">
+						<input class="input-text input_mini" type="text" value="044">
+						<input class="input-text input_small" type="text" value="123-45-67">
+					</div>
+				</div>
+				<div class="label">
+					<div class="label__title">Факс:</div>
+					<div class="label__field">
+						<input class="input-text input_mini" type="text" placeholder="Код">
+						<input class="input-text input_small" type="text" placeholder="Номер">
+					</div>
+				</div>
+				<div class="label">
+					<div class="label__title">Мобільний:</div>
+					<div class="label__field">
+						<input class="input-text input_mini" type="text" placeholder="Код" value="">
+						<input class="input-text input_small" type="text" placeholder="Номер" value="">
+					</div>
+				</div>
+				<!-- Місце знаходження -->
+				<h2 class="h2 h2_form">Місце знаходження:</h2>
+				<label class="label">
+					<div class="label__title">Iндекс:</div>
+					<div class="label__field">
+						<input class="input-text input_small" type="text" value="04108">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Область:</div>
+					<select class="select">
+						<option>Івано-Франковська</option>
+						<option>Черкаська</option>
+					</select>
+				</label>
+				<label class="label">
+					<div class="label__title">Район:</div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Місто / селище:</div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Вулиця:</div>
+					<div class="label__field">
+						<input class="input-text" type="text" value="">
+					</div>
+				</label>
+				<div class="label">
+					<div class="label__title">Будинок:</div>
+					<div class="label__field">
+						<input class="input-text input_mini" type="text" value="178">
+						<div class="label__title">Корпус:</div>
+						<input class="input-text input_mini" type="text" value="1Б">
+					</div>
+				</div>
+				<label class="label">
+					<div class="label__title">Квартира:</div>
+					<div class="label__field">
+						<input class="input-text input_mini" type="text" value="897">
+					</div>
+					<div class="label__info">Вкажіть цифру 0 (нуль), якщо це приватний будинок</div>
+				</label>
+				<label class="label">
+					<div class="label__title label__title_mod">Вкажіть букви і цифри зображеннi на малюнку: <span>*</span></div>
+					<div class="label__captcha">
+						<img src="img/captcha.jpg" alt="Введите цыфры">
+						<button></button>
+					</div>
+				</label>
+				<label class="label">
+				 <div class="label__title"></div>
+				 <input class="input-text input_small" value="6Б2Жк" type="text">
+				</label>
+			</div>
+			<!-- END .userdata__form -->
+			<!-- BEGIN .btn_block -->
+			<div class="btn_block btn_block_form">
+				<button class="btn">Зареєструватися</button>
+				<button class="btn btn_gray">Скасувати</button>
+			</div>
+			<!-- END .btn_block -->
+		</div>
+		<!-- END .userdata -->
+	</section>
+	<!-- END .cols -->
+	<!-- BEGIN .footer -->
+	<footer class="footer">
+		<!-- BEGIN .links-out -->
+		<div class="links-out">
+			<a href="#">
+				<i class="ico-fl1"></i>
+				<span>Президент України</span>
+			</a>
+			<a href="#">
+				<i class="ico-fl2"></i>
+				<span>Кабінет Міністрів України</span>
+			</a>
+			<a class="links-out__last" href="#">
+				<i class="ico-fl3"></i>
+				<span>Верховна рада України</span>
+			</a>
+		</div>
+		<!-- END .links-out -->
+		<!-- BEGIN .cols -->
+		<div class="cols">
+			<div class="cols__710">
+				<div class="footer__title footer__title_mod">Корисні посилання</div>
+			</div>
+			<div class="cols__220 cols__220_mod">
+				<div class="footer__title">Міністерство в соцмережах</div>
+				<div class="social">
+					<a class="social__fb" href="#"></a>
+					<a class="social__vk" href="#"></a>
+					<a class="social__tw" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<!-- END .cols -->
+		<div class="footer__bottom">
+			<div class="counter">
+				<img src="img/counter.png" alt="">
+			</div>
+			<div class="copyright">© 2013 Міністерство доходів і зборів України</div>
+			<nav class="footer__nav">
+				<ul>
+					<li><a href="#">RSS</a></li>
+					<li><a href="#">Застереження</a></li>
+					<li><a href="#">Адміністратор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<!-- END .footer -->
+</section>
+<!-- END .wrap -->
+</body>
+</html>

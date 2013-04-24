@@ -43,10 +43,7 @@
     display: block
     margin-bottom: 20px
     color: #666 
-.bottom_right 
-    float: right
-.faq
-    
+.faq    
     li
         position: relative
         margin-bottom: 28px
@@ -72,21 +69,83 @@
         color: #666
         font-size: 11px 
 .message
+    position: relative
     padding: 10px 17px 15px
-    margin: 0 auto
+    margin: 0 auto 21px
     width: 490px
     clear: both
-    font-size: 18px
-    text-align: center
     line-height: 1.4
     border-radius: 7px 
+    border: 1px solid
     p
         margin-bottom: 14px
     span
         font-size: 14px
+    ol 
+        clear: both
+        counter-reset: list1
+    ol 
+        ol 
+            margin-top: 15px
+            counter-reset: list2
+    li
+        margin-bottom: 15px
+        &:before
+            counter-increment: list1
+            content: counter(list1) ". "
+        li
+            &:before
+                counter-increment: list2
+                content: counter(list1) "." counter(list2) ". "
+    .bottom
+        margin-top: 11px
+        @extend %clr
+    .pagination
+        float: right
+    .ico-arr-r
+        margin-left: 10px
 .message_red
     background: #ecd9d9 
-    border: 1px solid #c7b4b4
+    border-color:  #c7b4b4
+.message_yellow
+    background: #ffffec
+    border-color: #ececd9 
+.message_gray 
+    background: #fafbfc
+    border-color: #e5ebf1
+.message_green
+    background: #d9ecd9
+    border-color: #b4c7b4
+.message_center
+    font-size: 18px
+    text-align: center
+.message_big
+    font-size: 14px
+.message__title
+    display: block
+    width: 400px
+    font-size: 15px
+    color: #333 
+    text-transform: uppercase
+    font-weight: 600 
+.message__roll 
+    position: absolute
+    right: 12px
+    top: 12px
+    color: #999
+    font-size: 12px
+    background: none  
+    i 
+        margin-left: 5px
+        +s($icons, roll-right)
+    span, i 
+        display: inline-block
+        vertical-align: middle
+.message__roll.is-active
+    i 
+        +s($icons, roll-down)
+.message__cont 
+    margin-top: 21px
 .faq-answer
     position: relative
     margin: 0 0 15px 31px
@@ -115,5 +174,5 @@
     left: 73px
     color: #666  
     font-weight: 600
-    font-size: 12px
+    font-size: 12px 
     text-transform: uppercase 

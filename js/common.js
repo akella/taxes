@@ -222,20 +222,31 @@ if ($('.js-accord').length > 0) {
   });
 };
 
+//accordeon navigation
+$('.js-accord-nav h3').click( function(){
+  if (!$(this).hasClass('active')) {
+    $('.js-accord-nav h3').removeClass('active');
+    $(this).addClass('active');
+    $('.js-accord-nav ul').slideUp();
+    $(this).next().slideDown();
+  };
+});
+
+//low list
 $(".low-list__roll").hide();
 $(".js-low-accord").children("li").children("a").click(function(){
   if ($(this).hasClass("is-active")) {
-    $(this).next().slideUp("fast");
+    $(this).next().hide();
     $(this).next().next().hide();
     $(this).removeClass("is-active");
     $(this).children("i").text("+");
   }
   else {
-    $(".low-list__cont").slideUp("fast");
+    $(".low-list__cont").hide();
     $(".low-list__roll").hide();
     $(".low-list").children("li").children("a").removeClass("is-active");
     $(".low-list").children("li").children("a").children("i").text("+");
-    $(this).next().slideDown("fast");
+    $(this).next().show();
     $(this).next().next().show();
     $(this).addClass("is-active");
     $(this).children("i").text("-");
@@ -244,41 +255,63 @@ $(".js-low-accord").children("li").children("a").click(function(){
 });
 $(".low-list").children("li").children(".low-list__roll").click(function(){
   $(this).hide();
-  $(".low-list__cont").slideUp("fast");
+  $(".low-list__cont").hide();
   $(this).prev().prev().removeClass("is-active");
   $(this).prev().prev().children("i").text("+");
   return false;
 });
 $(".low-list__more").click(function(){
   if ($(this).hasClass("js-active")) {
-    $(this).next().slideUp("fast");
+    $(this).next().hide();
     $(this).removeClass("js-active");
     $(this).children("i").text("+");
   }
   else {
-    $(this).next().slideDown("fast");
+    $(this).next().show();
     $(this).addClass("js-active");
     $(this).children("i").text("-");
   }
 });
 
-
-// popup for poll results
-
-$(".js-result").click( function(){
-  $(".l-progress").slideDown();
-  return false;
-
-
-
-
-
+//messgae container
+$(".js-message-cont").hide();
+$(".js-roll-message").click(function(){
+  if ($(this).hasClass("is-active")) {
+    $(this).parent().children(".js-message-cont").slideUp("fast");
+    $(this).removeClass("is-active");
+    $(this).children("span").text("Розгорнути");
+  }
+  else {
+    $(this).parent().children(".js-message-cont").slideDown("fast");
+    $(this).addClass("is-active");
+    $(this).children("span").text("Згорнути");
+  }
 });
 
+//popup for poll results
+$(".js-result").click(function() {
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active');
+    $(".l-progress").slideUp();
+  }
+  else {
+    $(this).addClass('active');
+    $(".l-progress").slideDown();
+  };  
+  return false;
+});
 $(".progress__close").click( function(){
   $(".l-progress").slideUp();
+  $(".js-result").removeClass('active');
   return false;
 });
+
+//table sort
+if ($(".js-table-sort").length > 0) {
+  $(".js-table-sort").tablesorter({
+    cssHeader: ""
+  }); 
+};
 
 
 });

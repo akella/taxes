@@ -4,14 +4,16 @@
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Registration</title>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.min.js"></script>
 	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
-	<script src="js/jquery.cycle.all.js"></script>
-	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+	<script src="js/jquery.cycle.all.js"></script>	
+	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>	
+	<script src="js/liteaccordion.jquery.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>	
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -93,75 +95,80 @@
 	<!-- END .navigation -->
 	<!-- BEGIN .breadcrumbs -->
 	<ul class="breadcrumbs">
-		<li><a href="#">Головна</a><span>></span></li>
-		<li>Реєстрація платника</li>
+		<li><a href="#">Головна </a><span>></span></li>
+		<li>Дізнайся більше про свого бізнес партнера
+		</li>
 	</ul>
 	<!-- END .breadcrumbs -->
 	<!-- BEGIN .cols -->
 	<section class="cols cols_white">
 		<!-- BEGIN .cab -->
-		<div class="cab">
+		<div class="cols__inner">
 			<!-- BEGIN .title -->
-			<h1 class="title">Реєстрація платника</h1>
-			<!-- END .title -->
-			<!-- BEGIN .cab__content -->
-			<div class="cab__content">
-				<!-- BEGIN .userinfo -->
-				<div class="userinfo">
-					
-
-					<h2 class="h2 h2_mod">РЕЄСТРАЦІЙНА ІНФОРМАЦІЯ</h2>
-
-					<label class="label">
-						<div class="label__title">Назва організації:<span>*</span></div>
-						<input class="input-text" type="text" value="ТОВ Перша Інвестиційна компанія">
-					</label>
-
-					<label class="label error">
-						<div class="label__title">Код ЄДРПОУ:<span>*</span></div>
-						<input class="input-text" type="text" value="ТОВ Перша Інвестиційна компанія">
-						<div class="label__message"><span>!</span>Поле Підтвердження пароля є обов’язковим</div>
-					</label>
-
-					<label class="label">
-						<div class="label__title">Область:<span>*</span></div>
-						<select class="select">
-							<option>Івано-Франковська</option>
-							<option>Черкаська</option>
-						</select>
-						<div class="label__info">Вкажіть Вашу дійсну та захищену адресу, оскільки на неї прийде повідомлення щодо підтвердження реєстрації.</div>
-					</label>
-
-					<label class="label">
-						<div class="label__title">Дата:<span>*</span></div>
-						<select class="select">
-							<option>01</option>
-							<option>02</option>
-							<option>03</option>
-							<option>04</option>
-						</select>
-						<select class="select">
-							<option>Листопад</option>
-							<option>Грудень</option>
-						</select>
-						<select class="select">
-							<option>2012</option>
-							<option>2013</option>
-						</select>
-					</label>
-
-
-				 
-
-
-				</div>
-				<!-- END .userinfo -->
+			<h1 class="title">
+				ДІЗНАЙСЯ БІЛЬШЕ ПРО СВОГО БІЗНЕС-ПАРТНЕРА
+				<a href="#" class="link-feedback"><i></i>Коментарії та пропозиції</a>
+			</h1>
+			<div class="business-partner">
+				<p>Для того, аби перевірити надійність Вашого ділового партнера достатньо знати його 	код ЄДРПОУ або ж точну його назву. Введіть відому Вам інформацію в одне з полів і наша 	система здійснить пошук по ряду баз даних, доступних для публічного використання і 	повідомить Вам про результати пошуку.</p>
+				<p>Увага: Оновлення баз даних відбувається 1 раз на місяць, отже, якщо юридична особа 	була зареєстрована, або внесена у одну із спеціалізованих баз протягом останніх 30 	діб, дані щодо неї відображатись НЕ БУДУТЬ.</p>
 			</div>
-			<!-- END .cab__content -->
-
-
-
-
+			<!-- END .title -->
+			<!-- BEGIN .search-form -->
+			<form>
+				<div class="search-form search-form_with-bg">
+					<label class="label">
+						<div class="label__title label__title_mod">Пошук:</div>
+						<div class="label__field">
+							<label class="radio radio_inline">
+								<input type="radio" name="optionsRadios" value="option1" checked="">
+								Юридична особа
+							</label>
+							<label class="radio radio_inline">
+								<input type="radio" name="optionsRadios" value="option2" checked="">
+								Фізична особа
+							</label>
+						</div>
+					</label>
+					<label class="label">
+						<div class="label__title">Код ЄДРПОУ:</div>
+						<input class="input-text input_small" type="text">
+						<div class="label__info">податковий номер, який надають органи ДПС</div>
+					</label>
+					<label class="label">
+						<div class="label__title">Найменування:</div>
+						<input class="input-text" type="text">
+						<div class="label__info">Потрібно вводити повну назву контрагента</div>
+					</label>
+					<label class="label">
+						<div class="label__title label__title_mod-1">Вкажіть букви і цифри зображеннi на малюнку:</div>
+						<div class="label__captcha">
+							<img src="img/captcha.jpg" alt="Введите цыфры">
+							<button></button>
+						</div>
+					</label>
+					<label class="label">
+						<div class="label__title"></div>
+						<input class="input-text input_small" type="text">
+					</label>
+					<label class="label">
+						<div class="label__title"></div>
+						<button class="btn btn_small">Пошук</button>
+						<button class="btn btn_gray btn_small">Очистити</button>
+					</label>
+				</div>
+			</form>
+			<!-- END .search-form -->
+			<!-- BEGIN .message -->
+			<div class="message message_green message_big">
+				<p>Станом на 11.04.2013 щодо платника податків ВІДКРИТЕ АКЦІОНЕРНЕ ТОВАРИСТВО "РАДИКАЛ" наявна інформація: «ПЕРЕБУВАЄ НА ОБЛІКУ В ОРГАНІ ДПС»</p>
+			</div>
+			<!-- END .message -->
+			<!-- BEGIN .message -->
+			<div class="message message_red message_big">
+				<p>Розмір середньої заробітної плати працівників за 3.2012 менший за мінімальний (середню заробітну плату розраховано відповідно до Порядку визначення відповідності платників податків критеріям, які дають право на отримання автоматичного бюджетного відшкодування податку на додану вартість, затвердженого наказом Міністерства фінансів України від 21.09.2011 № 1178). (при значенні коефіцієнта співвідношення розміру середньої заробітної плати працівників до розміру мінімальної заробітної менше 1 за останній звітний квартал)</p>
+			</div>
+			<!-- END .message -->
 		</div>
 		<!-- END .cab -->
 	</section>

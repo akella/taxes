@@ -5,13 +5,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.min.js"></script>
 	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 	<script src="js/jquery.cycle.all.js"></script>	
 	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>	
+	<script src="js/liteaccordion.jquery.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>	
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -101,15 +103,11 @@
 	<section class="cols">
 		<div class="cols__220">
 			<!-- BEGIN .aside-nav -->
-			<div class="aside-nav">
-				<div class="tabs">
-					<ul class="tabs__list">
-						<li class="tabs__title">Медіа центр</li>
-					</ul>
-				</div>
-				<ul class="aside-nav__list">
+			<div class="aside-nav js-accord-nav">
+				<h3 class="active"><span>Медіа центр</span></h3>
+				<ul style="display: block">
 					<li><a href="#">Новини</a></li>
-					<li><a href="#">Регіональні новини</a></li>
+					<li class="active"><a href="#">Регіональні новини</a></li>
 					<li><a href="#">Міжнародні новини</a></li>
 					<li><a href="#">Контакти</a></li>
 					<li><a href="#">До відома ЗМІ</a></li>
@@ -118,22 +116,80 @@
 					<li><a href="#">Фотогалерея</a></li>
 					<li><a href="#">Відеогалерея</a></li>
 				</ul>
-				<ul class="aside-nav__links">
-					<li><a href="#">Про ДПС України</a></li>
-					<li><a href="#">Податки та збори</a></li>
-					<li><a href="#">Діяльність ДПС України</a></li>
-					<li><a href="#">ДПС і громадськість</a></li>
-					<li><a href="#">Доступ до публічної інформації</a></li>
-					<li><a href="#">Модернізація ДПС України</a></li>
-					<li><a href="#">Медіа-центр</a></li>
-					<li><a href="#">Фізичним особам</a></li>
-					<li><a href="#">Юридичним особам</a></li>
-					<li><a href="#">Самозайнятим особам</a></li>
-					<li><a href="#">Приймальня громадян</a></li>
-					<li><a href="#">Регуляторна політика</a></li>
-					<li><a href="#">ДЕКЛАРУВАННЯ ДОХОДІВ ГРОМАДЯН</a></li>
-					<li><a href="#">Податкова база до набрання чинності Податковим кодексом</a></li>
-					<li><a href="#">Електронна звітність</a></li>
+				<h3><span>Про ДПС України</span></h3>
+				<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Податки та збори</span></h3>
+				<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Діяльність ДПС України</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>ДПС і громадськість</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Доступ до публічної інформації</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Модернізація ДПС України</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Медіа-центр</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Фізичним особам</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Юридичним особам</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Самозайнятим особам</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Приймальня громадян</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Регуляторна політика</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>ДЕКЛАРУВАННЯ ДОХОДІВ ГРОМАДЯН</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Податкова база до набрання чинності Податковим кодексом</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+				</ul>
+				<h3><span>Електронна звітність</span></h3>
+					<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
 				</ul>
 			</div>
 			<!-- END .aside-nav -->

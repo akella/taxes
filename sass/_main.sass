@@ -196,10 +196,7 @@
 		right: 9px		
 		border-width: 7px 0 7px 7px
 		border-color: transparent transparent transparent #2c486e
-.services_mod
-	height: 97px
-	padding: 25px 0 0 5px
-	+background-image(linear-gradient(#fff 50%, #c3e4f7))
+.services_mod, .services_inner	
 	span
 		width: 46px
 		height: 46px
@@ -210,6 +207,33 @@
 	li
 		width: 100px
 		margin: 0
+.services_mod
+	height: 97px
+	padding: 25px 0 0 5px
+	+background-image(linear-gradient(#fff 50%, #c3e4f7))
+.services_inner
+	height: auto	
+	padding: 13px
+	background: #FFF 
+	.services__list
+		height: auto
+		li
+			float: none
+			width: auto
+			margin-top: 10px
+			overflow: hidden
+			text-align: left
+			line-height: 46px
+			span
+				float: left
+				margin: 0 8px 0 0 
+				text-align: center
+			&:first-child
+				margin: 0
+	.h2
+		padding-bottom: 10px
+		color: #c8a74f 
+		
 //datepicker
 .datepicker
 	padding-bottom: 8px
@@ -297,7 +321,7 @@
 		top: 0
 		left: 0
 		margin: 0
-		z-index: 100		
+		z-index: 50		
 		+background-image(linear-gradient(top, #2391d8, #1370a7))
 		//border-radius: 5px 5px 0 0		
 		-webkit-backface-visibility: hidden //fixes chrome bug
