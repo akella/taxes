@@ -686,6 +686,8 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .input_medium { width: 104px; }
 
+.input_large { width: 198px; }
+
 .userdata__form { overflow: hidden; }
 
 .userdata__userpic { position: relative; float: left; width: 140px; height: 140px; margin: 0 10px; border: 1px solid #b3b3b3; border-radius: 3px; text-align: center; }
@@ -694,6 +696,8 @@ table { border-spacing: 0; border-collapse: collapse; }
 .userdata__userpic i { background: url('../img/icons-sd95bda6736.png') 0 -1255px no-repeat; width: 34px; height: 34px; position: absolute; top: 40px; left: 50%; margin-left: -17px; }
 
 .h2_form_alt { padding: 0 0 10px; text-align: left; }
+
+.btn_xsmall { height: 27px; line-height: 27px; font-size: 12px; border-radius: 3px; padding: 0 5px; }
 
 .logo, .datepicker .ui-datepicker-prev span, .datepicker .ui-datepicker-next span { font: 0/0 a; text-shadow: none; color: transparent; }
 
