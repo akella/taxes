@@ -112,144 +112,180 @@
 			cursor: pointer
 
 
-.userinfo
-	.userinfo__warning
-		text-align: right
-		margin-right: 15px
-	.userinfo__red
+// .userinfo
+// 	.userinfo__warning
+// 		text-align: right
+// 		margin-right: 15px
+// 	.userinfo__red
+// 		color: #cc3333
+// 	.userinfo__form
+// 		margin-top: 17px
+// 	.userinfo__title
+// 		background: #dde6ee
+// 		display: block
+// 		margin-bottom: 23px
+// 		height: 30px
+// 		line-height: 30px
+// 		padding: 0 10px
+// 		font-weight: 600
+// 		text-transform: uppercase
+// 		color: #333
+// 		font-size: 14px
+// 	.userinfo__title-2
+// 		font-size: 14px
+// 		color: #333
+// 		font-weight: 600
+// 		text-transform: uppercase
+// 		padding: 5px 632px 15px 40px
+// 		text-align: right
+// 		margin-bottom: 16px
+// 		border-bottom: 1px solid #dfe8ef
+// 	.formline
+// 		@extend %clr
+// 		margin-bottom: 15px
+// 		.userinfo__label
+// 			float: left
+// 			text-align: right
+// 			font-size: 14px
+// 			color: #25426c
+// 			font-weight: 600
+// 			width: 288px
+// 			margin-right: 20px
+// 			margin-top: 0
+// 		.formline__right
+// 			display: table
+// 		.radio
+// 			display: block
+// 			cursor: pointer
+// 			margin-bottom: 9px
+// 			font-size: 14px
+// 		.userinfo__infotext
+// 			color: #666
+// 			font-size: 11px
+// 			width: 265px
+// 			line-height: 1.4
+// 		.userinfo__input
+// 			padding: 0 4px
+// 			height: 25px
+// 			line-height: 25px
+// 			border: 1px solid #b3b3b3
+// 			margin-right: 10px
+// 			border-radius: 3px
+// 			display: block
+// 			margin-bottom: 5px
+// 			width: 277px
+// 			display: inline-block
+// 			margin-bottom: 0
+// 			vertical-align: middle
+// 		.userinfo__select
+// 			border-radius: 3px
+// 			border: 1px solid #b3b3b3
+// 			padding: 4px 4px
+// 			width: 287px
+// 			height: 27px
+// 			display: inline-block
+// 			margin-bottom: 0
+// 			vertical-align: middle
+// 			margin-right: 10px
+// 			//-webkit-appearance: none
+// 		.userinfo__input_alt
+// 			display: inline-block
+// 			vertical-align: top
+// 		.userinfo__input_code
+// 			width: 65px
+// 		.userinfo__citycode
+// 			width: 28px
+// 		.userinfo__phone
+// 			width: 66px
+// 		.userinfo__index
+// 			width: 40px
+// 		.userinfo__housenumber
+// 			width: 25px
+// 		.userinfo__building
+// 			width: 18px
+// 		.userinfo__apartment
+// 			width: 25px
+// 		.userinfo__captcha
+// 			width: 57px
+// 		.userinfo__captcha-image
+// 			position: relative
+// 			margin-bottom: 8px
+// 			i
+// 				+s($icons, ico_captcha_reload)
+// 				cursor: pointer
+// 				position: absolute
+// 				right: -38px
+// 				top: 6px
+// 		.userinfo__select__birthday
+// 			width: 50px
+// 		.userinfo__select__birthmonth
+// 			width: 106px
+// 		.userinfo__select__birthyear
+// 			width: 65px
+// 		.userinfo__select__region
+// 			width: 169px
+// 		.userinfo__select_gender
+// 			width: 107px
+
+
+// 	.formline__error
+// 		position: relative
+// 		.userinfo__input
+// 			border: 1px solid #ff9999
+// 		.formline__help
+// 			margin-top: 2px
+// 			color: #cc3333
+// 			font-size: 12px
+// 			display: inline-block
+// 			margin-bottom: 0
+// 			vertical-align: middle
+// 			strong
+// 				font-weight: bold
+// 				font-size: 14px
+// 				margin-right: 2px
+// 	.formline_inline
+// 		display: inline-block
+// 		.userinfo__label
+// 			text-align: left
+// 			width: auto
+// 			margin-right: 10px
+// 		.formline__right
+// 			width: auto
+// .cab__buttons_userinfo
+// 	margin-bottom: 40px
+
+.cab__warning
+	text-align: right
+	margin-bottom: 20px
+	font-size: 12px
+	color: #666
+	span
 		color: #cc3333
-	.userinfo__form
-		margin-top: 17px
-	.userinfo__title
-		background: #dde6ee
-		display: block
-		margin-bottom: 23px
-		height: 30px
-		line-height: 30px
-		padding: 0 10px
-		font-weight: 600
-		text-transform: uppercase
-		color: #333
-		font-size: 14px
-	.userinfo__title-2
-		font-size: 14px
-		color: #333
-		font-weight: 600
-		text-transform: uppercase
-		padding: 5px 632px 15px 40px
-		text-align: right
-		margin-bottom: 16px
-		border-bottom: 1px solid #dfe8ef
-	.formline
-		@extend %clr
-		margin-bottom: 15px
-		.userinfo__label
-			float: left
-			text-align: right
-			font-size: 14px
-			color: #25426c
-			font-weight: 600
-			width: 288px
-			margin-right: 20px
-			margin-top: 0
-		.formline__right
-			display: table
-		.radio
-			display: block
-			cursor: pointer
-			margin-bottom: 9px
-			font-size: 14px
-		.userinfo__infotext
-			color: #666
-			font-size: 11px
-			width: 265px
-			line-height: 1.4
-		.userinfo__input
-			padding: 0 4px
-			height: 25px
-			line-height: 25px
-			border: 1px solid #b3b3b3
-			margin-right: 10px
-			border-radius: 3px
-			display: block
-			margin-bottom: 5px
-			width: 277px
-			display: inline-block
-			margin-bottom: 0
-			vertical-align: middle
-		.userinfo__select
-			border-radius: 3px
-			border: 1px solid #b3b3b3
-			padding: 4px 4px
-			width: 287px
-			height: 27px
-			display: inline-block
-			margin-bottom: 0
-			vertical-align: middle
-			margin-right: 10px
-			//-webkit-appearance: none
-		.userinfo__input_alt
-			display: inline-block
-			vertical-align: top
-		.userinfo__input_code
-			width: 65px
-		.userinfo__citycode
-			width: 28px
-		.userinfo__phone
-			width: 66px
-		.userinfo__index
-			width: 40px
-		.userinfo__housenumber
-			width: 25px
-		.userinfo__building
-			width: 18px
-		.userinfo__apartment
-			width: 25px
-		.userinfo__captcha
-			width: 57px
-		.userinfo__captcha-image
-			position: relative
-			margin-bottom: 8px
-			i
-				+s($icons, ico_captcha_reload)
-				cursor: pointer
-				position: absolute
-				right: -38px
-				top: 6px
-		.userinfo__select__birthday
-			width: 50px
-		.userinfo__select__birthmonth
-			width: 106px
-		.userinfo__select__birthyear
-			width: 65px
-		.userinfo__select__region
-			width: 169px
-		.userinfo__select_gender
-			width: 107px
+.label__title_mod
+	line-height: 1
+.label__field
+	overflow: hidden
+	.label__title
+		width: auto
+.radio
+	display: block
+	margin-bottom: 5px
+	font-size: 14px
 
+.h2_form
+	height: 30px
+	margin: 43px 0 23px
+	padding: 0 630px 10px 0
+	line-height: 30px
+	border-bottom: 1px solid #dfe8ef
+	text-align: right
 
-	.formline__error
-		position: relative
-		.userinfo__input
-			border: 1px solid #ff9999
-		.formline__help
-			margin-top: 2px
-			color: #cc3333
-			font-size: 12px
-			display: inline-block
-			margin-bottom: 0
-			vertical-align: middle
-			strong
-				font-weight: bold
-				font-size: 14px
-				margin-right: 2px
-	.formline_inline
-		display: inline-block
-		.userinfo__label
-			text-align: left
-			width: auto
-			margin-right: 10px
-		.formline__right
-			width: auto
-.cab__buttons_userinfo
-	margin-bottom: 40px
+.cab__buttons_form
+	margin-bottom: 50px
+
+.input_mini
+	width: 27px
+.input_small
+	width: 68px
+.input_medium
+	width: 104px

@@ -261,22 +261,6 @@ $(".low-list__more").click(function(){
   }
 });
 
-<<<<<<< HEAD
-=======
-$(".js-message-cont").hide();
-$(".js-roll-message").click(function(){
-  if ($(this).hasClass("is-active")) {
-    $(this).parent().children(".js-message-cont").slideUp("fast");
-    $(this).removeClass("is-active");
-    $(this).children("span").text("Розгорнути");
-  }
-  else {
-    $(this).parent().children(".js-message-cont").slideDown("fast");
-    $(this).addClass("is-active");
-    $(this).children("span").text("Згорнути");
-  }
-});
->>>>>>> c55695ffc7422b1c44b7111512c43d9039d7e118
 
 // popup for poll results
 

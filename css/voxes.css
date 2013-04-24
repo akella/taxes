@@ -10,11 +10,7 @@
 
 .voxes__item { padding-left: 30px; margin-bottom: 30px; }
 .voxes__item .voxes__link { position: relative; display: block; font: 14px "Open Sans", Sans-serif; }
-<<<<<<< HEAD
 .voxes__item .voxes__link i { position: absolute; left: -29px; top: 5px; display: block; width: 21px; height: 20px; background: url('../img/icons-s120619a88e.png') 0 -1079px no-repeat; width: 21px; height: 20px; }
-=======
-.voxes__item .voxes__link i { position: absolute; left: -29px; top: 5px; display: block; width: 21px; height: 20px; background: url('../img/icons-s28898e965c.png') 0 -1113px no-repeat; width: 21px; height: 20px; }
->>>>>>> c55695ffc7422b1c44b7111512c43d9039d7e118
 
 .voxes__date { padding-top: 5px; color: #999999; }
 
@@ -30,15 +26,9 @@
 
 .progress { position: relative; box-sizing: border-box; width: 586px; margin: 18px 46px; border: 1px solid #cfd9e3; background-color: #ebf0f5; font-size: 14px; }
 .progress .progress__triangle { position: absolute; top: -14px; left: 178px; }
-<<<<<<< HEAD
 .progress .progress__triangle i { display: block; background: url('../img/icons-s120619a88e.png') 0 -1224px no-repeat; width: 27px; height: 14px; }
 .progress .progress__close { position: absolute; display: block; top: 11px; right: 11px; }
 .progress .progress__close i { display: block; background: url('../img/icons-s120619a88e.png') 0 -1360px no-repeat; width: 13px; height: 13px; }
-=======
-.progress .progress__triangle i { display: block; background: url('../img/icons-s28898e965c.png') 0 -1258px no-repeat; width: 27px; height: 14px; }
-.progress .progress__close { position: absolute; display: block; top: 11px; right: 11px; }
-.progress .progress__close i { display: block; background: url('../img/icons-s28898e965c.png') 0 -1394px no-repeat; width: 13px; height: 13px; }
->>>>>>> c55695ffc7422b1c44b7111512c43d9039d7e118
 .progress .progress__answer { padding: 22px 17px 10px; }
 .progress .progress__answer li { margin-bottom: 9px; }
 .progress .progress__answer .progress__counter { float: left; margin-top: 6px; font-size: 12px; color: #666666; }
@@ -52,8 +42,4 @@
 .lows .bottom .pagination { float: none; margin: 18px 0 0 14px; }
 .lows li { padding: 5px 0px 15px; margin-bottom: 15px; border-bottom: 1px solid #dfe8ef; }
 .lows li .low__link { display: inline-block; line-height: 1.4; font-size: 14px; }
-<<<<<<< HEAD
 .lows li .low__link i { display: inline-block; margin-left: 10px; background: url('../img/icons-s120619a88e.png') 0 -1973px no-repeat; width: 7px; height: 7px; }
-=======
-.lows li .low__link i { display: inline-block; margin-left: 10px; background: url('../img/icons-s28898e965c.png') 0 -1966px no-repeat; width: 7px; height: 7px; }
->>>>>>> c55695ffc7422b1c44b7111512c43d9039d7e118
