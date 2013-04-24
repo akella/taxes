@@ -62,6 +62,7 @@
         font-weight: 600 
         text-align: left
         border-bottom: 2px solid #dde6ee 
+        white-space: nowrap 
     td
         padding: 9px 
         border-bottom: 1px solid #dee7ef 
@@ -100,6 +101,37 @@
         padding: 0
     a
         padding: 9px 
+.table_sort
+    th
+        min-width: 100px 
+        &:hover
+            background: #dee7ee 
+            cursor: pointer
+            .table__sort-arrows
+                +opacity(1)
+    tr
+        &:last-child
+            td
+                border-bottom-width: 2px
+.btn-del
+    position: relative
+    width: 17px
+    height: 17px
+    background: #fff
+    border: 1px solid #cecece
+    border-radius: 50%
+    &:hover
+        border-color: #709fcf
+    i
+        position: absolute
+        top: 4px
+        left: 4px
+        +s($icons, delete-bullshit)
+.table__sort-arrows
+    float: right
+    margin-top: 2px 
+    +opacity(.5)
+    +s($icons, sort) 
 .chosen-quest
     clear: both
     margin-bottom: 36px
@@ -143,7 +175,7 @@
 .chosen-quest__tab-item
     display: none
     padding: 15px 0 0 10px
-.business-partner
+.business-partner 
     font-size: 14px
     line-height: 1.4
     p
@@ -157,3 +189,5 @@
     button
         margin-left: 6px
         +s($icons, captcha-reload)      
+.tabs_table
+    background: #96b8d5  

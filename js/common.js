@@ -293,6 +293,10 @@ $(".progress__close").click( function(){
 });
 
 
+$(".js-table-sort").tablesorter({
+    cssHeader: ""
+}); 
+
 });
 
 
