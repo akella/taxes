@@ -273,10 +273,7 @@ $(".low-list__more").click(function(){
   }
 });
 
-<<<<<<< HEAD
-=======
 //messgae container
->>>>>>> b2140ddf759a09ec776cab0fdfb163323d4e76ce
 $(".js-message-cont").hide();
 $(".js-roll-message").click(function(){
   if ($(this).hasClass("is-active")) {
