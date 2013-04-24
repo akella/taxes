@@ -224,17 +224,17 @@ $('.js-accord .accord__item').click(function() {
 $(".low-list__roll").hide();
 $(".js-low-accord").children("li").children("a").click(function(){
   if ($(this).hasClass("is-active")) {
-    $(this).next().slideUp("fast");
+    $(this).next().hide();
     $(this).next().next().hide();
     $(this).removeClass("is-active");
     $(this).children("i").text("+");
   }
   else {
-    $(".low-list__cont").slideUp("fast");
+    $(".low-list__cont").hide();
     $(".low-list__roll").hide();
     $(".low-list").children("li").children("a").removeClass("is-active");
     $(".low-list").children("li").children("a").children("i").text("+");
-    $(this).next().slideDown("fast");
+    $(this).next().show();
     $(this).next().next().show();
     $(this).addClass("is-active");
     $(this).children("i").text("-");
@@ -243,26 +243,24 @@ $(".js-low-accord").children("li").children("a").click(function(){
 });
 $(".low-list").children("li").children(".low-list__roll").click(function(){
   $(this).hide();
-  $(".low-list__cont").slideUp("fast");
+  $(".low-list__cont").hide();
   $(this).prev().prev().removeClass("is-active");
   $(this).prev().prev().children("i").text("+");
   return false;
 });
 $(".low-list__more").click(function(){
   if ($(this).hasClass("js-active")) {
-    $(this).next().slideUp("fast");
+    $(this).next().hide();
     $(this).removeClass("js-active");
     $(this).children("i").text("+");
   }
   else {
-    $(this).next().slideDown("fast");
+    $(this).next().show();
     $(this).addClass("js-active");
     $(this).children("i").text("-");
   }
 });
 
-<<<<<<< HEAD
-=======
 $(".js-message-cont").hide();
 $(".js-roll-message").click(function(){
   if ($(this).hasClass("is-active")) {
@@ -276,7 +274,6 @@ $(".js-roll-message").click(function(){
     $(this).children("span").text("Згорнути");
   }
 });
->>>>>>> c55695ffc7422b1c44b7111512c43d9039d7e118
 
 // popup for poll results
 

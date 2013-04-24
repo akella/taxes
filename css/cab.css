@@ -20,11 +20,7 @@
 .password__form .form .formline input { padding: 0 4px; }
 .password__form .form .formline .formline__right { display: table; }
 .password__form .form .formline .cab__captcha { position: relative; margin-bottom: 8px; }
-<<<<<<< HEAD
-.password__form .form .formline .cab__captcha i { background: url('../img/icons-s120619a88e.png') 0 -1033px no-repeat; width: 29px; height: 36px; cursor: pointer; position: absolute; right: -38px; top: 6px; }
-=======
-.password__form .form .formline .cab__captcha i { background: url('../img/icons-s28898e965c.png') 0 -1067px no-repeat; width: 29px; height: 36px; cursor: pointer; position: absolute; right: -38px; top: 6px; }
->>>>>>> c55695ffc7422b1c44b7111512c43d9039d7e118
+.password__form .form .formline .cab__captcha i { background: url('../img/icons-sa492a83af1.png') 0 -1163px no-repeat; width: 29px; height: 36px; cursor: pointer; position: absolute; right: -38px; top: 6px; }
 .password__form .form .formline .formline__captcha { width: 57px; }
 
 .password__form .formline { margin-bottom: 10px; }
@@ -65,11 +61,7 @@
 .userinfo .formline .userinfo__apartment { width: 25px; }
 .userinfo .formline .userinfo__captcha { width: 57px; }
 .userinfo .formline .userinfo__captcha-image { position: relative; margin-bottom: 8px; }
-<<<<<<< HEAD
-.userinfo .formline .userinfo__captcha-image i { background: url('../img/icons-s120619a88e.png') 0 -1033px no-repeat; width: 29px; height: 36px; cursor: pointer; position: absolute; right: -38px; top: 6px; }
-=======
-.userinfo .formline .userinfo__captcha-image i { background: url('../img/icons-s28898e965c.png') 0 -1067px no-repeat; width: 29px; height: 36px; cursor: pointer; position: absolute; right: -38px; top: 6px; }
->>>>>>> c55695ffc7422b1c44b7111512c43d9039d7e118
+.userinfo .formline .userinfo__captcha-image i { background: url('../img/icons-sa492a83af1.png') 0 -1163px no-repeat; width: 29px; height: 36px; cursor: pointer; position: absolute; right: -38px; top: 6px; }
 .userinfo .formline .userinfo__select__birthday { width: 50px; }
 .userinfo .formline .userinfo__select__birthmonth { width: 106px; }
 .userinfo .formline .userinfo__select__birthyear { width: 65px; }
