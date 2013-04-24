@@ -313,6 +313,15 @@ if ($(".js-table-sort").length > 0) {
   }); 
 };
 
+//auth
+$('.js-auth').click( function(){
+  $('.auth').slideDown();
+  return false;
+});
+$('.js-auth-close').click( function(){
+  $('.auth').slideUp();
+  return false;
+});
 
 });
 
