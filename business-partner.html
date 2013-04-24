@@ -114,45 +114,50 @@
 			<!-- END .title -->
 			<!-- BEGIN .search-form -->
 			<form>
-				<div class="search-form">
+				<div class="search-form search-form_with-bg">
 					<label class="label">
-						<div class="label__title">Пошук за фразою:</div>
-						<input class="input-text" type="text">
+						<div class="label__title label__title_mod">Пошук:</div>
+						<div class="label__field">
+							<label class="radio radio_inline">
+								<input type="radio" name="optionsRadios" value="option1" checked="">
+								Юридична особа
+							</label>
+							<label class="radio radio_inline">
+								<input type="radio" name="optionsRadios" value="option2" checked="">
+								Фізична особа
+							</label>
+						</div>
 					</label>
 					<label class="label">
-						<div class="label__title">Категорія:</div>
-						<select class="select select_width">
-							<option>Всі</option>
-							<option>....</option>
-						</select>
+						<div class="label__title">Код ЄДРПОУ:</div>
+						<input class="input-text input_small" type="text">
+						<div class="label__info">
+							податковий номер, який надають органи ДПС
+						</div>
+					</label>
+					<label class="label">
+						<div class="label__title">Найменування:</div>
+						<input class="input-text" type="text">
+						<div class="label__info">
+							Потрібно вводити повну назву контрагента
+						</div>
 					</label>
 					<label class="label">
 						<div class="label__title">Підкатегорія:</div>
-						<select class="select select_width">
-							<option>....</option>
-							<option>....</option>
-						</select>
+						<div class="label__captcha">
+							<img src="img/captcha.jpg" alt="Введите цыфры">
+							<button></button>
+						</div>
 					</label>
 					<label class="label">
-						<div class="label__title">Шукати серед:</div>
-						<select class="select">
-							<option>Питань та відповідей</option>
-							<option>....</option>
-						</select>
-					</label>
-					<label class="label">
-						<div class="label__title">Статус:</div>
-						<select class="select">
-							<option>Чинний</option>
-							<option>....</option>
-						</select>
+						<div class="label__title"></div>
+						<input class="input-text input_small" type="text">
 					</label>
 					<label class="label">
 						<div class="label__title"></div>
 						<button class="btn btn_small">Пошук</button>
 						<button class="btn btn_gray btn_small">Очистити</button>
 					</label>
-					
 				</div>
 			</form>
 			<!-- END .search-form -->
