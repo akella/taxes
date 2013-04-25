@@ -224,11 +224,14 @@ if ($('.js-accord').length > 0) {
 
 //accordeon navigation
 $('.js-accord-nav h3').click( function(){
-  if (!$(this).hasClass('active')) {
-    $('.js-accord-nav h3').removeClass('active');
-    $(this).addClass('active');
-    $('.js-accord-nav ul').slideUp();
-    $(this).next().slideDown();
+  var accord = $(this).find('span');
+  if (accord.length > 0) {
+    if (!$(this).hasClass('active')) {
+      $('.js-accord-nav h3').removeClass('active');
+      $(this).addClass('active');
+      $('.js-accord-nav ul').slideUp();
+      $(this).next().slideDown();
+    };
   };
 });
 
