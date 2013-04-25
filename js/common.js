@@ -131,7 +131,7 @@ if ($('.js-gallery').length > 0) {
     if (!$(this).hasClass('active')) {
       var pic = $(this).attr('data-item');
       var text = $(this).find('p').text();
-      $('.js-gallery li').removeClass('active');
+      $(this).parent().children('li').removeClass('active');
       $(this).parent().prev().find('img').attr('src', pic);
       $(this).parent().prev().find('p').text(text);
       $(this).addClass('active');
@@ -145,12 +145,12 @@ if ($('.js-gallery').length > 0) {
     $(this).parent().prev().find('p').text(text); 
   };
   function gallery_sl() {     
-    $('.js-gallery li.active').each(function() {        
-      if ($('.js-gallery li').last().hasClass('active')) {
+    $('.js-gallery-move li.active').each(function() {        
+      if ($('.js-gallery-move li').last().hasClass('active')) {
         $(this).removeClass('active');
-        $('.js-gallery li').first().addClass('active');
-        var pic = $('.js-gallery li').first().attr('data-item');
-        var text = $('.js-gallery li').first().find('p').text();
+        $('.js-gallery-move li').first().addClass('active');
+        var pic = $('.js-gallery-move li').first().attr('data-item');
+        var text = $('.js-gallery-move li').first().find('p').text();
         $(this).parent().prev().find('img').attr('src', pic);
         $(this).parent().prev().find('p').text(text); 
       }
