@@ -403,7 +403,6 @@ table
 		right: 0
 		width: 40px
 		height: 21px
-		background-color: #21659c 
 		+background-image(linear-gradient(left, rgba(34,90,142,0) 0%, #21659c 75%))
 .tape__move
 	position: relative
@@ -750,7 +749,46 @@ table
 .auth__info
 	padding: 10px 0
 	line-height: 1.2
-
+//popup
+//popup votes
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background: rgba(37,66,108,.75)
+	z-index: 1000
+	display: none
+.popup
+	display: none
+	position: fixed
+	width: 483px
+	left: 50%
+	top: 250px
+	padding: 10px 0 25px
+	margin-top: -120px
+	margin-left: -242px
+	background: #fff
+	box-shadow: 0 0 29px rgba(0,0,0,.41)
+	z-index: 1001
+	border-radius: 1px
+	border: 1px solid #cdd7e1
+	&.show
+		display: block
+	.title
+		padding-left: 15px
+		color: #000
+		margin-bottom: 0
+.popup_btn
+	text-align: center
+.popup__question
+	font-size: 14px
+	color: #000
+	background: #f3f6f9
+	padding: 18px
+	line-height: 1.4
 
 	
 		

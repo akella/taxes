@@ -1,0 +1,756 @@
+<!doctype html>
+<!--[if IE 7]><html lang="ru-RU" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+	<script src="js/jquery.cycle.all.js"></script>	
+	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>	
+	<script src="js/liteaccordion.jquery.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>	
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<!-- BEGIN .hedaer -->
+	<header class="header">
+		<div class="languages">
+			<a class="active" href="#">Укр</a>
+			<a href="#">Рус</a>
+			<a href="#">Eng</a>
+		</div>
+		<a class="logo" href="#">Міністерство доходів і зборів України</a>
+		<div class="flag"><i></i></div>
+		<div class="header__top">
+			<div class="header__title">
+				<h1>Міністерство доходів і зборів України</h1>
+				<span>Офіційний портал</span>
+			</div>		
+			<div class="header__links">
+				<a href="#">До головного порталу</a>
+				<a class="js-auth" href="#">Реєстрація</a>
+			</div>
+		</div>		
+		<div class="header__bottom">
+			<form class="header__search" action="">
+				<input type="text" placeholder="Пошук по сайту">
+				<button type="submit"></button>
+			</form>
+			<div class="social">
+				<a class="social__fb" href="#"></a>
+				<a class="social__vk" href="#"></a>
+				<a class="social__tw" href="#"></a>
+			</div>
+			<nav class="header__nav">
+				<ul>
+					<li><a href="#">Приймальня громадян</a></li>
+					<li><a href="#">Форум</a></li>
+					<li><a href="#">Контакти</a></li>
+				</ul>
+			</nav>
+		</div>	
+		<form class="auth" action="">
+			<button class="auth__close js-auth-close"></button>
+			<div class="auth__title">Авторизація</div>
+			<div class="auth__field">
+				<span>Email:</span>
+				<input type="text" value="petrivsky.leonid.@gmail.com">
+			</div>
+			<div class="auth__field auth__field_mod">
+				<span>Пароль:</span>
+				<input type="password" value="********">
+				<button type="submit">Увійти</button>
+			</div>
+			<div class="auth__pass-restore">
+				<a href="#">Відновити пароль</a>
+			</div>
+			<div class="auth__info">
+				<p>Якщо Ви бажаєте отримувати новини на email і т.д. - <a href="#">Зареєструйтеся</a></p>
+			</div>
+		</form>	
+	</header>
+	<!-- END .hedaer -->
+	<!-- BEGIN .navigation -->
+	<nav class="nav">
+		<ul>
+			<li>
+				<a href="#">Міністерство</a>
+				<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+					<li><a href="#">Міжнародні новини</a></li>
+					<li><a href="#">Контакти</a></li>
+					<li><a href="#">До відома ЗМІ</a></li>
+					<li><a href="#">Реагування на критику</a></li>
+					<li><a href="#">Журнал "Вісник податкової служби"</a></li>
+					<li><a href="#">Фотогалерея</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Діяльність</a>
+				<ul>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">Регіональні новини</a></li>
+					<li><a href="#">Міжнародні новини</a></li>
+					<li><a href="#">Контакти</a></li>
+					<li><a href="#">До відома ЗМІ</a></li>
+					<li><a href="#">Реагування на критику</a></li>
+					<li><a href="#">Журнал "Вісник податкової служби"</a></li>
+					<li><a href="#">Фотогалерея</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Податки, збори, платежі </a></li>
+			<li><a href="#">Електронні форми документів </a></li>
+			<li><a href="#">Медіа-центр</a></li>                
+		</ul>
+	</nav>
+	<!-- END .navigation -->
+	<!-- BEGIN .tape -->
+	<div class="tape">
+		<div class="tape__title"><i></i>Увага!</div>
+		<div class="tape__control">
+			<button class="tape__play"></button>
+			<button class="tape__pause"></button>
+		</div>
+		<div class="tape__info">
+			<div id="marquee_container" class="tape__move">
+				<p id="marquee_text">Указом Президента України від утворено Міністерство доходів і зборів України, реорганізувавши Державну митну службу України та Державну податкову службу України, поклавши на Міністерство функцію з адміністрування єдиного внеску на загал  ::  З 1 січня 2013 року вводиться новий податок на нерухоме майно, відмінне від земельної ділянки (див. розділ "Податки та збори")  ::  У випадку проявів протиправних та корупційних дій - новий сервіс від Державної податкової служби "Пульс податкової" (044) 284-00-07</p>
+			</div>			
+		</div>
+	</div>
+	<!-- END .tape -->
+	<!-- BEGIN .types -->
+	<div class="types">
+		<a class="types__item-1" href="#">Фізичним особам<i></i></a>
+		<a class="types__item-2" href="#">Юридичним особам<i></i></a>
+		<a class="types__item-3" href="#">Самозайнятим особам<i></i></a>
+		<a class="types__item-4" href="#">Великим платникам<i></i></a>
+	</div>
+	<!-- END .types -->
+	<!-- BEGIN .cols -->
+	<section class="cols">
+		<div class="cols__460">
+			<!-- BEGIN .main-block -->
+			<div class="main-block">
+				<div class="tabs">
+					<ul class="tabs__list js-tab">
+						<li class="active" data-item="main-block__tab-1">Головні події</li>
+						<li data-item="main-block__tab-2">Фото</li>
+						<li data-item="main-block__tab-3">Відео</li>
+					</ul>
+				</div>
+				<div id="main-block__tab-1" class="main-block__content js-tab-item" style="display: block">
+					<div class="gallery">
+						<div class="gallery__pic">
+							<a href="#">
+								<img src="img/pic1.jpg" alt="">
+								<p>Міндоходів: Виключення акцизних марок з бланків суворої звітності призведе до зростання фальсифікату</p>
+							</a>
+						</div>
+						<ul class="gallery__navi js-gallery js-gallery-move">
+							<li data-item="img/pic9.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Міндоходів: Виключення акцизних марок з бланків суворої звітності призведе до зростання фальсифікату</p>
+							</li>
+							<li data-item="img/pic1.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Тут буде заголовок</p>
+							</li>
+							<li data-item="img/pic9.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Тут також буде заголовок</p>
+							</li>
+							<li data-item="img/pic1.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>І тут буде заголовок</p>
+							</li>
+							<li data-item="img/pic9.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Ну і тут також буде заголовок</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="main-block__tab-2" class="main-block__content js-tab-item">
+					<div class="gallery">
+						<div class="gallery__pic">
+							<a href="#">
+								<img src="img/pic1.jpg" alt="">
+								<p>Міндоходів: Виключення акцизних марок з бланків суворої звітності призведе до зростання фальсифікату</p>
+							</a>
+						</div>
+						<ul class="gallery__navi js-gallery">
+							<li class="active" data-item="img/pic9.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Міндоходів: Виключення акцизних марок з бланків суворої звітності призведе до зростання фальсифікату</p>
+							</li>
+							<li data-item="img/pic1.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Тут буде заголовок</p>
+							</li>
+							<li data-item="img/pic9.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Тут також буде заголовок</p>
+							</li>
+							<li data-item="img/pic1.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>І тут буде заголовок</p>
+							</li>
+							<li data-item="img/pic9.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Ну і тут також буде заголовок</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="main-block__tab-3" class="main-block__content js-tab-item">
+					<div class="gallery">
+						<div class="gallery__pic">
+							<a href="#">
+								<img src="img/pic1.jpg" alt="">
+								<p>Міндоходів: Виключення акцизних марок з бланків суворої звітності призведе до зростання фальсифікату</p>
+							</a>
+						</div>
+						<ul class="gallery__navi js-gallery">
+							<li class="active" data-item="img/pic9.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Міндоходів: Виключення акцизних марок з бланків суворої звітності призведе до зростання фальсифікату</p>
+							</li>
+							<li data-item="img/pic1.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Тут буде заголовок</p>
+							</li>
+							<li data-item="img/pic9.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Тут також буде заголовок</p>
+							</li>
+							<li data-item="img/pic1.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>І тут буде заголовок</p>
+							</li>
+							<li data-item="img/pic9.jpg">
+								<img src="img/pic2.jpg" alt=""><i></i>
+								<p>Ну і тут також буде заголовок</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- END .main-block -->
+		</div>
+		<div class="cols__240">
+			<!-- BEGIN .main-news -->
+			<div class="main-news">
+				<div class="tabs">
+					<ul class="tabs__list js-tab">
+						<li class="active" data-item="main-news__tab-1">Новини</li>
+						<li data-item="main-news__tab-2">Регіональні</li>
+						<li data-item="main-news__tab-3">Міжнародні</li>     
+					</ul>				
+				</div>
+				<div id="main-news__tab-1" class="main-news__content js-tab-item" style="display: block">
+					<ul>
+						<li>
+							<span>10.09.2013</span>
+							<a href="#">Київські митники передали до музейного фонду держави 248 старовинних</a>
+						</li>
+						<li>
+							<span>10.09.2013<i class="ico-photo"></i></span>
+							<a href="#">До уваги суб’єктів зовнішньо- економічної діяльності! З 6.02.2013 року</a>
+						</li>
+						<li>
+							<span>10.09.2013</span>
+							<a href="#">Міндоходів: Виключення акцизних марок з бланків суворої звітності призведе</a>
+						</li>
+						<li>
+							<span>10.09.2013<i class="ico-video"></i></span>
+							<a href="#">Для ведення незалежної професійної діяльності потрібно зареєструватися!</a>
+						</li>
+						<li>
+							<span>10.09.2013</span>
+							<a href="#">Металургійні підприємства – безсумнівні лідери</a>
+						</li>
+					</ul>
+					<a class="more" href="#">всі новини</a>
+				</div>
+				<div id="main-news__tab-2" class="main-news__content js-tab-item">
+					<ul>
+						<li>
+							<span>10.09.2013</span>
+							<a href="#">Київські митники передали до музейного фонду держави 248 старовинних</a>
+						</li>
+						<li>
+							<span>10.09.2013<i class="ico-photo"></i></span>
+							<a href="#">До уваги суб’єктів зовнішньо- економічної діяльності! З 6.02.2013 року</a>
+						</li>
+					</ul>
+					<a class="more" href="#">всі новини</a>
+				</div>
+				<div id="main-news__tab-3" class="main-news__content js-tab-item">
+					<ul>
+						<li>
+							<span>10.09.2013</span>
+							<a href="#">Київські митники передали до музейного фонду держави 248 старовинних</a>
+						</li>
+						<li>
+							<span>10.09.2013<i class="ico-photo"></i></span>
+							<a href="#">До уваги суб’єктів зовнішньо- економічної діяльності! З 6.02.2013 року</a>
+						</li>
+						<li>
+							<span>10.09.2013</span>
+							<a href="#">Міндоходів: Виключення акцизних марок з бланків суворої звітності призведе</a>
+						</li>
+					</ul>
+					<a class="more" href="#">всі новини</a>
+				</div>
+			</div>
+			<!-- END .main-news -->
+		</div>		
+		<div class="cols__220 cols__220_mod">
+			<!-- BEGIN .announcements -->
+			<div class="announcements announcements_slider">
+				<div class="tabs">
+					<ul class="tabs__list">
+						<li class="tabs__title"><span>!</span>Анонси</li>
+					</ul>
+					<div class="tabs__navi js-sl-navi"></div>
+				</div>
+				<ul class="announcements__content js-sl">
+					<li>
+						<span>08.09.2013</span>
+						<a href="#">Міндоходів: Виключення акцизних марок з бланків суворої звітності призведе...</a>
+						<a class="more" href="#">детальніше</a>
+					</li>		
+					<li>
+						<span>11.09.2013</span>
+						<a href="#">Для ведення незалежної професійної діяльності потрібно зареєструватися!</a>
+						<a class="more" href="#">детальніше</a>
+					</li>				
+					<li>
+						<span>12.09.2013</span>
+						<a href="#">До уваги суб’єктів зовнішньо- економічної діяльності! З 6.02.2013 року</a>
+						<a class="more" href="#">детальніше</a>
+					</li>	
+				</ul>
+			</div>
+			<!-- END .announcements -->
+			<a class="banner-customs banner-customs_mod" href="#">
+				<span>Митне</span>
+				<strong>оформлення</strong>
+				<i></i>
+			</a>
+			<!-- BEGIN .videoscenes -->
+			<div class="videoscenes videoscenes_mod">
+				<div class="tabs tabs_slider">
+					<ul class="tabs__list">
+						<li class="tabs__title">Відеосюжети</li>
+					</ul>
+					<div class="tabs__navi js-sl-navi"></div>
+				</div>
+				<ul class="videoscenes__slider js-sl">
+					<li>
+						<a href="#">
+							<img src="img/pic3.jpg" width="200" height="154" alt="">
+							<p>Міндоходів: Виключення акцизних марок з бланків суворої звітності призведе</p>
+							<i class="ico-play"></i>
+						</a>						
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/pic8.jpg" width="200" height="154" alt="">
+							<p>До уваги суб’єктів зовнішньо- економічної діяльності! З 6.02.2013 року</p>
+							<i class="ico-play"></i>
+						</a>						
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/pic3.jpg" width="200" height="154" alt="">
+							<p>Для ведення незалежної професійної діяльності потрібно зареєструватися!</p>
+							<i class="ico-play"></i>
+						</a>						
+					</li>
+				</ul>
+			</div>
+			<!-- END .videoscenes -->
+		</div>		
+	</section>
+	<!-- END .cols -->
+	<!-- BEGIN .cols -->
+	<div class="cols">
+		<!-- BEGIN .services -->
+		<div class="services">
+			<button class="services__prev js-scl-prev"><i></i></button>
+			<button class="services__next js-scl-next"><i></i></button>
+			<div class="services__list js-scl">
+				<ul class="js-scl-items">
+					<li>
+						<a href="#">
+							<span><img src="img/icons/s1.png" alt=""></span>
+							<strong>Реєстр платників ПДВ</strong>
+						</a>				
+					</li>
+					<li>
+						<a href="#">
+							<span><img src="img/icons/s2.png" alt=""></span>
+							<strong>Пульс</strong>
+						</a>				
+					</li>
+					<li>
+						<a href="#">
+							<span><img src="img/icons/s3.png" alt=""></span>
+							<strong>Акредитований центр сертифікації ключів </strong>
+						</a>				
+					</li>
+					<li>
+						<a href="#">
+							<span><img src="img/icons/s4.png" alt=""></span>
+							<strong>Адреси масової реєстрації</strong>
+						</a>				
+					</li>
+					<li>
+						<a href="#">
+							<span><img src="img/icons/s5.png" alt=""></span>
+							<strong>Оnline-декларування</strong>
+						</a>				
+					</li>
+					<li>
+						<a href="#">
+							<span><img src="img/icons/s6.png" alt=""></span>
+							<strong>Єдина база знань</strong>
+						</a>				
+					</li>
+					<li>
+						<a href="#">
+							<span><img src="img/icons/s7.png" alt=""></span>
+							<strong>Перевірка платника єдиного податку </strong>
+						</a>				
+					</li>
+					<li>
+						<a href="#">
+							<span><img src="img/icons/s1.png" alt=""></span>
+							<strong>Реєстр платників ПДВ</strong>
+						</a>				
+					</li>
+					<li>
+						<a href="#">
+							<span><img src="img/icons/s2.png" alt=""></span>
+							<strong>Пульс</strong>
+						</a>				
+					</li>
+					<li>
+						<a href="#">
+							<span><img src="img/icons/s3.png" alt=""></span>
+							<strong>Акредитований центр сертифікації ключів </strong>
+						</a>				
+					</li>
+				</ul>
+			</div>		
+		</div>
+		<!-- END .services -->
+	</div>
+	<!-- END .cols -->
+	<!-- BEGIN .cols -->
+	<div class="cols">
+		<div class="cols__220">
+			<!-- BEGIN .datepicker -->
+			<div class="datepicker js-dp"></div>
+			<!-- END .datepicker -->
+			<a class="banner-legistation" href="">
+				<span>ЗАКОНОДАВСТВО</span>
+				<ul>
+					<li class="ico-book-1">податкове</li>
+					<li class="ico-book-2">митне</li>
+					<li class="ico-book-3">ЄСВ</li>
+				</ul>
+			</a>
+		</div>
+		<div class="cols__480">
+			<div class="accord js-accord">
+				<ol>
+					<li class="accord__slide">
+						<h2><span>Брошури та листівки</span></h2>
+						<div class="accord__content">
+							<ul>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати консолідованого податку на прибуток та форми...<a href="#">детальніше</a></p>
+								</li>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати...<a href="#">детальніше</a></p>
+								</li>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати консолідованого...<a href="#">детальніше</a></p>
+								</li>
+							</ul>
+							<a class="more" href="#">архів документів</a>
+						</div>
+					</li>
+					<li class="accord__slide">
+						<h2><span>Заходи для платників</span></h2>
+						<div class="accord__content">
+							<ul>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати консолідованого податку на прибуток та форми...<a href="#">детальніше</a></p>
+								</li>
+							</ul>
+							<a class="more" href="#">архів документів</a>
+						</div>
+					</li>
+					<li class="accord__slide">
+						<h2><span>Повідомлення та нагадування</span></h2>
+						<div class="accord__content">
+							<ul>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати консолідованого податку на прибуток та форми...<a href="#">детальніше</a></p>
+								</li>
+							</ul>
+							<a class="more" href="#">архів документів</a>
+						</div>
+					</li>
+					<li class="accord__slide">
+						<h2><span>Офіційні документи</span></h2>
+						<div class="accord__content">
+							<ul>
+								<li>
+									<span><a href="#">Податки та збори</a>06.09.2013</span>
+									<p>Про затвердження форми Розрахунку податкових зобов’язань щодо сплати консолідованого податку на прибуток та форми...<a href="#">детальніше</a></p>
+								</li>
+							</ul>
+							<a class="more" href="#">архів документів</a>
+						</div>
+					</li>
+				</ol>
+			</div>	
+			<!-- END .accord -->
+		</div>
+		<div class="cols__220 cols__220_mod">
+			<a class="banner-declaration" href="#">				
+				<span>Декларування</span>
+				<strong>доходів</strong>
+			</a>
+		</div>
+	</div>
+	<!-- END .cols -->
+	<!-- BEGIN .cols -->
+	<div class="cols">
+		<div class="cols__710">
+			<!-- BEGIN .services -->
+			<div class="services services_mod">
+				<div class="services__list">
+					<ul>
+						<li>
+							<a href="#">
+								<span><img src="img/icons/s8.png" alt=""></span>
+								<strong>Податковий кодекс</strong>
+							</a>				
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="img/icons/s9.png" alt=""></span>
+								<strong>Митний кодекс</strong>
+							</a>				
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="img/icons/s10.png" alt=""></span>
+								<strong>Рішення місцевих рад</strong>
+							</a>				
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="img/icons/s11.png" alt=""></span>
+								<strong>Реєстри</strong>
+							</a>				
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="img/icons/s12.png" alt=""></span>
+								<strong>Переліки</strong>
+							</a>				
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="img/icons/s13.png" alt=""></span>
+								<strong>Довідники</strong>
+							</a>				
+						</li>
+						<li>
+							<a href="#">
+								<span><img src="img/icons/s14.png" alt=""></span>
+								<strong>Бюджетні рахунки</strong>
+							</a>				
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- END .services -->
+		</div>
+		<div class="cols__220 cols__220_mod">
+			<a class="banner-business banner-business_mod" href="#">
+				<strong>Назустріч Бізнесу</strong>
+			</a>
+		</div>
+	</div>
+	<!-- END .cols -->
+	<!-- BEGIN .cols -->
+	<div class="cols">
+		<div class="cols__470">
+			<!-- BEGIN .main-map -->
+			<div class="main-map">
+				<div class="main-map__container">
+					
+				</div>
+				<div class="main-map__title">Територіальні органи</div>
+				<div class="main-map__select">
+					<p>Скористайтесь інтерактивною картою, або оберiть свій регіон зі списку</p>
+					<select name="" id="">
+						<option value="1">Автономна республіка Крим</option>
+						<option value="2">Інше місто</option>
+						<option value="3">Інше місто</option>
+						<option value="4">Інше місто</option>
+						<option value="5">Інше місто</option>
+						<option value="6">Інше місто</option>
+						<option value="7">Інше місто</option>						
+					</select>
+				</div>
+			</div>
+			<!-- END .main-map -->
+		</div>
+		<div class="cols__230">
+			<!-- BEGIN .new-info -->
+			<div class="new-info">
+				<div class="tabs">
+					<ul class="tabs__list js-tab">
+						<li class="active" data-item="new-info__tab-1"><span>!</span>Нове на сайті</li>
+						<li data-item="new-info__tab-2">Опитування</li>
+					</ul>
+				</div>
+				<div id="new-info__tab-1" class="new-info__content js-tab-item" style="display: block">
+					<ul>
+						<li>
+							<span>10.09.2013</span>
+							<a href="#">Київські митники передали до музейного фонду держави 248 старовинних</a>
+						</li>
+						<li>
+							<span>10.09.2013</span>
+							<a href="#">До уваги суб’єктів зовнішньо- економічної діяльності! З 6.02.2013 року</a>
+						</li>
+					</ul>
+					<a class="more" href="#">всі новини</a>
+				</div>
+				<div id="new-info__tab-2" class="new-info__content js-tab-item">
+					<p>Тут буде проходити опитування</p>
+				</div>
+			</div>
+			<!-- END .new-info -->
+		</div>
+		<div class="cols__220 cols__220_mod">
+			<a class="banner-items" href="#">
+				<strong>Митні пункти</strong>
+			</a>
+			<a class="banner-centres" href="#">
+				<strong>Центри обслуговування</strong>
+			</a>
+		</div>
+	</div>
+	<!-- END .cols -->
+	<!-- BEGIN .footer -->
+	<footer class="footer">
+		<!-- BEGIN .links-out -->
+		<div class="links-out">
+			<a href="#">
+				<i class="ico-fl1"></i>
+				<span>Президент України</span>
+			</a>
+			<a href="#">
+				<i class="ico-fl2"></i>
+				<span>Кабінет Міністрів України</span>
+			</a>
+			<a class="links-out__last" href="#">
+				<i class="ico-fl3"></i>
+				<span>Верховна рада України</span>
+			</a>
+		</div>
+		<!-- END .links-out -->
+		<!-- BEGIN .cols -->
+		<div class="cols">
+			<div class="cols__710">
+				<div class="footer__title footer__title_mod">Корисні посилання</div>
+			</div>
+			<div class="cols__220 cols__220_mod">
+				<div class="footer__title">Міністерство в соцмережах</div>
+				<div class="social">
+					<a class="social__fb" href="#"></a>
+					<a class="social__vk" href="#"></a>
+					<a class="social__tw" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<!-- END .cols -->
+		<div class="footer__bottom">
+			<div class="counter">
+				<img src="img/counter.png" alt="">
+			</div>
+			<div class="copyright">© 2013 Міністерство доходів і зборів України</div>
+			<nav class="footer__nav">
+				<ul>
+					<li><a href="#">RSS</a></li>
+					<li><a href="#">Застереження</a></li>
+					<li><a href="#">Адміністратор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<!-- END .footer -->
+</section>
+<!-- END .wrap -->
+<!-- BEGIN .popup -->
+<div class="overlay"  style="display:block;"></div>
+<div class="popup" style="display:block;">
+		<h2 class="title">Опитування</h2>
+		<p class="popup__question">Чи задоволені ви роботою електронного сервісу "Дізнайся більше про свого бізнес-партнера"?</p>
+		<button class="progress__close"></button>
+		<ul class="progress__answer">
+			<li>
+				<p>Так, сервіс корисний та зручний</p>
+				<span>3</span>
+				<div class="progress__line"><i style="width: 20%"></i></div>
+				<span>20%</span>
+			</li>
+			<li>
+				<p>Так, сервіс корисний та зручний</p>
+				<span>32</span>
+				<div class="progress__line"><i style="width: 13%"></i></div>
+				<span>13%</span>
+			</li>
+			<li>
+				<p>Так, сервіс корисний та зручний</p>
+				<span>324</span>
+				<div class="progress__line"><i style="width: 43%"></i></div>
+				<span>43%</span>
+			</li>
+			<li>
+				<p>Так, сервіс корисний та зручний</p>
+				<span>32</span>
+				<div class="progress__line"><i style="width: 19%"></i></div>
+				<span>19%</span>
+			</li>
+		</ul>
+		<div class="popup_btn">
+			<button class="btn btn_small">Закрити</button>
+		</div>
+</div>
+<!-- END .popup -->
+</body>
+</html>
