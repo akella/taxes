@@ -73,7 +73,8 @@
 		font-weight: normal
 		line-height: 1.2
 		cursor: pointer
-		span
+		a
+			display: block
 			font-weight: 600 
 			color: $blue 
 		&.active
@@ -81,7 +82,7 @@
 			+background-image(linear-gradient(#f5fbfe, #b0def8))
 			overflow: hidden
 			cursor: default
-			span
+			a
 				float: left
 				height: 35px
 				padding: 0 10px
@@ -90,12 +91,6 @@
 				line-height: 35px
 				font-size: 14px
 				color: #000		
-		&:hover
-			span
-				text-decoration: underline		
-		a
-			display: block
-			font-weight: 600 
 	ul
 		display: none
 		padding: 10px 0

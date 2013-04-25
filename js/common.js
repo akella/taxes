@@ -224,15 +224,16 @@ if ($('.js-accord').length > 0) {
 
 //accordeon navigation
 $('.js-accord-nav h3').click( function(){
-  var accord = $(this).find('span');
+  var accord = $(this).next('ul');
   if (accord.length > 0) {
     if (!$(this).hasClass('active')) {
       $('.js-accord-nav h3').removeClass('active');
       $(this).addClass('active');
       $('.js-accord-nav ul').slideUp();
       $(this).next().slideDown();
+      return false;
     };
-  };
+  };  
 });
 
 //low list
