@@ -17,14 +17,14 @@ if ($('.js-dp').length > 0) {
     isRTL: false,
     showMonthAfterYear: false,
     hideIfNoPrevNext: true,
-    afterAdjustDate: function(){        
-      
+    afterAdjustDate: function(){
+
     },
-    onSelect: function() { 
-      
+    onSelect: function() {
+
     }
   });
-};  
+};
 
 // Бегущая строка
 function tape_move () {
@@ -131,7 +131,7 @@ if ($('.js-gallery').length > 0) {
     if (!$(this).hasClass('active')) {
       var pic = $(this).attr('data-item');
       var text = $(this).find('p').text();
-      $('.js-gallery li').removeClass('active');
+      $(this).parent().children('li').removeClass('active');
       $(this).parent().prev().find('img').attr('src', pic);
       $(this).parent().prev().find('p').text(text);
       $(this).addClass('active');
@@ -145,12 +145,12 @@ if ($('.js-gallery').length > 0) {
     $(this).parent().prev().find('p').text(text); 
   };
   function gallery_sl() {     
-    $('.js-gallery li.active').each(function() {        
-      if ($('.js-gallery li').last().hasClass('active')) {
+    $('.js-gallery-move li.active').each(function() {        
+      if ($('.js-gallery-move li').last().hasClass('active')) {
         $(this).removeClass('active');
-        $('.js-gallery li').first().addClass('active');
-        var pic = $('.js-gallery li').first().attr('data-item');
-        var text = $('.js-gallery li').first().find('p').text();
+        $('.js-gallery-move li').first().addClass('active');
+        var pic = $('.js-gallery-move li').first().attr('data-item');
+        var text = $('.js-gallery-move li').first().find('p').text();
         $(this).parent().prev().find('img').attr('src', pic);
         $(this).parent().prev().find('p').text(text); 
       }
@@ -224,12 +224,16 @@ if ($('.js-accord').length > 0) {
 
 //accordeon navigation
 $('.js-accord-nav h3').click( function(){
-  if (!$(this).hasClass('active')) {
-    $('.js-accord-nav h3').removeClass('active');
-    $(this).addClass('active');
-    $('.js-accord-nav ul').slideUp();
-    $(this).next().slideDown();
-  };
+  var accord = $(this).next('ul');
+  if (accord.length > 0) {
+    if (!$(this).hasClass('active')) {
+      $('.js-accord-nav h3').removeClass('active');
+      $(this).addClass('active');
+      $('.js-accord-nav ul').slideUp();
+      $(this).next().slideDown();
+      return false;
+    };
+  };  
 });
 
 //low list
@@ -288,23 +292,32 @@ $(".js-roll-message").click(function(){
   }
 });
 
+
+
 //popup for poll results
 $(".js-result").click(function() {
   if ($(this).hasClass('active')) {
     $(this).removeClass('active');
-    $(".l-progress").slideUp();
+    //$(".l-progress").slideUp();
   }
   else {
     $(this).addClass('active');
-    $(".l-progress").slideDown();
-  };  
+    //$(".l-progress").slideDown();
+    $(".overlay, .popup").css("display", "block");
+  };
   return false;
 });
+
 $(".progress__close").click( function(){
-  $(".l-progress").slideUp();
+  //$(".l-progress").slideUp();
   $(".js-result").removeClass('active');
   return false;
 });
+
+$('.progress__close, .js-btn').click(function() {
+  $(".overlay, .popup").hide();
+});
+
 
 //table sort
 if ($(".js-table-sort").length > 0) {
@@ -313,10 +326,15 @@ if ($(".js-table-sort").length > 0) {
   }); 
 };
 
-
-$(".js-table-sort").tablesorter({
-    cssHeader: ""
-}); 
+//auth
+$('.js-auth').click( function(){
+  $('.auth').slideDown();
+  return false;
+});
+$('.js-auth-close').click( function(){
+  $('.auth').slideUp();
+  return false;
+});
 
 });
 
