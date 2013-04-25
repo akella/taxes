@@ -11,6 +11,7 @@
 		height: 45px
 		padding-left: 60px
 		margin-left: 10px
+		background-color: #c4e4f7 
 		+background-image(linear-gradient(#fff, #c4e4f7))	
 		border-radius: 10px
 		box-shadow: rgba(52,51,51,.46) 0 0 3px
@@ -53,8 +54,12 @@
 	background: #fff 
 .gallery__pic
 	position: relative
+	width: 440px
+	height: 307px
+	overflow: hidden
 	img
 		display: block
+		height: 100%
 	p
 		position: absolute
 		bottom: 0
@@ -72,6 +77,9 @@
 	li
 		position: relative
 		float: left
+		width: 88px
+		height: 62px
+		overflow: hidden
 		cursor: pointer
 		&.active
 			img
@@ -89,6 +97,7 @@
 				border-color: #2e4972 transparent transparent transparent
 	img
 		display: block
+		height: 100%
 		opacity: 0.5
 	p
 		display: none
@@ -96,6 +105,7 @@
 .main-news
 	float: left
 	width: 240px
+	background-color: #f3d177 
 	+background-image(linear-gradient(#fff2c2, #f3d177))	
 	.tabs
 		padding: 8px 0 0 7px
@@ -135,6 +145,7 @@
 	position: relative
 	height: 118px
 	padding: 17px 40px 0 40px
+	background-color: #fff2c2 
 	+background-image(linear-gradient(#fff2c2, #f3d177))
 	border-radius: 5px	
 	overflow: hidden	
@@ -161,6 +172,7 @@
 		line-height: 56px
 		margin-bottom: 9px
 		border-radius: 5px
+		background-color: #456ea9 
 		+background-image(linear-gradient(#456ea9, #25426c))
 		box-shadow: rgba(0,0,0,0.5) -1px -1px 0 inset
 	img
@@ -210,6 +222,7 @@
 .services_mod
 	height: 97px
 	padding: 25px 0 0 5px
+	background-color: #c3e4f7 
 	+background-image(linear-gradient(#fff 50%, #c3e4f7))
 .services_inner
 	height: auto	
@@ -247,6 +260,7 @@
 .datepicker
 	padding-bottom: 8px
 	margin-bottom: 10px
+	background-color: #fdeeb8 
 	+background-image(linear-gradient(#fdeeb8 58px, #fff 58px))
 	.ui-datepicker-header
 		height: 24px
@@ -331,6 +345,7 @@
 		left: 0
 		margin: 0
 		z-index: 50		
+		background-color: #2391d8 
 		+background-image(linear-gradient(top, #2391d8, #1370a7))
 		//border-radius: 5px 5px 0 0		
 		-webkit-backface-visibility: hidden //fixes chrome bug
@@ -386,76 +401,6 @@
 		z-index: 10
 		overflow: hidden 
 		background: #fff
-		
-
-
-// .accord__item
-// 	position: relative
-// 	float: left
-// 	width: 31px
-// 	height: 277px
-// 	&.active
-// 		width: 387px
-// 		background: #FFF
-// 		border-radius: 5px 0 0 5px
-// 		.accord__title	
-// 			border-radius: 5px
-// 			background: #FFF				
-// 			color: #000  
-// 			span
-// 				border-bottom: 1px solid #dee7ef
-// 				&:after
-// 					top: 11px
-// 					left: 2px
-// 					border-width: 5px 0 5px 5px
-// 					border-color: transparent transparent transparent #bbdaed
-// 		& + .accord__item
-// 			background: #fff
-			
-
-
-.accord__title
-	position: relative
-	float: left
-	width: 31px
-	height: 277px
-	+background-image(linear-gradient(left, #2391d8, #1370a7))
-	border-radius: 5px 0 0 5px
-	color: #fff2c2
-	cursor: pointer
-	&.active
-		background: #FFF		
-		color: #000  
-		span
-			border-bottom: 1px solid #dee7ef
-			&:after
-				top: 11px
-				left: 2px
-				border-width: 5px 0 5px 5px
-				border-color: transparent transparent transparent #bbdaed
-	span
-		position: absolute
-		top: 123px
-		left: -108px
-		width: 247px
-		height: 31px		
-		line-height: 31px			
-		//font-weight: 600  
-		text-align: right
-		text-transform: uppercase
-		+rotate(-90)		
-		//-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=3.061515884555943e-16, M12=1, M21=-1, M22=3.061515884555943e-16, SizingMethod='auto expand')"
-		//filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.4488887394336025, M12=-0.388228567653781, M21=0.388228567653781, M22=1.4488887394336025, SizingMethod='auto expand')
-		&:after
-			content: ""
-			position: absolute
-			top: 15px
-			left: 0
-			width: 0px
-			height: 0px
-			border-style: solid
-			border-width: 5px 5px 0 5px
-			border-color: #bbdaed transparent transparent transparent
 .accord__content 
 	ul
 		padding: 15px
@@ -485,6 +430,7 @@
 .main-map
 	position: relative
 	height: 220px
+	background-color: #dde6ee 
 	+background-image(linear-gradient(#fff, #dde6ee))
 .main-map__container
 	position: absolute
