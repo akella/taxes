@@ -4,62 +4,86 @@
 .cols_margin
     margin: 0 10px 10px 10px
     padding: 0 0 27px
-    border-bottom: 1px solid #e0e8f0 
+    border-bottom: 1px solid #e0e8f0
 .categ-nav
     float: left
     margin-right: -1px
     width: 259px
-    border-right: 1px solid #e0e8f0 
-    ol 
-        margin-left: 32px
-    li 
-        color: #666 
+    border-right: 1px solid #e0e8f0
+    li
+        color: #666
         list-style-type: decimal
-    a 
-        display: block
-        padding: 6px 15px 6px 0 
-        position: relative
-        z-index: 2
-        line-height: 1.2
-    .is-active
-        color: #c8a74f
-        a  
-            color: #fff  
-            background: #225d91 
-            -webkit-user-select: none
-            -moz-user-select: none
-            user-select: none
-            &:before
-                content: ""  
-                position: absolute
-                left: -32px
-                top: 0
-                bottom: 0
-                z-index: -1
-                width: 32px  
-                background: #225d91 
-    .bottom 
+        padding: 6px 0 6px 0
+        overflow: hidden
+        span
+            color: #666
+            font-size: 12px
+            display: block
+            margin: 1px 0 0 2px
+            padding-right: 10px
+            float: left
+            text-align: right
+            width: 30px
+        a
+            display: block
+            position: relative
+            z-index: 2
+            line-height: 1.2
+            color: #069
+            padding-right: 15px
+            overflow: hidden
+        li
+            list-style-type: none
+            background: #f4f7f9
+        &.is-active
+            background: #225d91
+            padding-bottom: 0
+            span
+                color: #c8a74f
+            a
+                padding-bottom: 5px
+                color: #fff
+            ul
+                padding-top: 5px
+            li
+                font-size: 12px
+                &.is-active
+                    background: #b5c8da
+                    padding-bottom: 5px
+                    span
+                        color: #333
+                    a
+                        padding-bottom: 0
+                        color: #000
+                span
+                    font-size: 10px
+                    color: #666
+                a
+                    padding-bottom: 0
+                    color: #069
+
+    .bottom
         padding: 14px 0 0 32px
         .next
             float: left
-        .ico-arr-r 
+        .ico-arr-r
             margin-left: 10px
-    .pagination 
-        margin: 5px 0 
+    .pagination
+        margin: 5px 0
         a
             padding: 0 5px
             line-height: 17px
-.categ-nav__title 
+.categ-nav__title
     margin: 19px 12px 16px
-    color: #c8a74f 
+    color: #c8a74f
     text-transform: uppercase
     font-weight: 600
-.categ-cont 
+.categ-cont
     padding: 0 15px 0 20px
     overflow: hidden
-    background: #fff  
+    background: #fff
     border-left: 1px solid #e0e8f0
-.categ-cont__title  
+.categ-cont__title
     margin: 19px 0 21px
     font-size: 20px
     font-weight: normal
@@ -101,9 +125,11 @@
             font-weight: 600
             font-size: 18px
             box-shadow: 0 1px 2px rgba(203,200,194,.25), inset 0 0 1px rgba(255,255,255,.65)
+            background-color: #1b85cb 
             +background-image(linear-gradient(bottom, #1b85cb 0%, #23a5ed 100%)) 
     .low-list__cont 
         display: none
+        padding-top: 10px 
         ul 
             display: none
             margin-left: 8px 
@@ -149,7 +175,7 @@
         line-height: 1
 .low-list__more 
     display: block
-    margin: 10px 0
+    padding-bottom: 10px
     background: none 
     cursor: pointer
     i
@@ -169,4 +195,62 @@
         vertical-align: middle
     span 
         color: #00518c 
-        border-bottom: 1px dashed 
+        border-bottom: 1px dashed
+//low-main
+.low-main
+.low-main__title
+    position: relative
+    margin-bottom: 25px
+    padding-top: 95px
+    font-size: 20px
+    text-align: center
+    font-weight: 400 
+    line-height: 1.2
+    color: #000
+    i
+        position: absolute
+        top: 11px
+        left: 50%
+        margin-left: -26px 
+.low-main__content
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1.2
+    ul
+        margin-bottom: 15px
+    p
+        margin-bottom: 15px
+.low-main__load
+    margin-top: 25px
+    text-align: right
+    a
+        position: relative
+        padding-left: 28px
+    i
+        position: absolute
+        top: -2px
+        left: 0
+.low-main__list 
+    margin-bottom: 50px
+    .h2
+        margin-bottom: 10px
+        font-size: 20px
+        font-weight: 400
+        text-transform: none
+    li
+        padding: 5px 8px
+        margin-bottom: 4px
+        background: #f4f7f9 
+        &:nth-child(2n)
+            background: #FFF 
+        ul
+            margin: 8px 0 -8px 22px
+        li
+            padding: 6px 8px
+            margin-bottom: 2px
+            a
+                font-size: 12px
+    a
+        font-size: 14px
+        line-height: 1.2
+        text-transform: uppercase

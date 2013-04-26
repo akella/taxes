@@ -39,6 +39,7 @@ table
 	margin: 0 auto
 	background: #25426c 
 	box-shadow: #25426c 0px 1px 0 1px inset
+	background-color: #31507d 
 	+background-image(linear-gradient(#31507d 108px, #21659c 170px, #31507d 260px, #25426c 100%))
 .title
 	position: relative
@@ -64,6 +65,7 @@ table
 	height: 37px
 	padding: 0 17px
 	border-radius: 5px
+	background-color: #24a5ee 
 	+background-image(linear-gradient(#24a5ee, #1c86cb))
 	border: 1px solid #258fcd
 	box-shadow: #48b4f0 1px 1px 0 inset, rgba(203,200,194,.25) 1px 1px 2px
@@ -71,18 +73,23 @@ table
 	font-weight: 600 
 	color: #fff
 	&:hover
+		background-color: #156ba3 
 		+background-image(linear-gradient(#24a5ee, #156ba3))
 	&:active
+		background-color: #24a5ee 
 		+background-image(linear-gradient(#1c86cb, #24a5ee))
 		box-shadow: #0e4970 0 0 3px inset 
 .btn_gray
+	background-color: #e7e7e7 
 	+background-image(linear-gradient(#fff, #e7e7e7))
 	border-color: #bababa
 	box-shadow: rgba(203,200,194,.25) 1px 1px 2px
 	color: #666 
 	&:hover
+		background-color: #bbb 
 		+background-image(linear-gradient(#fff, #bbb))
 	&:active, &.active
+		background-color: #e7e7e7 
 		+background-image(linear-gradient(#e7e7e7, #fff))
 		box-shadow: #999 0 0 3px inset 
 //bottom
@@ -123,7 +130,7 @@ table
 		background: #dde6ee 
 		color: #2f2f2f 
 //icons
-.ico-video, .ico-photo, .ico-arr-r, .ico-arr-l
+.ico-video, .ico-photo, .ico-arr-r, .ico-arr-l, .ico-user
 	display: inline-block
 .ico-video
 	+s($icons, ico-video)
@@ -133,34 +140,6 @@ table
 	+s($icons, ico-play)
 .ico-play-big
 	+s($icons, ico-play-big)
-.ico-s1
-	+s($icons, s1)
-.ico-s2
-	+s($icons, s2)
-.ico-s3
-	+s($icons, s3)
-.ico-s4
-	+s($icons, s4)
-.ico-s5
-	+s($icons, s5)
-.ico-s6
-	+s($icons, s6)
-.ico-s7
-	+s($icons, s7)
-.ico-s8
-	+s($icons, s8)
-.ico-s9
-	+s($icons, s9)
-.ico-s10
-	+s($icons, s10)
-.ico-s11
-	+s($icons, s11)
-.ico-s12
-	+s($icons, s12)
-.ico-s13
-	+s($icons, s13)
-.ico-s14
-	+s($icons, s14)
 .ico-book-1
 	+s($icons, ico-book-1)
 .ico-book-2
@@ -181,17 +160,24 @@ table
 	+s($icons, print)
 .ico-word-d
 	+s($icons, ico-word-d)
+.ico-word-d1
+	+s($icons, ico-word-d1)
 .ico-point-d
 	+s($icons, ico-point-d)
 .ico-exel-d
 	+s($icons, ico-exel-d)
 .ico-photo-d
 	+s($icons, ico-photo-d)
+.ico-user
+	+s($icons, ico-user)
+.ico-emblem
+	+s($icons, ico-emblem)
 //header
 .header
 	position: relative
 	height: 108px
 	padding: 0 10px
+	background-color: #4670ac 
 	+background-image(linear-gradient(#4670ac, #2b4a77))
 .languages
 	float: left
@@ -205,6 +191,7 @@ table
 		font-size: 11px
 		color: #FFF  
 		&.active
+			background-color: #1d8acf 
 			+background-image(linear-gradient(#1d8acf, #26acf5))
 .logo
 	float: left
@@ -240,10 +227,29 @@ table
 		margin-left: 8px
 		height: 27px
 		padding: 0 10px
+		background-color: #24a5ed 
 		+background-image(linear-gradient(#24a5ed, #1c86cb))
 		border-radius: 0 0 5px 5px
 		line-height: 27px
 		color: #fff
+.header__authorized
+	float: right
+	padding: 8px 10px
+	background-color: #24a5ed 
+	+background-image(linear-gradient(#24a5ed, #1c86cb))
+	border-radius: 0 0 5px 5px
+	a
+		color: #FFF 
+	i
+		margin-right: 6px
+	p
+		margin-top: 5px
+		text-align: right
+		span
+			margin: 0 9px
+			color: #95c8e9
+		a
+			color: #f6d98a  
 .header__search
 	float: left
 	width: 221px
@@ -292,6 +298,7 @@ table
 	z-index: 100 
 	ul
 		height: 35px
+		background-color: #fff2c2 
 		+background-image(linear-gradient(#fff2c2, #f3d178))
 	li
 		position: relative
@@ -302,6 +309,7 @@ table
 			a
 				border: none 
 		&:hover
+			background-color: #fff2c2 
 			+background-image(linear-gradient(#fff2c2, #e1be60))
 			ul
 				display: block
@@ -311,6 +319,7 @@ table
 			top: 35px
 			left: 0
 			height: auto
+			background-color: #f3d075 
 			+background-image(linear-gradient(#f3d075, #fff2c2 32%))		
 			border-top: 1px solid #d3b560 	
 			li
@@ -369,6 +378,7 @@ table
 	position: relative
 	float: left
 	padding: 0 7px 0 31px
+	background-color: #e0310b 
 	+background-image(linear-gradient(#e0310b, #c12602))	
 	i
 		position: absolute
@@ -411,6 +421,7 @@ table
 .footer
 	margin-top: 14px
 	padding: 0 9px
+	background-color: #25426c 
 	+background-image(linear-gradient(#25426c 0%, #235485 50%, #25426c 100%))
 	.cols
 		height: 97px
@@ -459,6 +470,7 @@ table
 		height: 35px
 		padding: 5px
 		margin-right: 10px
+		background-color: #fff2c2 
 		+background-image(linear-gradient(#fff2c2, #f3d177))	
 		border-radius: 5px
 		line-height: 35px		
@@ -549,6 +561,7 @@ table
 .banner-customs, .banner-legistation
 	position: relative
 	display: block
+	background-color: #3a4352 
 	+background-image(linear-gradient(#3a4352 0%, #4f525d 47%, #373942 54%, #15181c 100%))	
 	color: #fff
 	span
@@ -673,18 +686,25 @@ table
 	border: 1px solid #b3b3b3
 //auth
 .auth
+	display: none
 	position: absolute
 	top: 0
 	right: 10px
 	width: 250px
 	padding: 0 17px
 	border-radius: 0 0 5px 5px
+	background-color: #24a5ee 
 	+background-image(linear-gradient(#24a5ee, #1c86cb))	
 	box-shadow: rgba(0,0,0,.22) 5px 5px 7px
 	z-index: 1000 
 	color: #FFF 
 	a
 		color: #f5d174
+.auth__close
+	position: absolute
+	top: 5px
+	right: 5px
+	+s($icons, close-w)
 .auth__title
 	padding: 9px 0
 	text-align: center
@@ -716,13 +736,16 @@ table
 		height: 23px
 		padding: 0 8px
 		border-radius: 4px
+		background-color: #fff3ca 
 		+background-image(linear-gradient(#fff3ca, #f4d279))
 		box-shadow: rgba(0,0,0,0.1) 1px 1px 2px
 		font-size: 14px
 		color: #003366 
 		&:hover
+			background-color: #d2ae4e 
 			+background-image(linear-gradient(#fff3ca, #d2ae4e))
 		&:active
+			background-color: #f4d279 
 			+background-image(linear-gradient(#f4d279, #fff3ca))
 .auth__pass-restore
 	padding: 5px 0 10px 60px
@@ -730,7 +753,46 @@ table
 .auth__info
 	padding: 10px 0
 	line-height: 1.2
-
+//popup
+//popup votes
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background: rgba(37,66,108,.75)
+	z-index: 1000
+	display: none
+.popup
+	display: none
+	position: fixed
+	width: 483px
+	left: 50%
+	top: 250px
+	padding: 10px 0 25px
+	margin-top: -120px
+	margin-left: -242px
+	background: #fff
+	box-shadow: 0 0 29px rgba(0,0,0,.41)
+	z-index: 1001
+	border-radius: 1px
+	border: 1px solid #cdd7e1
+	&.show
+		display: block
+	.title
+		padding-left: 15px
+		color: #000
+		margin-bottom: 0
+.popup_btn
+	text-align: center
+.popup__question
+	font-size: 14px
+	color: #000
+	background: #f3f6f9
+	padding: 18px
+	line-height: 1.4
 
 	
 		
