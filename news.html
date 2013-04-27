@@ -194,14 +194,42 @@
 			<!-- BEGIN .question -->
 			<form class="question" action="">
 				<div class="question__title">Опитування</div>
-				<p>Чи задоволені ви роботою електронного сервісу "Дізнайся більше про свого бізнес- партнера"?</p>
-				<label><input type="radio" name="question">Так, сервіс корисний та зручний</label>
-				<label><input type="radio" name="question">Так, але сервіс потребує технічного доопрацювання </label>
-				<label><input type="radio" name="question">Так, але хотілося б бачити більше інформації про себе та своїх контрагентів</label>
-				<label><input type="radio" name="question">Ні, оскільки не містить корисної для мене інформації</label>
+				<div class="question__text">Чи задоволені ви роботою електронного сервісу "Дізнайся більше про свого бізнес- партнера"?</div>
+				<div class="question__answer">
+					<label><input type="radio" name="question">Так, сервіс корисний та зручний</label>
+					<label><input type="radio" name="question">Так, але сервіс потребує технічного доопрацювання </label>
+					<label><input type="radio" name="question">Так, але хотілося б бачити більше інформації про себе та своїх контрагентів</label>
+					<label><input type="radio" name="question">Ні, оскільки не містить корисної для мене інформації</label>
+				</div>
+				<ul class="poll-result">
+					<li>
+						<p>Так, сервіс корисний та зручний</p>
+						<span>245</span>
+						<div class="poll-result__line"><i style="width: 80%"></i></div>
+						<span>80%</span>
+					</li>
+					<li>
+						<p>Так, але сервіс потребує технічного доопрацювання</p>
+						<span>132</span>
+						<div class="poll-result__line"><i style="width: 60%"></i></div>
+						<span>60%</span>
+					</li>
+					<li>
+						<p>Так, але хотілося б бачити більше інформації про себе та своїх контрагентівя</p>
+						<span>132</span>
+						<div class="poll-result__line"><i style="width: 60%"></i></div>
+						<span>60%</span>
+					</li>
+					<li>
+						<p>Ні, оскільки не містить корисної для мене інформації</p>
+						<span>132</span>
+						<div class="poll-result__line"><i style="width: 60%"></i></div>
+						<span>60%</span>
+					</li>
+				</ul>
 				<div class="question__btn">
 					<input class="btn" type="submit">
-					<a href="#">Результати</a>
+					<a href="#" class="js-poll-result">Результати</a>
 					<a href="#">Архів опитувань</a>
 				</div>			
 			</form>
@@ -431,5 +459,42 @@
 	<!-- END .footer -->
 </section>
 <!-- END .wrap -->
+<!-- BEGIN .popup -->
+<div class="overlay"></div>
+<div class="popup js-popup-poll">
+		<h2 class="title">Опитування</h2>
+		<p class="popup__question">Чи задоволені ви роботою електронного сервісу "Дізнайся більше про свого бізнес-партнера"?</p>
+		<button class="progress__close js-popup-poll-close"></button>
+		<ul class="poll-result">
+			<li>
+				<p>Так, сервіс корисний та зручний</p>
+				<span>3</span>
+				<div class="poll-result__line"><i style="width: 20%"></i></div>
+				<span>20%</span>
+			</li>
+			<li>
+				<p>Так, сервіс корисний та зручний</p>
+				<span>32</span>
+				<div class="poll-result__line"><i style="width: 13%"></i></div>
+				<span>13%</span>
+			</li>
+			<li>
+				<p>Так, сервіс корисний та зручний</p>
+				<span>324</span>
+				<div class="poll-result__line"><i style="width: 43%"></i></div>
+				<span>43%</span>
+			</li>
+			<li>
+				<p>Так, сервіс корисний та зручний</p>
+				<span>32</span>
+				<div class="poll-result__line"><i style="width: 19%"></i></div>
+				<span>19%</span>
+			</li>
+		</ul>
+		<div class="popup_btn">
+			<button class="btn btn_small js-popup-poll-close">Закрити</button>
+		</div>
+</div>
+<!-- END .popup -->
 </body>
 </html>
