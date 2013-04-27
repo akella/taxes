@@ -327,9 +327,15 @@ $('.js-auth-close').click( function(){
   return false;
 });
 
-$(".js-table-sort").tablesorter({
-    cssHeader: ""
-}); 
+//poll result
+$('.js-poll-result').click( function(){
+  $('.overlay, .js-popup-poll').fadeIn();
+  return false;
+});
+$('.js-popup-poll-close').click( function(){
+  $('.overlay, .js-popup-poll').fadeOut();
+  return false;
+});
 
 });
 
