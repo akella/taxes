@@ -354,15 +354,19 @@ $('.js-search button').click(function(){
 });
 
 
-//scroll
+// fixed nav, breadcrumbs
 $(window).scroll(function() {
   if ($(window).scrollTop() > 108) {
     $('.nav').addClass('nav_fixed');
     $('.header').css('margin-bottom', '35px');
+    $('.inner-page .breadcrumbs').addClass('breadcrumbs_fixed');
+    $('.inner-page .header').css('margin-bottom', '73px');
   }
   else {
     $('.nav').removeClass('nav_fixed');
     $('.header').css('margin-bottom', '0');
+    $('.inner-page .breadcrumbs').removeClass('breadcrumbs_fixed');
+    $('.inner-page .header').css('margin-bottom', '0');
   }
 });
 
