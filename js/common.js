@@ -134,7 +134,7 @@ if ($('.js-gallery').length > 0) {
       var link = $(this).find('span').text();
       $(this).parent().children('li').removeClass('active');
       $(this).parent().prev().find('img').attr('src', pic);
-      $(this).parent().prev().find('p').text(text);
+      $(this).parent().prev().find('.gallery__link-text').text(text);
       $(this).parent().prev().find('a').attr('href', link);
       $(this).addClass('active');
     };
@@ -144,7 +144,7 @@ if ($('.js-gallery').length > 0) {
     var pic = $(this).next().attr('data-item');
     var text = $(this).next().find('p').text();
     $(this).parent().prev().find('img').attr('src', pic);
-    $(this).parent().prev().find('p').text(text); 
+    $(this).parent().prev().find('.gallery__link-text').text(text); 
   };
   function gallery_sl() {     
     $('.js-gallery-move li.active').each(function() {        
@@ -155,7 +155,7 @@ if ($('.js-gallery').length > 0) {
         var text = $('.js-gallery-move li').first().find('p').text();
         var link = $('.js-gallery-move li').first().find('span').text();
         $(this).parent().prev().find('img').attr('src', pic);
-        $(this).parent().prev().find('p').text(text); 
+        $(this).parent().prev().find('.gallery__link-text').text(text); 
         $(this).parent().prev().find('a').attr('href', link);
       }
       else {
@@ -165,7 +165,7 @@ if ($('.js-gallery').length > 0) {
         var text = $(this).next().find('p').text();
         var link = $(this).next().find('span').text();
         $(this).parent().prev().find('img').attr('src', pic);
-        $(this).parent().prev().find('p').text(text); 
+        $(this).parent().prev().find('.gallery__link-text').text(text); 
         $(this).parent().prev().find('a').attr('href', link);
       }
     });

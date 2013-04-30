@@ -61,18 +61,20 @@
 		display: block
 		width: 100%
 		height: 100%
-	p
-		position: absolute
-		bottom: 0
-		left: 0
-		right: 0
-		padding: 10px 15px
-		background: rgba(37,66,108,.95)
-		font-family: Verdana, Arial, sans-serif
-		font-size: 14px
-		font-weight: bold
-		color: #fff
-		line-height: 1.4    
+.gallery__link-text  
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 10px 15px
+	background: rgba(37,66,108,.95)
+	font-family: Verdana, Arial, sans-serif
+	font-size: 14px
+	font-weight: bold
+	color: #fff
+	line-height: 1.4    
+	&:hover 
+		text-decoration: none
 .gallery__navi
 	overflow: hidden
 	li
@@ -486,6 +488,9 @@
 	position: relative
 	height: 157px
 	padding: 10px
+	ul 
+		height: 135px
+		overflow: hidden
 	li
 		margin-bottom: 20px
 		span
@@ -499,6 +504,8 @@
 			color: #000 
 //new-info__poll
 .new-info__poll
+	height: 145px
+	overflow: hidden
 	.poll-result
 		p, li
 			margin-bottom: 5px
