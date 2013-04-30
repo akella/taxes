@@ -131,9 +131,11 @@ if ($('.js-gallery').length > 0) {
     if (!$(this).hasClass('active')) {
       var pic = $(this).attr('data-item');
       var text = $(this).find('p').text();
+      var link = $(this).find('span').text();
       $(this).parent().children('li').removeClass('active');
       $(this).parent().prev().find('img').attr('src', pic);
-      $(this).parent().prev().find('p').text(text);
+      $(this).parent().prev().find('.gallery__link-text').text(text);
+      $(this).parent().prev().find('a').attr('href', link);
       $(this).addClass('active');
     };
   })  
@@ -142,7 +144,7 @@ if ($('.js-gallery').length > 0) {
     var pic = $(this).next().attr('data-item');
     var text = $(this).next().find('p').text();
     $(this).parent().prev().find('img').attr('src', pic);
-    $(this).parent().prev().find('p').text(text); 
+    $(this).parent().prev().find('.gallery__link-text').text(text); 
   };
   function gallery_sl() {     
     $('.js-gallery-move li.active').each(function() {        
@@ -151,16 +153,20 @@ if ($('.js-gallery').length > 0) {
         $('.js-gallery-move li').first().addClass('active');
         var pic = $('.js-gallery-move li').first().attr('data-item');
         var text = $('.js-gallery-move li').first().find('p').text();
+        var link = $('.js-gallery-move li').first().find('span').text();
         $(this).parent().prev().find('img').attr('src', pic);
-        $(this).parent().prev().find('p').text(text); 
+        $(this).parent().prev().find('.gallery__link-text').text(text); 
+        $(this).parent().prev().find('a').attr('href', link);
       }
       else {
         $(this).removeClass('active');
         $(this).next().addClass('active');         
         var pic = $(this).next().attr('data-item');
         var text = $(this).next().find('p').text();
+        var link = $(this).next().find('span').text();
         $(this).parent().prev().find('img').attr('src', pic);
-        $(this).parent().prev().find('p').text(text); 
+        $(this).parent().prev().find('.gallery__link-text').text(text); 
+        $(this).parent().prev().find('a').attr('href', link);
       }
     });
   };
@@ -318,23 +324,31 @@ if ($(".js-table-sort").length > 0) {
 };
 
 //auth
-$('.js-auth').click( function(){
+$('.js-auth').click(function(){
   $('.auth').slideDown();
   return false;
 });
-$('.js-auth-close').click( function(){
+$('.js-auth-close').click(function(){
   $('.auth').slideUp();
   return false;
 });
 
 //poll result
-$('.js-poll-result').click( function(){
+$('.js-poll-result').click(function(){
   $('.overlay, .js-popup-poll').fadeIn();
   return false;
 });
-$('.js-popup-poll-close').click( function(){
+$('.js-popup-poll-close').click(function(){
   $('.overlay, .js-popup-poll').fadeOut();
   return false;
+});
+
+//search
+$('.js-search button').click(function(){
+  var search_val = $(this).prev().val();
+  if (search_val == "") {
+    return false;
+  };  
 });
 
 });
