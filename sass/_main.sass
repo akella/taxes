@@ -446,6 +446,13 @@
 	height: 220px
 	background-color: #dde6ee 
 	+background-image(linear-gradient(#fff, #dde6ee))
+	.main-map__map
+		position: absolute
+		top: -56px
+		left: -28px
+		opacity: 0
+		z-index: -1
+		+transition(all .3s linear)
 .main-map__container
 	position: absolute
 	top: 56px
@@ -453,7 +460,11 @@
 	width: 180px
 	height: 121px
 	background: url(../img/main-map.png) no-repeat
-	cursor: pointer	
+	cursor: pointer
+	&:hover
+		.main-map__map
+			opacity: 1
+			z-index: 1000
 .main-map__title
 	padding: 17px 0 0 10px
 	font-size: 18px
