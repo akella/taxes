@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+$(".fancybox,.slider_photos a").fancybox();
+
 //datepicker
 if ($('.js-dp').length > 0) {
   $('.js-dp').datepicker({
