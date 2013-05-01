@@ -320,16 +320,20 @@
 				&.ui-state-disabled
 					border: none
 				&.ui-datepicker-today
-					background: url(../img/icons/ico-mark.png) no-repeat 50% 85% $blue
+					background: $blue url(../img/icons/ico-mark.png) no-repeat 50% 85% 
 					a
 						color: #FFF
 				&.ui-state-custom
-					background: url(../img/icons/ico-mark.png) no-repeat 50% 85% #fcebb1 
+					background: #fcebb1 url(../img/icons/ico-mark.png) no-repeat 50% 85% 
+				a.ui-state-custom, a.ui-state-active
+					background: #FDEAB8 url(../img/icons/ico-mark.png) no-repeat 50% 85%
+					display: none
 			a
 				display: block
 				padding: 3px 0 7px 0
 				text-align: center
-				color: #000 
+				color: #000
+				height: 24px - 10px
 		.ui-datepicker-week-end
 			color: $red
 			a
