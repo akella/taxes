@@ -132,8 +132,8 @@ if ($('.js-gallery').length > 0) {
   $('.js-gallery li').click(function() {
     if (!$(this).hasClass('active')) {
       var pic = $(this).attr('data-item');
-      var text = $(this).find('p').text();
-      var link = $(this).find('span').text();
+      var text = $(this).find('a').text();
+      var link = $(this).find('a').attr('href');
       $(this).parent().children('li').removeClass('active');
       $(this).parent().prev().find('img').attr('src', pic);
       $(this).parent().prev().find('.gallery__link-text').text(text);
@@ -144,7 +144,7 @@ if ($('.js-gallery').length > 0) {
   $('.js-gallery li').first().addClass('active');
   function gallery_class() {
     var pic = $(this).next().attr('data-item');
-    var text = $(this).next().find('p').text();
+    var text = $(this).next().find('a').text();
     $(this).parent().prev().find('img').attr('src', pic);
     $(this).parent().prev().find('.gallery__link-text').text(text); 
   };
@@ -154,8 +154,8 @@ if ($('.js-gallery').length > 0) {
         $(this).removeClass('active');
         $('.js-gallery-move li').first().addClass('active');
         var pic = $('.js-gallery-move li').first().attr('data-item');
-        var text = $('.js-gallery-move li').first().find('p').text();
-        var link = $('.js-gallery-move li').first().find('span').text();
+        var text = $('.js-gallery-move li').first().find('a').text();
+        var link = $('.js-gallery-move li').first().find('a').attr('href');
         $(this).parent().prev().find('img').attr('src', pic);
         $(this).parent().prev().find('.gallery__link-text').text(text); 
         $(this).parent().prev().find('a').attr('href', link);
@@ -164,8 +164,8 @@ if ($('.js-gallery').length > 0) {
         $(this).removeClass('active');
         $(this).next().addClass('active');         
         var pic = $(this).next().attr('data-item');
-        var text = $(this).next().find('p').text();
-        var link = $(this).next().find('span').text();
+        var text = $(this).next().find('a').text();
+        var link = $(this).next().find('a').attr('href');
         $(this).parent().prev().find('img').attr('src', pic);
         $(this).parent().prev().find('.gallery__link-text').text(text); 
         $(this).parent().prev().find('a').attr('href', link);
