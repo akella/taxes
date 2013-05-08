@@ -319,14 +319,16 @@
 				border: 1px solid #bfbfbf
 				&.ui-state-disabled
 					border: none
-				&.ui-datepicker-today
-					background: $blue url(../img/icons/ico-mark.png) no-repeat 50% 85% 
-					a
-						color: #FFF
 				&.ui-state-custom
 					background: #fcebb1 url(../img/icons/ico-mark.png) no-repeat 50% 85% 
 				a.ui-state-custom, a.ui-state-active
 					background: #FDEAB8 url(../img/icons/ico-mark.png) no-repeat 50% 85%
+				&.ui-datepicker-today, &.ui-datepicker-current-day
+					background: $blue url(../img/icons/ico-mark.png) no-repeat 50% 85% 
+					a
+						color: #FFF
+					a.ui-state-custom, a.ui-state-active
+						background-color: transparent
 			a
 				display: block
 				padding: 3px 0 7px 0
