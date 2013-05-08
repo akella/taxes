@@ -445,15 +445,16 @@
 .main-map
 	position: relative
 	height: 220px
-	background-color: #dde6ee 
+	background-color: #dde6ee
 	+background-image(linear-gradient(#fff, #dde6ee))
 	.main-map__map
 		position: absolute
-		top: -56px
-		left: -28px
+		left: -28px + 60px
+		top: -56px - 4px
 		opacity: 0
 		z-index: -1
-		+transition(all .3s linear)
+		+transition(all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275))
+		+transform(scale(.5))
 .main-map__container
 	position: absolute
 	top: 56px
@@ -462,10 +463,17 @@
 	height: 121px
 	background: url(../img/main-map.png) no-repeat
 	cursor: pointer
-	&:hover
+	&.is-visiblemap
 		.main-map__map
 			opacity: 1
+			+transform(scale(1))
 			z-index: 1000
+			border: 1px solid #284671
+			border-radius: 10px
+			box-shadow: 0 0 10px rgba(#000, .5)
+			
+			img, .maps, canvas
+				border-radius: 10px
 .main-map__title
 	padding: 17px 0 0 10px
 	font-size: 18px

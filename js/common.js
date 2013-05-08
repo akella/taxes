@@ -2,6 +2,15 @@ $(document).ready(function() {
 
 $(".fancybox,.slider_photos a").fancybox();
 
+$('.main-map__container').click(function (e) {
+  $(this).addClass('is-visiblemap');
+});
+
+$(document).click(function(event) {
+    if ( $(event.target).closest('.main-map__container').get(0) == null )  {
+         $(".main-map__container").removeClass('is-visiblemap');
+    }
+});
 //datepicker
 // if ($('.js-dp').length > 0) {
 //   $('.js-dp').datepicker({
